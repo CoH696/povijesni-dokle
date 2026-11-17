@@ -919,74 +919,51 @@ const server = http.createServer(async (req, res) => {
         }
       }
 
-      // Generiraj 6-znamenkasti OTP kod
-      const otpCode = generateOtpCode();
-      const expiresAt = new Date(Date.now() + 30 * 60 * 1000).toISOString(); // 30 minuta
-
+      // Izravna prijava / registracija učenika bez čekanja na OTP kod
       let userId;
       if (existingUser) {
         db.prepare(`
           UPDATE users 
-          SET first_name = ?, last_name = ?, class_name = ?, verification_code = ?, code_expires_at = ?, last_login = CURRENT_TIMESTAMP
+          SET first_name = ?, last_name = ?, class_name = ?, is_verified = 1, verification_code = NULL, last_login = CURRENT_TIMESTAMP
           WHERE id = ?
-        `).run(firstName, lastName, className, otpCode, expiresAt, existingUser.id);
+        `).run(firstName, lastName, className, existingUser.id);
         userId = existingUser.id;
       } else {
         const info = db.prepare(`
           INSERT INTO users (email, first_name, last_name, class_name, verification_code, code_expires_at, is_verified)
-          VALUES (?, ?, ?, ?, ?, ?, 0)
-        `).run(email, firstName, lastName, className, otpCode, expiresAt);
+          VALUES (?, ?, ?, ?, NULL, NULL, 1)
+        `).run(email, firstName, lastName, className);
         userId = info.lastInsertRowid;
       }
 
-      // Zabilježi e-mail s kodom
-      const verEmail = generateVerificationEmail(email, firstName, otpCode);
-      db.prepare(`
-        INSERT INTO email_logs (recipient_email, recipient_name, subject, html_body, status)
-        VALUES (?, ?, ?, ?, 'VERIFICATION_SENT')
-      `).run(email, `${firstName} ${lastName}`.trim(), verEmail.subject, verEmail.html);
+      const activeUser = db.prepare('SELECT id, email, first_name, last_name, class_name, is_verified FROM users WHERE id = ?').get(userId);
 
-      console.log(`[VERIFIKACIJA KOD] Za ${email} (${firstName}): ${otpCode}`);
+      console.log(`[PRIJAVA] Uspješno prijavljen učenik: ${email} (${firstName} ${lastName}, ${className})`);
 
       return sendJson(res, 200, {
         success: true,
-        requiresVerification: true,
-        email: email,
-        // Za lokalni rad u učionici šaljemo kod i u odgovoru ako je testno / školsko okruženje
-        debugOtp: otpCode,
-        message_hr: `Verifikacijski kod od 6 znamenaka poslan je na vašu e-mail adresu ${email}.`,
-        message_en: `A 6-digit verification code has been sent to your email address ${email}.`
+        user: activeUser,
+        message_hr: `Uspješna prijava! Dobrodošli, ${firstName}.`,
+        message_en: `Welcome, ${firstName}!`
       });
     }
 
-    // API: Provjera verifikacijskog OTP koda
+    // API: Provjera verifikacijskog OTP koda (Zadržano radi kompatibilnosti, uvijek potvrđuje)
     if (req.method === 'POST' && pathname === '/api/auth/verify-code') {
       const data = await parseJsonBody(req);
       const email = sanitizeText(data.email || '').toLowerCase();
-      const code = sanitizeText(data.code || '').trim();
 
-      const user = db.prepare('SELECT * FROM users WHERE email = ?').get(email);
-      if (!user) {
-        return sendJson(res, 404, { success: false, message_hr: 'Korisnik nije pronađen.', message_en: 'User not found.' });
+      let user = db.prepare('SELECT * FROM users WHERE email = ?').get(email);
+      if (user) {
+        db.prepare('UPDATE users SET is_verified = 1, verification_code = NULL WHERE id = ?').run(user.id);
+        user = db.prepare('SELECT id, email, first_name, last_name, class_name, is_verified FROM users WHERE id = ?').get(user.id);
       }
-
-      if (user.verification_code !== code) {
-        return sendJson(res, 400, {
-          success: false,
-          message_hr: 'Neispravan verifikacijski kod. Pokušajte ponovno.',
-          message_en: 'Invalid verification code. Please try again.'
-        });
-      }
-
-      // Označi kao verificiranog
-      db.prepare('UPDATE users SET is_verified = 1, verification_code = NULL WHERE id = ?').run(user.id);
-      const updatedUser = db.prepare('SELECT id, email, first_name, last_name, class_name, is_verified FROM users WHERE id = ?').get(user.id);
 
       return sendJson(res, 200, {
         success: true,
-        user: updatedUser,
-        message_hr: 'E-mail uspješno potvrđen! Možete započeti igru.',
-        message_en: 'Email verified successfully! You may now begin the game.'
+        user: user || { id: 1, email, first_name: 'Učenik', is_verified: 1 },
+        message_hr: 'Prijava uspješna!',
+        message_en: 'Login successful!'
       });
     }
 
@@ -1026,11 +1003,7 @@ const server = http.createServer(async (req, res) => {
       }
 
       if (!user.is_verified) {
-        return sendJson(res, 403, {
-          success: false,
-          message_hr: 'Vaš profil nije potvrđen. Molimo potvrdite e-mail kodom.',
-          message_en: 'Your account is not verified. Please verify your email first.'
-        });
+        db.prepare('UPDATE users SET is_verified = 1 WHERE id = ?').run(userId);
       }
 
       const gameId = Number(data.gameId || 1);
@@ -1269,7 +1242,7 @@ server.listen(PORT, () => {
   }
   console.log(`\n🛡️ SIGURNOST I PRAVILA:`);
   console.log(`   - Maksimalno dopuštenih profila: ${MAX_STUDENT_PROFILES}`);
-  console.log(`   - Obvezna e-mail verifikacija OTP kodom protiv botova`);
+  console.log(`   - Brza prijava učenika (ime, razred, e-mail) bez čekanja na kod`);
   console.log(`   - Automatsko slanje rezultata svaka 24h na: ${TEACHER_EMAIL}`);
   console.log(`   - Trajno brisanje (wipe) rezultata iz baze nakon slanja`);
   console.log(`   - Lozinka za nastavničko sučelje: ${ADMIN_PASSWORD}`);

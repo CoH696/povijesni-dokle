@@ -255,8 +255,9 @@
           <span id="langLabel" class="text-[11px] font-mono-num font-bold">HR</span>
         </button>
 
-        <!-- Profil Učenika -->
-        <div id="userBadge" class="hidden items-center gap-1.5 px-2.5 py-1.5 bg-[#60aa75]/20 border border-[#60aa75]/50 rounded-xl text-xs max-w-[110px] sm:max-w-none">
+        <!-- Profil Učenika (klik za odjavu / promjenu profila) -->
+        <div id="userBadge" onclick="handleLogout()" title="Kliknite za promjenu učenika / odjavu"
+             class="hidden items-center gap-1.5 px-2.5 py-1.5 bg-[#60aa75]/20 hover:bg-[#60aa75]/30 cursor-pointer border border-[#60aa75]/50 rounded-xl text-xs max-w-[120px] sm:max-w-none transition">
           <span class="w-2 h-2 rounded-full bg-[#60aa75] animate-pulse shrink-0"></span>
           <span id="userDisplayName" class="font-bold text-[#60aa75] truncate text-[11px]">Učenik</span>
         </div>
@@ -1039,9 +1040,9 @@
         <div class="w-11 h-11 mx-auto rounded-2xl bg-[#60aa75]/15 border border-[#60aa75]/30 flex items-center justify-center text-xl text-[#60aa75]">
           👤
         </div>
-        <h3 class="text-lg sm:text-xl font-serif-title font-bold text-white">Prijava za ocjenjivanje</h3>
+        <h3 class="text-lg sm:text-xl font-serif-title font-bold text-white">Prijava učenika</h3>
         <p class="text-xs text-muted">
-          Unesite svoje pravo ime i e-mail. Nakon prijave primit ćete 6-znamenkasti kod.
+          Unesite svoje stvarno ime, razred i e-mail za sudjelovanje u kvizu i bodovanje.
         </p>
       </div>
 
@@ -1079,7 +1080,7 @@
         </div>
 
         <div class="p-2.5 bg-red-950/40 border border-red-500/30 rounded-xl text-[11px] text-red-300 leading-snug">
-          ⚠️ <strong>Upozorenje:</strong> Lažni nadimci i vulgarnosti se odbijaju. Maksimalan broj profila u sustavu je 70 učenika.
+          ⚠️ <strong>Pravila:</strong> Za točnu evidenciju unesite stvarno ime i razred. Maksimalan broj profila u sustavu je 70 učenika.
         </div>
 
         <div class="flex gap-2.5 pt-1">
@@ -1087,40 +1088,9 @@
             Odustani
           </button>
           <button type="submit" id="regSubmitBtn" class="w-2/3 py-3 bg-[#478b5c] hover:bg-[#3d774f] text-white font-black rounded-xl transition shadow-lg shadow-[#478b5c]/30 min-h-[44px]">
-            Zatraži kod ➔
+            Prijavi se i igraj ➔
           </button>
         </div>
-      </form>
-    </div>
-  </div>
-
-  <div id="otpModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 hidden">
-    <div class="bg-surface rounded-3xl max-w-sm w-full p-5 sm:p-7 shadow-2xl space-y-4 text-center border">
-      <div class="w-11 h-11 mx-auto rounded-2xl bg-[#60aa75]/20 text-[#60aa75] flex items-center justify-center text-xl">
-        ✉️
-      </div>
-
-      <div class="space-y-1">
-        <h3 class="text-lg sm:text-xl font-serif-title font-bold text-white">Potvrda e-maila</h3>
-        <p class="text-xs text-muted" id="otpModalSub">
-          Unesite 6-znamenkasti kod:
-        </p>
-      </div>
-
-      <form id="otpForm" onsubmit="handleOtpSubmit(event)" class="space-y-4">
-        <div>
-          <input type="text" id="inputOtpCode" maxlength="6" pattern="[0-9]{6}" required placeholder="123456"
-                 inputmode="numeric" autocomplete="one-time-code" enterkeyhint="done"
-                 class="w-full text-center tracking-[6px] sm:tracking-[8px] font-mono-num text-2xl sm:text-3xl py-2.5 sm:py-3 bg-card-inner border-2 border-[#60aa75]/60 rounded-xl text-[#60aa75] focus:outline-none focus:border-[#60aa75] min-h-[50px]" />
-        </div>
-
-        <div id="otpHintBox" class="text-[11px] text-muted">
-          Ukoliko je testno okruženje bez SMTP-a, kod se također prikazuje na ekranu poslužitelja.
-        </div>
-
-        <button type="submit" id="otpConfirmBtn" class="w-full py-3 bg-[#478b5c] hover:bg-[#3d774f] text-white font-black rounded-xl text-sm transition min-h-[44px]">
-          Potvrdi i aktiviraj profil ➔
-        </button>
       </form>
     </div>
   </div>
@@ -14854,7 +14824,7 @@ Otključavanje za: ${formatCooldownTime(cooldown.remaining_ms)}.`);
 
       const btn = document.getElementById('regSubmitBtn');
       btn.disabled = true;
-      btn.textContent = 'Šaljem kod...';
+      btn.textContent = 'Prijavljujem...';
 
       try {
         const res = await fetch(`${API_BASE}/api/auth/register`, {
@@ -14865,13 +14835,21 @@ Otključavanje za: ${formatCooldownTime(cooldown.remaining_ms)}.`);
         const data = await res.json();
 
         if (data.success) {
-          pendingRegisterEmail = email;
+          currentUser = data.user || { id: 1, email, first_name: firstName, last_name: lastName, class_name: className };
+          localStorage.setItem('dokle_current_user', JSON.stringify(currentUser));
+          updateUserBadgeUI();
           closeLoginModal();
-          openOtpModal(email, data.debugOtp);
+          await fetchUserCooldowns();
+          if (pendingGameIdx !== null) {
+            const g = pendingGameIdx;
+            pendingGameIdx = null;
+            startGame(g);
+          }
         } else {
-          alert(data.message_hr || data.message_en || 'Greška pri registraciji.');
+          alert(data.message_hr || data.message_en || 'Greška pri prijavi.');
         }
       } catch (err) {
+        // Lokalni offline rad / Netlify fallback
         currentUser = { id: 1, email, first_name: firstName, last_name: lastName, class_name: className };
         localStorage.setItem('dokle_current_user', JSON.stringify(currentUser));
         updateUserBadgeUI();
@@ -14880,61 +14858,25 @@ Otključavanje za: ${formatCooldownTime(cooldown.remaining_ms)}.`);
           const g = pendingGameIdx;
           pendingGameIdx = null;
           startGame(g);
-        } else {
-          alert('Prijavljeni ste u lokalnom načinu rada.');
         }
       } finally {
         btn.disabled = false;
-        btn.textContent = 'Zatraži kod ➔';
+        btn.textContent = 'Prijavi se i igraj ➔';
       }
     }
 
-    function openOtpModal(email, debugCode) {
-      document.getElementById('otpModalSub').textContent = `Kod poslan na: ${email}`;
-      if (debugCode) {
-        document.getElementById('otpHintBox').innerHTML = `💡 Školska mreža: Vaš kod je <strong>${debugCode}</strong>`;
-      }
-      document.getElementById('otpModal').classList.remove('hidden');
-      document.getElementById('inputOtpCode').focus();
-    }
-
-    async function handleOtpSubmit(e) {
-      e.preventDefault();
-      const code = document.getElementById('inputOtpCode').value.trim();
-      const btn = document.getElementById('otpConfirmBtn');
-      btn.disabled = true;
-      btn.textContent = 'Provjeravam...';
-
-      try {
-        const res = await fetch(`${API_BASE}/api/auth/verify-code`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: pendingRegisterEmail, code })
-        });
-        const data = await res.json();
-
-        if (data.success) {
-          currentUser = data.user;
-          localStorage.setItem('dokle_current_user', JSON.stringify(currentUser));
-          updateUserBadgeUI();
-          document.getElementById('otpModal').classList.add('hidden');
-          if (pendingGameIdx !== null) {
-            const g = pendingGameIdx;
-            pendingGameIdx = null;
-            startGame(g);
-          } else {
-            alert('E-mail je potvrđen! Možete započeti igru.');
-          }
-        } else {
-          alert(data.message_hr || 'Neispravan kod.');
-        }
-      } catch (err) {
-        alert('Pogreška pri spajanju s poslužiteljem.');
-      } finally {
-        btn.disabled = false;
-        btn.textContent = 'Potvrdi i aktiviraj profil ➔';
+    function handleLogout() {
+      if (confirm('Želite li se odjaviti i prijaviti pod drugim učenikom/imenom?')) {
+        currentUser = null;
+        localStorage.removeItem('dokle_current_user');
+        updateUserBadgeUI();
+        userCooldowns = [];
+        renderLobby();
       }
     }
+
+    function openOtpModal() {}
+    function handleOtpSubmit() {}
 
     function openTeacherModal() {
       document.getElementById('teacherModal').classList.remove('hidden');
