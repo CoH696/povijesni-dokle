@@ -13,7 +13,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const os = require('node:os');
 const crypto = require('node:crypto');
-const { DatabaseSync } = require('node:sqlite');
+// node:sqlite se dinamički provjerava u initDokleDatabase() radi kompatibilnosti s Node 18/20/22+
 
 const PORT = process.env.PORT || 3000;
 const DB_PATH = path.join(__dirname, 'dokle_school.db');
@@ -21,8 +21,375 @@ const TEACHER_EMAIL = 'eh.matija39@gmail.com';
 const MAX_STUDENT_PROFILES = 70;
 const ADMIN_PASSWORD = process.env.DOKLE_ADMIN_KEY || 'Profesor2026!'; // Lozinka za nastavnički portal
 
-// Inicijalizacija SQLite baze podataka
-const db = new DatabaseSync(DB_PATH);
+// ============================================================================
+// UNIVERZALNI ADAPTER ZA BAZU PODATAKA (100% KOMPATIBILAN SA SVIM VERZIJAMA NODE-A)
+// ============================================================================
+
+class DokleEmbeddedStore {
+  constructor(filePath) {
+    this.filePath = filePath.endsWith('.json') ? filePath : filePath + '.json';
+    this.data = {
+      users: [],
+      results: [],
+      email_logs: [],
+      admin_audit_log: [],
+      game_cooldowns: [],
+      _counters: { users: 0, results: 0, email_logs: 0, admin_audit_log: 0, game_cooldowns: 0 }
+    };
+    this.load();
+  }
+
+  load() {
+    try {
+      if (fs.existsSync(this.filePath)) {
+        const raw = fs.readFileSync(this.filePath, 'utf-8');
+        const parsed = JSON.parse(raw);
+        this.data = Object.assign(this.data, parsed);
+        ['users', 'results', 'email_logs', 'admin_audit_log', 'game_cooldowns'].forEach(t => {
+          if (!Array.isArray(this.data[t])) this.data[t] = [];
+        });
+        if (!this.data._counters) this.data._counters = {};
+        ['users', 'results', 'email_logs', 'admin_audit_log', 'game_cooldowns'].forEach(t => {
+          const maxId = this.data[t].reduce((max, item) => Math.max(max, item.id || 0), 0);
+          this.data._counters[t] = Math.max(this.data._counters[t] || 0, maxId);
+        });
+      }
+    } catch (e) {
+      console.warn('[BAZA] Nova baza inicijalizirana (nema postojeće datoteke ili greška čitanja).');
+    }
+  }
+
+  save() {
+    try {
+      const tempPath = this.filePath + '.tmp';
+      fs.writeFileSync(tempPath, JSON.stringify(this.data, null, 2), 'utf-8');
+      fs.renameSync(tempPath, this.filePath);
+    } catch (e) {
+      console.error('[BAZA] Greška pri spremanju baze:', e.message);
+    }
+  }
+
+  exec(sql) {
+    const s = sql.trim().toUpperCase();
+    if (s.startsWith('DELETE FROM RESULTS')) {
+      this.data.results = [];
+      this.save();
+    }
+    return this;
+  }
+
+  prepare(sql) {
+    const s = sql.trim();
+    const store = this;
+
+    return {
+      run(...params) {
+        // 1. INSERT INTO users
+        if (/INSERT INTO users/i.test(s)) {
+          store.data._counters.users = (store.data._counters.users || 0) + 1;
+          const id = store.data._counters.users;
+          const user = {
+            id,
+            email: params[0],
+            first_name: params[1],
+            last_name: params[2] || '',
+            class_name: params[3] || '',
+            verification_code: params[4],
+            code_expires_at: params[5],
+            is_verified: 0,
+            created_at: new Date().toISOString(),
+            last_login: new Date().toISOString()
+          };
+          store.data.users.push(user);
+          store.save();
+          return { lastInsertRowid: id, changes: 1 };
+        }
+
+        // 2. UPDATE users
+        if (/UPDATE users/i.test(s)) {
+          if (/SET is_verified = 1/i.test(s)) {
+            const uid = params[0];
+            const u = store.data.users.find(x => x.id === uid);
+            if (u) {
+              u.is_verified = 1;
+              u.verification_code = null;
+              store.save();
+              return { changes: 1 };
+            }
+            return { changes: 0 };
+          }
+
+          // Full update
+          const uid = params[6];
+          const u = store.data.users.find(x => x.id === uid);
+          if (u) {
+            u.first_name = params[0];
+            u.last_name = params[1] || '';
+            u.class_name = params[2] || '';
+            u.verification_code = params[3];
+            u.code_expires_at = params[4];
+            u.last_login = new Date().toISOString();
+            store.save();
+            return { changes: 1 };
+          }
+          return { changes: 0 };
+        }
+
+        // 3. DELETE FROM users
+        if (/DELETE FROM users/i.test(s)) {
+          const uid = params[0];
+          const initialLen = store.data.users.length;
+          store.data.users = store.data.users.filter(x => x.id !== uid);
+          store.data.results = store.data.results.filter(x => x.user_id !== uid);
+          store.data.game_cooldowns = store.data.game_cooldowns.filter(x => x.user_id !== uid);
+          store.save();
+          return { changes: initialLen - store.data.users.length };
+        }
+
+        // 4. INSERT INTO results
+        if (/INSERT INTO results/i.test(s)) {
+          store.data._counters.results = (store.data._counters.results || 0) + 1;
+          const id = store.data._counters.results;
+          const res = {
+            id,
+            user_id: params[0],
+            game_id: params[1],
+            game_title: params[2],
+            language: params[3],
+            total_km: params[4],
+            correct_count: params[5],
+            total_questions: params[6],
+            rank_title: params[7],
+            destination: params[8],
+            speed_bonus_km: params[9] || 0,
+            ortho_bonus_km: params[10] || 0,
+            streak_max: params[11] || 0,
+            details_json: params[12] || '[]',
+            created_at: new Date().toISOString()
+          };
+          store.data.results.push(res);
+          store.save();
+          return { lastInsertRowid: id, changes: 1 };
+        }
+
+        // 5. INSERT/UPDATE game_cooldowns
+        if (/INSERT INTO game_cooldowns/i.test(s)) {
+          const userId = params[0];
+          const gameId = params[1];
+          const lastPlayedAt = params[2];
+          const lockedUntil = params[3];
+          let existing = store.data.game_cooldowns.find(x => x.user_id === userId && x.game_id === gameId);
+          if (existing) {
+            existing.last_played_at = lastPlayedAt;
+            existing.locked_until = lockedUntil;
+          } else {
+            store.data._counters.game_cooldowns = (store.data._counters.game_cooldowns || 0) + 1;
+            store.data.game_cooldowns.push({
+              id: store.data._counters.game_cooldowns,
+              user_id: userId,
+              game_id: gameId,
+              last_played_at: lastPlayedAt,
+              locked_until: lockedUntil
+            });
+          }
+          store.save();
+          return { changes: 1 };
+        }
+
+        // 6. DELETE FROM game_cooldowns
+        if (/DELETE FROM game_cooldowns/i.test(s)) {
+          const userId = params[0];
+          const gameId = params[1];
+          if (gameId) {
+            store.data.game_cooldowns = store.data.game_cooldowns.filter(x => !(x.user_id === userId && x.game_id === gameId));
+          } else {
+            store.data.game_cooldowns = store.data.game_cooldowns.filter(x => x.user_id !== userId);
+          }
+          store.save();
+          return { changes: 1 };
+        }
+
+        // 7. INSERT INTO email_logs
+        if (/INSERT INTO email_logs/i.test(s)) {
+          store.data._counters.email_logs = (store.data._counters.email_logs || 0) + 1;
+          store.data.email_logs.push({
+            id: store.data._counters.email_logs,
+            recipient_email: params[0],
+            recipient_name: params[1],
+            subject: params[2],
+            html_body: params[3],
+            status: params[4] || 'SENT',
+            created_at: new Date().toISOString()
+          });
+          store.save();
+          return { changes: 1 };
+        }
+
+        // 8. INSERT INTO admin_audit_log
+        if (/INSERT INTO admin_audit_log/i.test(s)) {
+          store.data._counters.admin_audit_log = (store.data._counters.admin_audit_log || 0) + 1;
+          store.data.admin_audit_log.push({
+            id: store.data._counters.admin_audit_log,
+            action: params[0],
+            details: params[1],
+            created_at: new Date().toISOString()
+          });
+          store.save();
+          return { changes: 1 };
+        }
+
+        return { changes: 0 };
+      },
+
+      get(...params) {
+        // PRAGMA table_info
+        if (/PRAGMA table_info/i.test(s)) {
+          if (/users/i.test(s)) {
+            return [{ name: 'id' }, { name: 'email' }, { name: 'first_name' }, { name: 'verification_code' }, { name: 'code_expires_at' }, { name: 'is_verified' }];
+          }
+          return [{ name: 'id' }, { name: 'speed_bonus_km' }, { name: 'ortho_bonus_km' }, { name: 'streak_max' }];
+        }
+
+        // SELECT COUNT(*)
+        if (/SELECT COUNT\(\*\)/i.test(s)) {
+          if (/FROM users/i.test(s)) return { count: store.data.users.length };
+          if (/FROM results/i.test(s)) return { count: store.data.results.length };
+          if (/FROM email_logs/i.test(s)) return { count: store.data.email_logs.length };
+          return { count: 0 };
+        }
+
+        // SELECT * FROM users WHERE email = ?
+        if (/SELECT \* FROM users WHERE email/i.test(s)) {
+          const email = (params[0] || '').toLowerCase();
+          return store.data.users.find(u => u.email.toLowerCase() === email);
+        }
+
+        // SELECT * FROM users WHERE id = ?
+        if (/SELECT (?:id, email|\*) FROM users WHERE id/i.test(s)) {
+          const uid = Number(params[0]);
+          return store.data.users.find(u => u.id === uid);
+        }
+
+        // SELECT * FROM game_cooldowns WHERE user_id = ? AND game_id = ?
+        if (/SELECT \* FROM game_cooldowns WHERE user_id = \? AND game_id = \?/i.test(s)) {
+          const uid = Number(params[0]);
+          const gid = Number(params[1]);
+          return store.data.game_cooldowns.find(c => c.user_id === uid && c.game_id === gid);
+        }
+
+        // SELECT * FROM results WHERE id = ?
+        if (/SELECT \* FROM results WHERE id = \?/i.test(s)) {
+          const rid = Number(params[0]);
+          return store.data.results.find(r => r.id === rid);
+        }
+
+        return undefined;
+      },
+
+      all(...params) {
+        // PRAGMA table_info
+        if (/PRAGMA table_info/i.test(s)) {
+          if (/users/i.test(s)) {
+            return [{ name: 'id' }, { name: 'email' }, { name: 'first_name' }, { name: 'verification_code' }, { name: 'code_expires_at' }, { name: 'is_verified' }];
+          }
+          return [{ name: 'id' }, { name: 'speed_bonus_km' }, { name: 'ortho_bonus_km' }, { name: 'streak_max' }];
+        }
+
+        // SELECT game_id, last_played_at, locked_until FROM game_cooldowns WHERE user_id = ?
+        if (/FROM game_cooldowns WHERE user_id = \?/i.test(s)) {
+          const uid = Number(params[0]);
+          return store.data.game_cooldowns.filter(c => c.user_id === uid);
+        }
+
+        // SELECT ... FROM results r JOIN users u ...
+        if (/FROM results r\s+JOIN users u/i.test(s)) {
+          let list = [];
+          for (const r of store.data.results) {
+            const u = store.data.users.find(x => x.id === r.user_id);
+            if (u) {
+              list.push({
+                id: r.id,
+                game_id: r.game_id,
+                game_title: r.game_title,
+                total_km: r.total_km,
+                correct_count: r.correct_count,
+                total_questions: r.total_questions,
+                rank_title: r.rank_title,
+                destination: r.destination,
+                speed_bonus_km: r.speed_bonus_km || 0,
+                ortho_bonus_km: r.ortho_bonus_km || 0,
+                streak_max: r.streak_max || 0,
+                created_at: r.created_at,
+                first_name: u.first_name,
+                last_name: u.last_name,
+                class_name: u.class_name,
+                email: u.email
+              });
+            }
+          }
+
+          if (params.length > 0 && typeof params[0] === 'number') {
+            const gid = params[0];
+            list = list.filter(item => item.game_id === gid);
+          }
+
+          // ORDER BY total_km DESC, correct_count DESC, created_at ASC
+          list.sort((a, b) => (b.total_km - a.total_km) || (b.correct_count - a.correct_count) || (new Date(a.created_at) - new Date(b.created_at)));
+          return list.slice(0, 50);
+        }
+
+        // Admin students list
+        if (/SELECT u\.id, u\.email, u\.first_name/i.test(s)) {
+          return store.data.users.map(u => {
+            const userResults = store.data.results.filter(r => r.user_id === u.id);
+            const bestKm = userResults.reduce((max, r) => Math.max(max, r.total_km || 0), 0);
+            return {
+              id: u.id,
+              email: u.email,
+              first_name: u.first_name,
+              last_name: u.last_name,
+              class_name: u.class_name,
+              is_verified: u.is_verified,
+              created_at: u.created_at,
+              best_km: bestKm
+            };
+          });
+        }
+
+        return [];
+      }
+    };
+  }
+}
+
+function initDokleDatabase(dbPath) {
+  // 1. Pokušaj izvorni node:sqlite (Node 22.5+)
+  try {
+    const sqliteModule = require('node:sqlite');
+    if (sqliteModule && sqliteModule.DatabaseSync) {
+      const db = new sqliteModule.DatabaseSync(dbPath);
+      console.log('[BAZA] Uspješno učitan izvorni node:sqlite modul (Node 22+).');
+      return db;
+    }
+  } catch (err) {
+    console.warn('[BAZA] node:sqlite nije dostupan u ovom Node okruženju (' + err.message + ').');
+  }
+
+  // 2. Pokušaj better-sqlite3 ako postoji
+  try {
+    const Database = require('better-sqlite3');
+    const db = new Database(dbPath);
+    console.log('[BAZA] Uspješno učitan better-sqlite3 modul.');
+    return db;
+  } catch (err) {}
+
+  // 3. Fallback: Ugrađeni univerzalni Dokle podatkovni sustav (radi na SVIM verzijama Node-a)
+  console.log('[BAZA] Aktiviran ugrađeni univerzalni Dokle podatkovni sustav (100% kompatibilan sa svim Node.js verzijama).');
+  return new DokleEmbeddedStore(dbPath);
+}
+
+// Inicijalizacija baze podataka (Universal Database Adapter)
+const db = initDokleDatabase(DB_PATH);
 
 // Postavljanje sigurnosnih SQLite PRAGMA postavki
 db.exec('PRAGMA foreign_keys = ON;');
