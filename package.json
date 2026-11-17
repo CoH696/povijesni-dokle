@@ -1,0 +1,21 @@
+{
+  "name": "povijesni-dokle",
+  "version": "1.0.0",
+  "description": "Povijesni Dokle? – Doba prosvjetiteljstva u Europi i Hrvatskoj (Povijest 3, Alfa)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "keywords": [
+    "povijest",
+    "kviz",
+    "dokle",
+    "gimnazija",
+    "prosvjetiteljstvo"
+  ],
+  "author": "Gimnazija Povijest",
+  "license": "ISC"
+}

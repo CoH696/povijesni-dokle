@@ -1,0 +1,16 @@
+# Render Blueprint konfiguracija za "Povijesni Dokle?"
+# Omogućuje automatsko postavljanje Web Service-a na Render.com
+
+services:
+  - type: web
+    name: povijesni-dokle
+    runtime: node
+    plan: free
+    region: frankfurt # Najbliža regija Europi / Hrvatskoj
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 22.12.0
+      - key: DOKLE_ADMIN_KEY
+        value: Profesor2026!
