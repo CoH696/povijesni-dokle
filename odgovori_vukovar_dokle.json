@@ -1,0 +1,2238 @@
+{
+  "title": "Povijesni Dokle? – Vukovar i Domovinski rat",
+  "version": "1.0",
+  "language": "hr",
+  "scoring": "Odgovori i njihove varijante unutar iste kategorije broje se kao jedna kanonska vrijednost. Bodove odrediti prema učestalosti kanonskih vrijednosti po pitanju.",
+  "caution": "Baza nije iscrpan popis povijesno prihvatljivih odgovora. Izvanbazične odgovore treba omogućiti predati nastavniku na provjeru. Fuzzy prepoznavanje valja ograničiti kako se ne bi prihvatile druge stvarne osobe ili mjesta.",
+  "questions": [
+    {
+      "id": 1,
+      "round": 1,
+      "question": "Navedi jedno mjesto u istočnoj Slavoniji ili hrvatskom Srijemu koje je bilo zahvaćeno ratnim djelovanjima 1991.",
+      "answers": [
+        {
+          "canonical": "Vukovar",
+          "aliases": [
+            "Vukowar",
+            "Vukvar",
+            "Vukovr",
+            "Vukovarrr"
+          ]
+        },
+        {
+          "canonical": "Vinkovci",
+          "aliases": [
+            "Vinkoci",
+            "Vikovci"
+          ]
+        },
+        {
+          "canonical": "Osijek",
+          "aliases": []
+        },
+        {
+          "canonical": "Bogdanovci",
+          "aliases": []
+        },
+        {
+          "canonical": "Tovarnik",
+          "aliases": []
+        },
+        {
+          "canonical": "Ilok",
+          "aliases": []
+        },
+        {
+          "canonical": "Lovas",
+          "aliases": []
+        },
+        {
+          "canonical": "Dalj",
+          "aliases": []
+        },
+        {
+          "canonical": "Erdut",
+          "aliases": []
+        },
+        {
+          "canonical": "Sotin",
+          "aliases": []
+        },
+        {
+          "canonical": "Borovo",
+          "aliases": []
+        },
+        {
+          "canonical": "Tenja",
+          "aliases": []
+        },
+        {
+          "canonical": "Nijemci",
+          "aliases": []
+        },
+        {
+          "canonical": "Otok",
+          "aliases": []
+        },
+        {
+          "canonical": "Nuštar",
+          "aliases": []
+        },
+        {
+          "canonical": "Cerić",
+          "aliases": []
+        },
+        {
+          "canonical": "Marinci",
+          "aliases": []
+        },
+        {
+          "canonical": "Bršadin",
+          "aliases": []
+        },
+        {
+          "canonical": "Trpinja",
+          "aliases": []
+        },
+        {
+          "canonical": "Bapska",
+          "aliases": []
+        },
+        {
+          "canonical": "Šarengrad",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "round": 1,
+      "question": "Navedi jednu gradsku četvrt, ulicu ili položaj na kojem su vođene borbe za Vukovar.",
+      "answers": [
+        {
+          "canonical": "Trpinjska cesta",
+          "aliases": [
+            "Trpinjska",
+            "Trpinjska ulica",
+            "Trpinska cesta",
+            "Trpinjksa cesta"
+          ]
+        },
+        {
+          "canonical": "Borovo naselje",
+          "aliases": []
+        },
+        {
+          "canonical": "Sajmište",
+          "aliases": []
+        },
+        {
+          "canonical": "Mitnica",
+          "aliases": []
+        },
+        {
+          "canonical": "Lužac",
+          "aliases": []
+        },
+        {
+          "canonical": "Priljevo",
+          "aliases": []
+        },
+        {
+          "canonical": "Budžak",
+          "aliases": []
+        },
+        {
+          "canonical": "Novo naselje",
+          "aliases": []
+        },
+        {
+          "canonical": "Kukuruzni put",
+          "aliases": [
+            "Put kukuruza"
+          ]
+        },
+        {
+          "canonical": "Cesta za Bogdanovce",
+          "aliases": [
+            "Bogdanovačka cesta"
+          ]
+        }
+      ],
+      "teacher_note": "Kukuruzni put je opskrbni i izlazni pravac u širem prostoru obrane, a ne gradska četvrt. Po potrebi pitanje proširiti na pravce i položaje obrane."
+    },
+    {
+      "id": 3,
+      "round": 1,
+      "question": "Navedi jednog poznatog hrvatskog branitelja ili zapovjednika obrane Vukovara.",
+      "answers": [
+        {
+          "canonical": "Blago Zadro",
+          "aliases": [
+            "Zadro Blago",
+            "Blgo Zadro",
+            "Blago Zado"
+          ]
+        },
+        {
+          "canonical": "Mile Dedaković",
+          "aliases": [
+            "Jastreb",
+            "Dedaković Mile",
+            "Mile Dedakovc",
+            "Mile Dedakovicc"
+          ]
+        },
+        {
+          "canonical": "Branko Borković",
+          "aliases": [
+            "Mladi Jastreb",
+            "Borković Branko",
+            "Branko Borkovc",
+            "Branko Borkovicc"
+          ]
+        },
+        {
+          "canonical": "Marko Babić",
+          "aliases": []
+        },
+        {
+          "canonical": "Alfred Hill",
+          "aliases": []
+        },
+        {
+          "canonical": "Damir Markuš",
+          "aliases": [
+            "Kutina"
+          ]
+        },
+        {
+          "canonical": "Robert Zadro",
+          "aliases": [
+            "Zadro Robert"
+          ]
+        },
+        {
+          "canonical": "Tomislav Pucelj",
+          "aliases": [
+            "Pucelj Tomislav"
+          ]
+        },
+        {
+          "canonical": "Ivica Arbanas",
+          "aliases": [
+            "Arbanas Ivica"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "round": 1,
+      "question": "Navedi jednu hrvatsku vojnu postrojbu ili službu čiji su pripadnici sudjelovali u obrani Vukovara.",
+      "answers": [
+        {
+          "canonical": "204. vukovarska brigada",
+          "aliases": [
+            "204. brigada",
+            "204 brigada",
+            "204. brigada HV",
+            "204 brigada HV",
+            "204 vukovrska brigada"
+          ]
+        },
+        {
+          "canonical": "Zbor narodne garde",
+          "aliases": [
+            "ZNG"
+          ]
+        },
+        {
+          "canonical": "Ministarstvo unutarnjih poslova",
+          "aliases": [
+            "MUP",
+            "hrvatska policija",
+            "policija"
+          ]
+        },
+        {
+          "canonical": "Hrvatske obrambene snage",
+          "aliases": [
+            "HOS"
+          ]
+        },
+        {
+          "canonical": "Hrvatska vojska",
+          "aliases": [
+            "HV"
+          ]
+        },
+        {
+          "canonical": "1. gardijska brigada",
+          "aliases": [
+            "1 gbr",
+            "1. gbr",
+            "Tigrovi"
+          ]
+        },
+        {
+          "canonical": "3. gardijska brigada",
+          "aliases": [
+            "3 gbr",
+            "3. gbr",
+            "Kune"
+          ]
+        },
+        {
+          "canonical": "109. brigada ZNG-a",
+          "aliases": [
+            "109 brigada",
+            "109. brigada"
+          ]
+        }
+      ],
+      "teacher_note": "ZNG/MUP/HV šire su organizacije, a brigade pojedinačne postrojbe; pitanje to već dopušta."
+    },
+    {
+      "id": 5,
+      "round": 1,
+      "question": "Navedi jedan tip oružja ili vojne tehnike korišten tijekom Vukovarske bitke.",
+      "answers": [
+        {
+          "canonical": "Tenk",
+          "aliases": [
+            "tenkovi"
+          ]
+        },
+        {
+          "canonical": "Puška",
+          "aliases": []
+        },
+        {
+          "canonical": "Minobacač",
+          "aliases": []
+        },
+        {
+          "canonical": "Top",
+          "aliases": []
+        },
+        {
+          "canonical": "Oklopni transporter",
+          "aliases": []
+        },
+        {
+          "canonical": "Strojnica",
+          "aliases": [
+            "mitraljez",
+            "puškostrojnica"
+          ]
+        },
+        {
+          "canonical": "Ručni raketni bacač",
+          "aliases": [
+            "RPG",
+            "zolja",
+            "osa"
+          ]
+        },
+        {
+          "canonical": "Haubica",
+          "aliases": [
+            "artiljerijska haubica"
+          ]
+        },
+        {
+          "canonical": "Protutenkovska mina",
+          "aliases": []
+        },
+        {
+          "canonical": "Borbeni zrakoplov",
+          "aliases": []
+        },
+        {
+          "canonical": "Helikopter",
+          "aliases": []
+        },
+        {
+          "canonical": "Snajperska puška",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "round": 1,
+      "question": "Navedi jedno naselje u široj okolici Vukovara koje se spominje u povijesti bitke i okupacije 1991.",
+      "answers": [
+        {
+          "canonical": "Bogdanovci",
+          "aliases": []
+        },
+        {
+          "canonical": "Marinci",
+          "aliases": []
+        },
+        {
+          "canonical": "Borovo",
+          "aliases": []
+        },
+        {
+          "canonical": "Sotin",
+          "aliases": []
+        },
+        {
+          "canonical": "Bršadin",
+          "aliases": []
+        },
+        {
+          "canonical": "Negoslavci",
+          "aliases": []
+        },
+        {
+          "canonical": "Trpinja",
+          "aliases": []
+        },
+        {
+          "canonical": "Lipovača",
+          "aliases": []
+        },
+        {
+          "canonical": "Cerić",
+          "aliases": []
+        },
+        {
+          "canonical": "Nuštar",
+          "aliases": []
+        },
+        {
+          "canonical": "Ludvinci",
+          "aliases": []
+        },
+        {
+          "canonical": "Pačetin",
+          "aliases": []
+        },
+        {
+          "canonical": "Dalj",
+          "aliases": []
+        },
+        {
+          "canonical": "Erdut",
+          "aliases": []
+        },
+        {
+          "canonical": "Lovas",
+          "aliases": []
+        },
+        {
+          "canonical": "Tovarnik",
+          "aliases": []
+        },
+        {
+          "canonical": "Ilok",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "round": 1,
+      "question": "Navedi jedno zanimanje ili službu koja je pomagala stanovnicima Vukovara tijekom opsade.",
+      "answers": [
+        {
+          "canonical": "Liječnik",
+          "aliases": [
+            "doktor",
+            "doktor medicine",
+            "medicinski liječnik"
+          ]
+        },
+        {
+          "canonical": "Medicinska sestra",
+          "aliases": [
+            "medicinski tehničar",
+            "sestra"
+          ]
+        },
+        {
+          "canonical": "Novinar",
+          "aliases": [
+            "reporter"
+          ]
+        },
+        {
+          "canonical": "Vatrogasac",
+          "aliases": [
+            "vatrogasci"
+          ]
+        },
+        {
+          "canonical": "Vozač",
+          "aliases": [
+            "vozač hitne pomoći"
+          ]
+        },
+        {
+          "canonical": "Humanitarni djelatnik",
+          "aliases": [
+            "humanitarac"
+          ]
+        },
+        {
+          "canonical": "Logističar",
+          "aliases": [
+            "opskrbljivač"
+          ]
+        },
+        {
+          "canonical": "Bolničar",
+          "aliases": [
+            "sanitet",
+            "sanitetsko osoblje"
+          ]
+        },
+        {
+          "canonical": "Farmaceut",
+          "aliases": [
+            "ljekarnik"
+          ]
+        },
+        {
+          "canonical": "Kuhar",
+          "aliases": [
+            "kuharica"
+          ]
+        },
+        {
+          "canonical": "Volonter",
+          "aliases": [
+            "dobrovoljac"
+          ]
+        },
+        {
+          "canonical": "Spasilac",
+          "aliases": [
+            "pripadnik civilne zaštite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "round": 1,
+      "question": "Navedi jedno danas poznato memorijalno mjesto povezano s obranom Vukovara.",
+      "answers": [
+        {
+          "canonical": "Vukovarski vodotoranj",
+          "aliases": [
+            "Vodotoranj",
+            "Vukovar vodotoranj",
+            "Vukovarski vodotornj",
+            "Vukovarskii vodotoranj"
+          ]
+        },
+        {
+          "canonical": "Spomen-dom hrvatskih branitelja na Trpinjskoj cesti",
+          "aliases": [
+            "Trpinjska cesta",
+            "Spomen-dom Trpinjska cesta"
+          ]
+        },
+        {
+          "canonical": "Kukuruzni put",
+          "aliases": [
+            "spomen obilježje Kukuruzni put"
+          ]
+        },
+        {
+          "canonical": "Borovo Commerce",
+          "aliases": [
+            "Borovo commerce",
+            "skladište Borovo Commerce"
+          ]
+        },
+        {
+          "canonical": "Križ na Lušcu",
+          "aliases": [
+            "Lužac",
+            "Luzac"
+          ]
+        },
+        {
+          "canonical": "Spomen-obilježje poginulim braniteljima Trpinjske ceste i Borova naselja",
+          "aliases": [
+            "Spomen obilježje Trpinjska cesta"
+          ]
+        },
+        {
+          "canonical": "Memorijalni centar Domovinskog rata Vukovar",
+          "aliases": [
+            "Memorijalni centar"
+          ]
+        },
+        {
+          "canonical": "Nacionalna memorijalna bolnica Vukovar",
+          "aliases": [
+            "Vukovarska bolnica",
+            "bolnica Vukovar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "round": 2,
+      "question": "Navedi jedno mjesto u zadarskom zaleđu povezano s napadima 18. i 19. studenoga 1991.",
+      "answers": [
+        {
+          "canonical": "Škabrnja",
+          "aliases": [
+            "Škabarnja",
+            "Skabranja",
+            "Skabrna",
+            "Skabrjna"
+          ]
+        },
+        {
+          "canonical": "Nadin",
+          "aliases": []
+        },
+        {
+          "canonical": "Prkos",
+          "aliases": []
+        },
+        {
+          "canonical": "Zemunik Gornji",
+          "aliases": []
+        },
+        {
+          "canonical": "Biljane Donje",
+          "aliases": []
+        },
+        {
+          "canonical": "Ambar",
+          "aliases": []
+        },
+        {
+          "canonical": "Marinovac",
+          "aliases": []
+        },
+        {
+          "canonical": "Jabuka",
+          "aliases": []
+        },
+        {
+          "canonical": "Ražovljeva glavica",
+          "aliases": []
+        },
+        {
+          "canonical": "Nadinska gradina",
+          "aliases": []
+        },
+        {
+          "canonical": "Smoković",
+          "aliases": []
+        },
+        {
+          "canonical": "Debelo brdo",
+          "aliases": []
+        }
+      ],
+      "teacher_note": "Škabrnja i Nadin bili su napadnuta i zauzeta mjesta. Ostali navedeni toponimi odnose se na smjerove napada, položaje ili okolna mjesta, a ne nužno na mjesta koja su napadnuta toga datuma."
+    },
+    {
+      "id": 10,
+      "round": 2,
+      "question": "Navedi jedan zaseok, položaj ili lokalitet koji se spominje u povijesti napada na Škabrnju.",
+      "answers": [
+        {
+          "canonical": "Ambar",
+          "aliases": []
+        },
+        {
+          "canonical": "Ražovljeva glavica",
+          "aliases": [
+            "Razovljeva glavica",
+            "Ražovjeva glavica",
+            "Razovljeva glvica"
+          ]
+        },
+        {
+          "canonical": "Marinovac",
+          "aliases": []
+        },
+        {
+          "canonical": "Jabuka",
+          "aliases": []
+        },
+        {
+          "canonical": "Crkva sv. Marije",
+          "aliases": [
+            "crkva svete Marije",
+            "crkva sv Marije"
+          ]
+        },
+        {
+          "canonical": "Debelo brdo",
+          "aliases": [
+            "Debelog brda"
+          ]
+        },
+        {
+          "canonical": "Nadinska gradina",
+          "aliases": []
+        },
+        {
+          "canonical": "Šarovine",
+          "aliases": []
+        },
+        {
+          "canonical": "Biljane Donje",
+          "aliases": []
+        },
+        {
+          "canonical": "Zemunik Gornji",
+          "aliases": []
+        },
+        {
+          "canonical": "Smoković",
+          "aliases": []
+        },
+        {
+          "canonical": "Lišane Tinjske",
+          "aliases": []
+        }
+      ],
+      "teacher_note": "Pojedina mjesta su napadni položaji ili smjerovi, ne nužno zaseoci same Škabrnje. Formulacija dopušta položaj/lokalitet."
+    },
+    {
+      "id": 11,
+      "round": 2,
+      "question": "Navedi jednu vrstu teškoga oružja ili vojne tehnike upotrijebljene u napadu na Škabrnju.",
+      "answers": [
+        {
+          "canonical": "Tenk",
+          "aliases": []
+        },
+        {
+          "canonical": "Oklopni transporter",
+          "aliases": []
+        },
+        {
+          "canonical": "Top",
+          "aliases": []
+        },
+        {
+          "canonical": "Minobacač",
+          "aliases": []
+        },
+        {
+          "canonical": "Zrakoplov",
+          "aliases": []
+        },
+        {
+          "canonical": "Helikopter",
+          "aliases": []
+        },
+        {
+          "canonical": "Raketni sustav",
+          "aliases": [
+            "raketno topničko oružje",
+            "višecijevni bacač raketa"
+          ]
+        },
+        {
+          "canonical": "Topništvo",
+          "aliases": [
+            "artiljerija",
+            "topnička sredstva"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "round": 2,
+      "question": "Navedi jednu vrstu civilnog ili vjerskog objekta koji je stradao tijekom napada na Škabrnju.",
+      "answers": [
+        {
+          "canonical": "Stambena kuća",
+          "aliases": [
+            "kuća",
+            "obiteljska kuća"
+          ]
+        },
+        {
+          "canonical": "Crkva",
+          "aliases": []
+        },
+        {
+          "canonical": "Gospodarska zgrada",
+          "aliases": [
+            "gospodarski objekt"
+          ]
+        },
+        {
+          "canonical": "Staja",
+          "aliases": []
+        },
+        {
+          "canonical": "Skladište",
+          "aliases": []
+        },
+        {
+          "canonical": "Škola",
+          "aliases": [
+            "osnovna škola"
+          ]
+        },
+        {
+          "canonical": "Gospodarsko dvorište",
+          "aliases": [
+            "dvorište"
+          ]
+        },
+        {
+          "canonical": "Garaža",
+          "aliases": [
+            "spremište"
+          ]
+        }
+      ],
+      "teacher_note": "Kod širokih vrsta objekata dopuštena je nastavnikova procjena konkretnog slučaja."
+    },
+    {
+      "id": 13,
+      "round": 2,
+      "question": "Navedi jedan grad u sjevernoj Dalmaciji koji je bio povezan s ratnim operacijama 1991.",
+      "answers": [
+        {
+          "canonical": "Zadar",
+          "aliases": []
+        },
+        {
+          "canonical": "Šibenik",
+          "aliases": []
+        },
+        {
+          "canonical": "Benkovac",
+          "aliases": []
+        },
+        {
+          "canonical": "Knin",
+          "aliases": []
+        },
+        {
+          "canonical": "Drniš",
+          "aliases": []
+        },
+        {
+          "canonical": "Obrovac",
+          "aliases": []
+        },
+        {
+          "canonical": "Biograd na Moru",
+          "aliases": []
+        },
+        {
+          "canonical": "Vodice",
+          "aliases": []
+        },
+        {
+          "canonical": "Skradin",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "round": 2,
+      "question": "Navedi jedno dalmatinsko mjesto koje je tijekom Domovinskog rata pretrpjelo napade, razaranja ili ratne zločine.",
+      "answers": [
+        {
+          "canonical": "Škabrnja",
+          "aliases": []
+        },
+        {
+          "canonical": "Nadin",
+          "aliases": []
+        },
+        {
+          "canonical": "Kijevo",
+          "aliases": []
+        },
+        {
+          "canonical": "Dubrovnik",
+          "aliases": []
+        },
+        {
+          "canonical": "Drniš",
+          "aliases": []
+        },
+        {
+          "canonical": "Zadar",
+          "aliases": []
+        },
+        {
+          "canonical": "Šibenik",
+          "aliases": []
+        },
+        {
+          "canonical": "Biograd na Moru",
+          "aliases": []
+        },
+        {
+          "canonical": "Vodice",
+          "aliases": []
+        },
+        {
+          "canonical": "Skradin",
+          "aliases": []
+        },
+        {
+          "canonical": "Kašić",
+          "aliases": []
+        },
+        {
+          "canonical": "Smilčić",
+          "aliases": []
+        },
+        {
+          "canonical": "Zemunik Donji",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "round": 2,
+      "question": "Navedi jedan oblik pomoći stanovništvu ugroženom ratom 1991.",
+      "answers": [
+        {
+          "canonical": "Evakuacija",
+          "aliases": [
+            "evakuiranje"
+          ]
+        },
+        {
+          "canonical": "Sklonište",
+          "aliases": [
+            "skloništa",
+            "smještaj u skloništima"
+          ]
+        },
+        {
+          "canonical": "Liječnička pomoć",
+          "aliases": [
+            "medicinska pomoć",
+            "zdravstvena pomoć"
+          ]
+        },
+        {
+          "canonical": "Dostava hrane",
+          "aliases": [
+            "hrana",
+            "opskrba hranom"
+          ]
+        },
+        {
+          "canonical": "Prihvat prognanika",
+          "aliases": [
+            "smještaj prognanika",
+            "prihvat izbjeglica"
+          ]
+        },
+        {
+          "canonical": "Humanitarni konvoj",
+          "aliases": [
+            "humanitarna pomoć",
+            "konvoj pomoći"
+          ]
+        },
+        {
+          "canonical": "Opskrba vodom",
+          "aliases": [
+            "dostava vode"
+          ]
+        },
+        {
+          "canonical": "Dostava lijekova",
+          "aliases": [
+            "lijekovi"
+          ]
+        },
+        {
+          "canonical": "Psihološka pomoć",
+          "aliases": [
+            "psihosocijalna pomoć"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "round": 2,
+      "question": "Navedi jednu vrstu povijesnog izvora kojim možemo istraživati događaje u Škabrnji 1991.",
+      "answers": [
+        {
+          "canonical": "Svjedočanstvo",
+          "aliases": [
+            "svjedočanstva",
+            "izjava svjedoka",
+            "usmena povijest"
+          ]
+        },
+        {
+          "canonical": "Fotografija",
+          "aliases": []
+        },
+        {
+          "canonical": "Novinski članak",
+          "aliases": []
+        },
+        {
+          "canonical": "Vojna zapovijed",
+          "aliases": [
+            "vojne zapovijedi",
+            "zapovijed"
+          ]
+        },
+        {
+          "canonical": "Videozapis",
+          "aliases": [
+            "video snimka",
+            "filmska snimka"
+          ]
+        },
+        {
+          "canonical": "Sudska presuda",
+          "aliases": [
+            "presude"
+          ]
+        },
+        {
+          "canonical": "Službeni dokument",
+          "aliases": [
+            "arhivski dokument",
+            "spis"
+          ]
+        },
+        {
+          "canonical": "Medicinska dokumentacija",
+          "aliases": [
+            "medicinski nalaz"
+          ]
+        },
+        {
+          "canonical": "Forenzički nalaz",
+          "aliases": [
+            "forenzičko izvješće"
+          ]
+        },
+        {
+          "canonical": "Zemljovid",
+          "aliases": []
+        },
+        {
+          "canonical": "Ratni dnevnik",
+          "aliases": [
+            "dnevnik"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "round": 3,
+      "question": "Navedi jedno hrvatsko povijesno-geografsko područje na kojem su vođene borbe tijekom Domovinskog rata.",
+      "answers": [
+        {
+          "canonical": "Slavonija",
+          "aliases": []
+        },
+        {
+          "canonical": "Baranja",
+          "aliases": []
+        },
+        {
+          "canonical": "Hrvatski Srijem",
+          "aliases": [
+            "Srijem",
+            "zapadni Srijem"
+          ]
+        },
+        {
+          "canonical": "Banovina",
+          "aliases": [
+            "Banija"
+          ]
+        },
+        {
+          "canonical": "Kordun",
+          "aliases": []
+        },
+        {
+          "canonical": "Lika",
+          "aliases": []
+        },
+        {
+          "canonical": "Dalmacija",
+          "aliases": []
+        },
+        {
+          "canonical": "Dubrovačko primorje",
+          "aliases": []
+        },
+        {
+          "canonical": "Dalmatinska zagora",
+          "aliases": [
+            "Zagora"
+          ]
+        },
+        {
+          "canonical": "Posavina",
+          "aliases": [
+            "zapadna Slavonija"
+          ]
+        },
+        {
+          "canonical": "Pokuplje",
+          "aliases": [
+            "Pokupsko područje"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "round": 3,
+      "question": "Navedi jedan hrvatski grad koji je tijekom 1991. bio izložen napadima ili opsadi.",
+      "answers": [
+        {
+          "canonical": "Vukovar",
+          "aliases": []
+        },
+        {
+          "canonical": "Osijek",
+          "aliases": []
+        },
+        {
+          "canonical": "Dubrovnik",
+          "aliases": []
+        },
+        {
+          "canonical": "Vinkovci",
+          "aliases": []
+        },
+        {
+          "canonical": "Zadar",
+          "aliases": []
+        },
+        {
+          "canonical": "Šibenik",
+          "aliases": []
+        },
+        {
+          "canonical": "Karlovac",
+          "aliases": []
+        },
+        {
+          "canonical": "Gospić",
+          "aliases": []
+        },
+        {
+          "canonical": "Pakrac",
+          "aliases": []
+        },
+        {
+          "canonical": "Sisak",
+          "aliases": []
+        },
+        {
+          "canonical": "Petrinja",
+          "aliases": []
+        },
+        {
+          "canonical": "Slavonski Brod",
+          "aliases": []
+        },
+        {
+          "canonical": "Novska",
+          "aliases": []
+        },
+        {
+          "canonical": "Lipik",
+          "aliases": []
+        },
+        {
+          "canonical": "Drniš",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "round": 3,
+      "question": "Navedi jedan važan politički događaj povezan s uspostavom hrvatske neovisnosti 1990.–1992.",
+      "answers": [
+        {
+          "canonical": "Prvi višestranački izbori",
+          "aliases": [
+            "višestranački izbori",
+            "izbori 1990"
+          ]
+        },
+        {
+          "canonical": "Referendum o samostalnosti",
+          "aliases": [
+            "referendum",
+            "referendum 1991"
+          ]
+        },
+        {
+          "canonical": "Odluka o suverenosti i samostalnosti",
+          "aliases": [
+            "25. lipnja 1991.",
+            "proglašenje samostalnosti"
+          ]
+        },
+        {
+          "canonical": "Raskid državnopravnih veza sa SFRJ",
+          "aliases": [
+            "8. listopada 1991.",
+            "raskid sa SFRJ"
+          ]
+        },
+        {
+          "canonical": "Međunarodno priznanje Hrvatske",
+          "aliases": [
+            "međunarodno priznanje",
+            "15. siječnja 1992."
+          ]
+        },
+        {
+          "canonical": "Primanje Hrvatske u UN",
+          "aliases": [
+            "prijam u UN",
+            "22. svibnja 1992."
+          ]
+        },
+        {
+          "canonical": "Brijunska deklaracija",
+          "aliases": [
+            "Brijunski sporazum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "round": 3,
+      "question": "Navedi jednu hrvatsku vojnu ili redarstvenu operaciju provedenu tijekom Domovinskog rata.",
+      "answers": [
+        {
+          "canonical": "Bljesak",
+          "aliases": [
+            "operacija Bljesak"
+          ]
+        },
+        {
+          "canonical": "Oluja",
+          "aliases": [
+            "operacija Oluja"
+          ]
+        },
+        {
+          "canonical": "Maslenica",
+          "aliases": [
+            "operacija Maslenica"
+          ]
+        },
+        {
+          "canonical": "Otkos-10",
+          "aliases": [
+            "Otkos 10",
+            "Otkos deset",
+            "Otkos-01",
+            "Otkso-10"
+          ]
+        },
+        {
+          "canonical": "Orkan-91",
+          "aliases": [
+            "Orkan 91",
+            "Orkan"
+          ]
+        },
+        {
+          "canonical": "Miljevci",
+          "aliases": [
+            "Miljevački plato",
+            "operacija Miljevci"
+          ]
+        },
+        {
+          "canonical": "Medački džep",
+          "aliases": [
+            "akcija Medački džep"
+          ]
+        },
+        {
+          "canonical": "Zima 94",
+          "aliases": [
+            "Zima-94"
+          ]
+        },
+        {
+          "canonical": "Skok 1",
+          "aliases": [
+            "Skok-1"
+          ]
+        },
+        {
+          "canonical": "Skok 2",
+          "aliases": [
+            "Skok-2"
+          ]
+        },
+        {
+          "canonical": "Ljeto 95",
+          "aliases": [
+            "Ljeto-95"
+          ]
+        },
+        {
+          "canonical": "Južni potez",
+          "aliases": [
+            "Južni potez"
+          ]
+        }
+      ],
+      "teacher_note": "Operacije u BiH u suradnji s HVO-om (Zima 94, Skok, Ljeto 95) imaju drukčiji teritorijalni kontekst; ako pitate samo operacije na teritoriju RH, izbacite ih."
+    },
+    {
+      "id": 21,
+      "round": 3,
+      "question": "Navedi jednu gardijsku brigadu Hrvatske vojske poznatu iz Domovinskog rata.",
+      "answers": [
+        {
+          "canonical": "1. gardijska brigada",
+          "aliases": [
+            "1. gbr",
+            "Tigrovi"
+          ]
+        },
+        {
+          "canonical": "2. gardijska brigada",
+          "aliases": [
+            "2. gbr",
+            "Gromovi"
+          ]
+        },
+        {
+          "canonical": "3. gardijska brigada",
+          "aliases": [
+            "3. gbr",
+            "Kune"
+          ]
+        },
+        {
+          "canonical": "4. gardijska brigada",
+          "aliases": [
+            "4. gbr",
+            "Pauci"
+          ]
+        },
+        {
+          "canonical": "5. gardijska brigada",
+          "aliases": [
+            "5. gbr",
+            "Sokolovi"
+          ]
+        },
+        {
+          "canonical": "7. gardijska brigada",
+          "aliases": [
+            "7. gbr",
+            "Pume"
+          ]
+        },
+        {
+          "canonical": "9. gardijska brigada",
+          "aliases": [
+            "9. gbr",
+            "Vukovi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "round": 3,
+      "question": "Navedi jednu državu koja je diplomatski priznala Republiku Hrvatsku najkasnije do kraja siječnja 1992.",
+      "answers": [
+        {
+          "canonical": "Island",
+          "aliases": []
+        },
+        {
+          "canonical": "Njemačka",
+          "aliases": []
+        },
+        {
+          "canonical": "Austrija",
+          "aliases": []
+        },
+        {
+          "canonical": "Mađarska",
+          "aliases": []
+        },
+        {
+          "canonical": "Italija",
+          "aliases": []
+        },
+        {
+          "canonical": "Francuska",
+          "aliases": []
+        },
+        {
+          "canonical": "Slovenija",
+          "aliases": []
+        },
+        {
+          "canonical": "Litva",
+          "aliases": []
+        },
+        {
+          "canonical": "Estonija",
+          "aliases": []
+        },
+        {
+          "canonical": "Latvija",
+          "aliases": []
+        },
+        {
+          "canonical": "Poljska",
+          "aliases": []
+        },
+        {
+          "canonical": "Švedska",
+          "aliases": []
+        },
+        {
+          "canonical": "Danska",
+          "aliases": []
+        },
+        {
+          "canonical": "Finska",
+          "aliases": []
+        },
+        {
+          "canonical": "Norveška",
+          "aliases": []
+        },
+        {
+          "canonical": "Španjolska",
+          "aliases": []
+        },
+        {
+          "canonical": "Ujedinjena Kraljevina",
+          "aliases": []
+        },
+        {
+          "canonical": "Vatikan",
+          "aliases": []
+        },
+        {
+          "canonical": "Malta",
+          "aliases": []
+        },
+        {
+          "canonical": "Belgija",
+          "aliases": []
+        },
+        {
+          "canonical": "Nizozemska",
+          "aliases": []
+        },
+        {
+          "canonical": "Luksemburg",
+          "aliases": []
+        },
+        {
+          "canonical": "Češka i Slovačka Federativna Republika",
+          "aliases": []
+        }
+      ],
+      "teacher_note": "Treba paziti na povijesna državna imena: 1992. postojala je Čehoslovačka/ČSFR, ne zasebne današnje Češka i Slovačka."
+    },
+    {
+      "id": 23,
+      "round": 3,
+      "question": "Navedi jednu međunarodnu organizaciju ili misiju koja je sudjelovala u mirovnim, promatračkim ili humanitarnim aktivnostima vezanima uz Domovinski rat.",
+      "answers": [
+        {
+          "canonical": "Ujedinjeni narodi",
+          "aliases": [
+            "UN",
+            "OUN"
+          ]
+        },
+        {
+          "canonical": "UNPROFOR",
+          "aliases": [
+            "Zaštitne snage UN-a"
+          ]
+        },
+        {
+          "canonical": "UNTAES",
+          "aliases": [
+            "Prijelazna uprava UN-a"
+          ]
+        },
+        {
+          "canonical": "OESS",
+          "aliases": [
+            "OSCE",
+            "KESS",
+            "CSCE"
+          ]
+        },
+        {
+          "canonical": "Međunarodni odbor Crvenoga križa",
+          "aliases": [
+            "MOCK",
+            "ICRC",
+            "Crveni križ"
+          ]
+        },
+        {
+          "canonical": "UNHCR",
+          "aliases": [
+            "Visoki povjerenik UN za izbjeglice"
+          ]
+        },
+        {
+          "canonical": "Europska promatračka misija",
+          "aliases": [
+            "ECMM",
+            "EUMM",
+            "Promatračka misija Europske zajednice"
+          ]
+        },
+        {
+          "canonical": "UNICEF",
+          "aliases": [
+            "Fond UN-a za djecu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "round": 3,
+      "question": "Navedi jedan međunarodni sporazum ili mirovni plan povezan s ratom i uspostavom mira u Hrvatskoj.",
+      "answers": [
+        {
+          "canonical": "Vanceov plan",
+          "aliases": [
+            "Vance-ov plan",
+            "Vensov plan",
+            "Vansov plan",
+            "Vancev plan"
+          ]
+        },
+        {
+          "canonical": "Sarajevsko primirje",
+          "aliases": [
+            "Sarajevski sporazum",
+            "primirje 3. siječnja 1992."
+          ]
+        },
+        {
+          "canonical": "Erdutski sporazum",
+          "aliases": [
+            "Temeljni sporazum o istočnoj Slavoniji"
+          ]
+        },
+        {
+          "canonical": "Brijunska deklaracija",
+          "aliases": [
+            "Brijunski sporazum"
+          ]
+        },
+        {
+          "canonical": "Plan Z-4",
+          "aliases": [
+            "Z4",
+            "Z 4"
+          ]
+        },
+        {
+          "canonical": "Sporazum o prekidu vatre 29. ožujka 1994.",
+          "aliases": [
+            "Zagrebački sporazum o prekidu vatre"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "round": 4,
+      "question": "Navedi jedno memorijalno mjesto koje se danas može posjetiti u Vukovaru ili njegovoj okolici.",
+      "answers": [
+        {
+          "canonical": "Ovčara",
+          "aliases": [
+            "Spomen-dom Ovčara",
+            "Ovcra",
+            "Ovcaraa"
+          ]
+        },
+        {
+          "canonical": "Velepromet",
+          "aliases": [
+            "Hangari Velepromet"
+          ]
+        },
+        {
+          "canonical": "Vukovarski vodotoranj",
+          "aliases": [
+            "Vodotoranj",
+            "Vukovarski vodotornj"
+          ]
+        },
+        {
+          "canonical": "Memorijalno groblje žrtava iz Domovinskog rata",
+          "aliases": [
+            "Memorijalno groblje",
+            "Memorijalno groblje Vukovar"
+          ]
+        },
+        {
+          "canonical": "Nacionalna memorijalna bolnica Vukovar",
+          "aliases": [
+            "Vukovarska bolnica",
+            "Bolnica"
+          ]
+        },
+        {
+          "canonical": "Trpinjska cesta",
+          "aliases": [
+            "Spomen-dom na Trpinjskoj cesti"
+          ]
+        },
+        {
+          "canonical": "Kukuruzni put",
+          "aliases": [
+            "Spomen-obilježje Kukuruzni put"
+          ]
+        },
+        {
+          "canonical": "Borovo Commerce",
+          "aliases": [
+            "Borovo commerce"
+          ]
+        },
+        {
+          "canonical": "Memorijalni centar Domovinskog rata Vukovar",
+          "aliases": [
+            "Memorijalni centar"
+          ]
+        },
+        {
+          "canonical": "Križ na Lušcu",
+          "aliases": [
+            "Lužac"
+          ]
+        },
+        {
+          "canonical": "Središnji križ na ušću Vuke u Dunav",
+          "aliases": [
+            "Središnji križ"
+          ]
+        },
+        {
+          "canonical": "Vučedolski vinogradi",
+          "aliases": [
+            "spomen obilježje Vučedolski vinogradi"
+          ]
+        },
+        {
+          "canonical": "Nova ulica",
+          "aliases": [
+            "spomen obilježje Nova ulica"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "round": 4,
+      "question": "Navedi jedno hrvatsko mjesto, osim Vukovara, u kojem se komemoriraju žrtve ratnih zločina iz Domovinskog rata.",
+      "answers": [
+        {
+          "canonical": "Škabrnja",
+          "aliases": []
+        },
+        {
+          "canonical": "Nadin",
+          "aliases": []
+        },
+        {
+          "canonical": "Lovas",
+          "aliases": []
+        },
+        {
+          "canonical": "Voćin",
+          "aliases": []
+        },
+        {
+          "canonical": "Saborsko",
+          "aliases": []
+        },
+        {
+          "canonical": "Baćin",
+          "aliases": []
+        },
+        {
+          "canonical": "Dalj",
+          "aliases": []
+        },
+        {
+          "canonical": "Erdut",
+          "aliases": []
+        },
+        {
+          "canonical": "Sotin",
+          "aliases": []
+        },
+        {
+          "canonical": "Tovarnik",
+          "aliases": []
+        },
+        {
+          "canonical": "Ćelije",
+          "aliases": []
+        },
+        {
+          "canonical": "Berak",
+          "aliases": []
+        },
+        {
+          "canonical": "Bogdanovci",
+          "aliases": []
+        },
+        {
+          "canonical": "Gospić",
+          "aliases": []
+        },
+        {
+          "canonical": "Pakračka Poljana",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "round": 4,
+      "question": "Navedi jedan način na koji se danas može odati počast žrtvama Domovinskog rata.",
+      "answers": [
+        {
+          "canonical": "Paljenje svijeća",
+          "aliases": [
+            "upaliti svijeću",
+            "svijeće"
+          ]
+        },
+        {
+          "canonical": "Polaganje vijenaca",
+          "aliases": [
+            "polaganje vijenca",
+            "vijenac"
+          ]
+        },
+        {
+          "canonical": "Komemoracija",
+          "aliases": [
+            "komemorativni skup"
+          ]
+        },
+        {
+          "canonical": "Posjet groblju",
+          "aliases": [
+            "posjet memorijalnom groblju"
+          ]
+        },
+        {
+          "canonical": "Čuvanje svjedočanstava",
+          "aliases": [
+            "čuvanje uspomena",
+            "snimanje svjedočanstava"
+          ]
+        },
+        {
+          "canonical": "Edukacija",
+          "aliases": [
+            "predavanje",
+            "poučavanje povijesti"
+          ]
+        },
+        {
+          "canonical": "Minuta šutnje",
+          "aliases": [
+            "šutnja"
+          ]
+        },
+        {
+          "canonical": "Molitva",
+          "aliases": [
+            "zajednička molitva"
+          ]
+        },
+        {
+          "canonical": "Posjet spomen obilježju",
+          "aliases": [
+            "posjet spomeniku"
+          ]
+        },
+        {
+          "canonical": "Istraživanje povijesnih izvora",
+          "aliases": [
+            "istraživanje"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "round": 4,
+      "question": "Navedi jednu vrstu materijala koju povjesničar može koristiti za istraživanje Vukovarske bitke.",
+      "answers": [
+        {
+          "canonical": "Fotografija",
+          "aliases": [
+            "fotografije",
+            "slika"
+          ]
+        },
+        {
+          "canonical": "Ratni dnevnik",
+          "aliases": [
+            "dnevnik"
+          ]
+        },
+        {
+          "canonical": "Vojni dokument",
+          "aliases": []
+        },
+        {
+          "canonical": "Televizijska snimka",
+          "aliases": [
+            "TV snimka",
+            "televizijski prilog"
+          ]
+        },
+        {
+          "canonical": "Novine",
+          "aliases": []
+        },
+        {
+          "canonical": "Svjedočanstvo",
+          "aliases": [
+            "svjedočenje",
+            "izjava svjedoka"
+          ]
+        },
+        {
+          "canonical": "Zemljovid",
+          "aliases": []
+        },
+        {
+          "canonical": "Novinski članak",
+          "aliases": []
+        },
+        {
+          "canonical": "Radio snimka",
+          "aliases": [
+            "radio zapis"
+          ]
+        },
+        {
+          "canonical": "Sudski spis",
+          "aliases": [
+            "sudska presuda"
+          ]
+        },
+        {
+          "canonical": "Bolnička dokumentacija",
+          "aliases": [
+            "medicinski zapis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "round": 4,
+      "question": "Navedi jednu posljedicu rata koja je dugoročno utjecala na život hrvatskih gradova i sela.",
+      "answers": [
+        {
+          "canonical": "Razaranje",
+          "aliases": [
+            "uništena infrastruktura",
+            "razrušene kuće"
+          ]
+        },
+        {
+          "canonical": "Prognaništvo",
+          "aliases": [
+            "izbjeglištvo",
+            "raseljavanje"
+          ]
+        },
+        {
+          "canonical": "Nestale osobe",
+          "aliases": [
+            "nestali",
+            "potraga za nestalima"
+          ]
+        },
+        {
+          "canonical": "Demografski gubitci",
+          "aliases": [
+            "pad stanovništva",
+            "iseljavanje",
+            "demografski gubici"
+          ]
+        },
+        {
+          "canonical": "Minska opasnost",
+          "aliases": [
+            "mine",
+            "minsko eksplozivna sredstva"
+          ]
+        },
+        {
+          "canonical": "Gospodarski pad",
+          "aliases": [
+            "gospodarska šteta",
+            "nezaposlenost"
+          ]
+        },
+        {
+          "canonical": "Trauma",
+          "aliases": [
+            "psihološke posljedice",
+            "PTSP"
+          ]
+        },
+        {
+          "canonical": "Gubitak obrazovanja",
+          "aliases": [
+            "prekid školovanja"
+          ]
+        },
+        {
+          "canonical": "Socijalne posljedice",
+          "aliases": [
+            "razdvajanje obitelji"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "round": 4,
+      "question": "Navedi jednu djelatnost važnu za poslijeratnu obnovu i povratak stanovništva.",
+      "answers": [
+        {
+          "canonical": "Obnova kuća",
+          "aliases": [
+            "obnova stanova",
+            "stambena obnova"
+          ]
+        },
+        {
+          "canonical": "Razminiranje",
+          "aliases": [
+            "uklanjanje mina"
+          ]
+        },
+        {
+          "canonical": "Obnova škola",
+          "aliases": [
+            "obnova školstva"
+          ]
+        },
+        {
+          "canonical": "Obnova cesta",
+          "aliases": [
+            "izgradnja cesta",
+            "obnova prometnica"
+          ]
+        },
+        {
+          "canonical": "Povratak prognanika",
+          "aliases": [
+            "povratak izbjeglica"
+          ]
+        },
+        {
+          "canonical": "Obnova gospodarstva",
+          "aliases": [
+            "pokretanje poduzeća"
+          ]
+        },
+        {
+          "canonical": "Obnova bolnica",
+          "aliases": [
+            "obnova zdravstva"
+          ]
+        },
+        {
+          "canonical": "Obnova vodovoda",
+          "aliases": [
+            "obnova komunalne infrastrukture"
+          ]
+        },
+        {
+          "canonical": "Obnova električne mreže",
+          "aliases": [
+            "opskrba strujom"
+          ]
+        },
+        {
+          "canonical": "Poljoprivredna obnova",
+          "aliases": [
+            "obnova poljoprivrede"
+          ]
+        },
+        {
+          "canonical": "Obnova kulturnih dobara",
+          "aliases": [
+            "obnova kulturne baštine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "round": 4,
+      "question": "Navedi jednu hrvatsku ustanovu koja prikuplja, istražuje ili čuva građu povezanu s Domovinskim ratom.",
+      "answers": [
+        {
+          "canonical": "Hrvatski memorijalno-dokumentacijski centar Domovinskog rata",
+          "aliases": [
+            "HMDCDR",
+            "Memorijalno dokumentacijski centar",
+            "HMDCR",
+            "HMDCD"
+          ]
+        },
+        {
+          "canonical": "Memorijalni centar Domovinskog rata Vukovar",
+          "aliases": [
+            "MCDR Vukovar",
+            "Memorijalni centar Vukovar"
+          ]
+        },
+        {
+          "canonical": "Hrvatski državni arhiv",
+          "aliases": [
+            "HDA"
+          ]
+        },
+        {
+          "canonical": "Gradski muzej Vukovar",
+          "aliases": [
+            "GMV"
+          ]
+        },
+        {
+          "canonical": "Nacionalna memorijalna bolnica Vukovar",
+          "aliases": [
+            "Vukovarska bolnica"
+          ]
+        },
+        {
+          "canonical": "Državni arhiv u Vukovaru",
+          "aliases": [
+            "arhiv Vukovar"
+          ]
+        },
+        {
+          "canonical": "Muzej Domovinskog rata u Karlovcu",
+          "aliases": [
+            "Muzej Domovinskog rata Karlovac"
+          ]
+        },
+        {
+          "canonical": "Hrvatski povijesni muzej",
+          "aliases": [
+            "HPM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "round": 4,
+      "question": "Navedi jednu aktivnost koju provode povjesničari pri provjeri vjerodostojnosti svjedočanstava o ratu.",
+      "answers": [
+        {
+          "canonical": "Usporedba izvora",
+          "aliases": [
+            "uspoređivanje izvora",
+            "križna provjera"
+          ]
+        },
+        {
+          "canonical": "Provjera datuma",
+          "aliases": [
+            "utvrđivanje datuma"
+          ]
+        },
+        {
+          "canonical": "Utvrđivanje autorstva",
+          "aliases": [
+            "provjera autora"
+          ]
+        },
+        {
+          "canonical": "Provjera mjesta događaja",
+          "aliases": [
+            "provjera lokacije"
+          ]
+        },
+        {
+          "canonical": "Analiza konteksta",
+          "aliases": [
+            "kontekstualizacija"
+          ]
+        },
+        {
+          "canonical": "Kritika izvora",
+          "aliases": [
+            "izvorna kritika",
+            "Kritka izvora"
+          ]
+        },
+        {
+          "canonical": "Provjera autentičnosti",
+          "aliases": [
+            "provjera izvornosti"
+          ]
+        },
+        {
+          "canonical": "Razgovor sa svjedocima",
+          "aliases": [
+            "intervju"
+          ]
+        },
+        {
+          "canonical": "Provjera kronologije",
+          "aliases": [
+            "rekonstrukcija događaja"
+          ]
+        },
+        {
+          "canonical": "Provjera provenijencije",
+          "aliases": [
+            "podrijetlo dokumenta"
+          ]
+        }
+      ]
+    }
+  ],
+  "single_answer_bonus": [
+    {
+      "id": "B1",
+      "question": "Koje je godine završila Bitka za Vukovar?",
+      "answers": [
+        {
+          "canonical": "1991",
+          "aliases": [
+            "1991.",
+            "1991 godine",
+            "1991. godine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "question": "Koji se datum obilježava kao Dan sjećanja na žrtve Domovinskog rata i žrtvu Vukovara i Škabrnje?",
+      "answers": [
+        {
+          "canonical": "18. studenoga",
+          "aliases": [
+            "18 studenoga",
+            "18.11.",
+            "18.11",
+            "18. 11.",
+            "18 studenog",
+            "18. studeni",
+            "18.11.2026."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B3",
+      "question": "Na kojoj se rijeci nalazi Vukovar?",
+      "answers": [
+        {
+          "canonical": "Dunav",
+          "aliases": [
+            "Dunavu",
+            "rijeka Dunav",
+            "na Dunavu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "question": "Kako se zove mjesto masovnog zločina nad ljudima odvedenima iz vukovarske bolnice?",
+      "answers": [
+        {
+          "canonical": "Ovčara",
+          "aliases": [
+            "Ovčari",
+            "Ovcara",
+            "na Ovčari"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B5",
+      "question": "Koja je operacija Hrvatske vojske provedena u kolovozu 1995.?",
+      "answers": [
+        {
+          "canonical": "Oluja",
+          "aliases": [
+            "Operacija Oluja",
+            "Vojno redarstvena operacija Oluja",
+            "VRO Oluja"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B6",
+      "question": "Koje je godine dovršena mirna reintegracija hrvatskoga Podunavlja?",
+      "answers": [
+        {
+          "canonical": "1998",
+          "aliases": [
+            "1998.",
+            "1998 godine",
+            "1998. godine"
+          ]
+        }
+      ]
+    }
+  ]
+}

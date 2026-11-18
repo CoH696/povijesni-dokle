@@ -1,0 +1,6390 @@
+[
+  {
+    "id": 1,
+    "game": 1,
+    "gameTitle": "Igra 1 – Nastanak moderne države i političke teorije",
+    "curriculumHours": "Nastavni sati 1–2",
+    "question": "Navedi jedan čimbenik koji je pridonio jačanju država u ranom novom vijeku.",
+    "note": "Rano novovjekovni procesi centralizacije, fiskalne i vojne revolucije.",
+    "bonusFact": {
+      "q": "Koje je godine sklopljen Vestfalski mir kojim završava Tridesetogodišnji rat?",
+      "a": "1648"
+    },
+    "answers": [
+      {
+        "c": "Trgovina i novčano gospodarstvo",
+        "r": "common",
+        "km": 250,
+        "a": [
+          "trgovina",
+          "trgovanje",
+          "novcano gospodarstvo",
+          "razvoj trgovine",
+          "trgovacki putovi",
+          "kapitalizam",
+          "novac",
+          "trgovina na daljinu"
+        ]
+      },
+      {
+        "c": "Rast i razvoj gradova (urbanizacija)",
+        "r": "common",
+        "km": 300,
+        "a": [
+          "rast gradova",
+          "gradovi",
+          "razvoj gradova",
+          "urbanizacija",
+          "jacanje gradova",
+          "gradanstvo",
+          "procvat gradova"
+        ]
+      },
+      {
+        "c": "Razvoj vatrenog oružja (vojna revolucija)",
+        "r": "common",
+        "km": 350,
+        "a": [
+          "vatreno oruzje",
+          "razvoj vatrenog oruzja",
+          "oruzje",
+          "vojna revolucija",
+          "topovi",
+          "puske",
+          "artiljerija",
+          "puske musketari"
+        ]
+      },
+      {
+        "c": "Stalni porezi (redovito oporezivanje)",
+        "r": "common",
+        "km": 280,
+        "a": [
+          "porezi",
+          "stalni porezi",
+          "oporezivanje",
+          "ubiranje poreza",
+          "porezni sustav",
+          "drzavni porezi",
+          "redoviti porezi"
+        ]
+      },
+      {
+        "c": "Učestali ratovi i potreba za obranom",
+        "r": "common",
+        "km": 320,
+        "a": [
+          "ratovi",
+          "rat",
+          "cest ratovi",
+          "ratovanje",
+          "vanjska opasnost",
+          "obrana",
+          "vojni sukobi"
+        ]
+      },
+      {
+        "c": "Demografski rast (porast stanovništva)",
+        "r": "common",
+        "km": 380,
+        "a": [
+          "demografski rast",
+          "rast stanovnistva",
+          "porast stanovnistva",
+          "stanovnistvo",
+          "demografija",
+          "broj stanovnika"
+        ]
+      },
+      {
+        "c": "Izum i širenje tiskarstva",
+        "r": "common",
+        "km": 360,
+        "a": [
+          "tiskarstvo",
+          "tisak",
+          "izum tiskarstva",
+          "tiskarski stroj",
+          "knjige",
+          "sirenje informacija"
+        ]
+      },
+      {
+        "c": "Stvaranje stajaće vojske",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "stajaca vojska",
+          "stalna vojska",
+          "profesionalna vojska",
+          "vojska",
+          "vojnici na placi"
+        ]
+      },
+      {
+        "c": "Profesionalna birokracija i činovništvo",
+        "r": "medium",
+        "km": 800,
+        "a": [
+          "birokracija",
+          "cinovnistvo",
+          "profesionalno cinovnistvo",
+          "drzavni cinovnici",
+          "drzavna uprava",
+          "razvoj birokracije",
+          "cinovnici"
+        ]
+      },
+      {
+        "c": "Slabljenje feudalnog plemstva",
+        "r": "medium",
+        "km": 850,
+        "a": [
+          "slabljenje plemstva",
+          "slabljenje feudalaca",
+          "pad feudalizma",
+          "slom feudalizma",
+          "gubitak moci plemstva"
+        ]
+      },
+      {
+        "c": "Geografska otkrića i prekomorska kolonizacija",
+        "r": "medium",
+        "km": 900,
+        "a": [
+          "geografska otkrica",
+          "kolonije",
+          "kolonizacija",
+          "prekomorska trgovina",
+          "kolonijalizam",
+          "kolonijalno sirenje",
+          "otkrice amerike"
+        ]
+      },
+      {
+        "c": "Vjersko ujednačavanje i konfesionalizacija",
+        "r": "medium",
+        "km": 950,
+        "a": [
+          "vjersko ujednacavanje",
+          "konfesionalizacija",
+          "religijsko jedinstvo",
+          "vjera pod kontrolom drzave",
+          "cuius regio eius religio"
+        ]
+      },
+      {
+        "c": "Merkantilistička ekonomska politika",
+        "r": "medium",
+        "km": 1100,
+        "a": [
+          "merkantilizam",
+          "merkantilisticka politika",
+          "zastita domace proizvodnje",
+          "carine"
+        ]
+      },
+      {
+        "c": "Standardizacija mjera, utega i novca",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "standardizacija mjera",
+          "jedinstvene mjere",
+          "mjere i utezi",
+          "monopol na kovanje novca",
+          "jedinstveni novac"
+        ]
+      },
+      {
+        "c": "Razvoj kartografije i geodezije",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "kartografija",
+          "karte",
+          "geodezija",
+          "premjeravanje zemlje",
+          "geografske karte"
+        ]
+      },
+      {
+        "c": "Uspostava organizirane državne poštanske službe",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "posta",
+          "postanska sluzba",
+          "drzavna posta",
+          "prijenos poruka",
+          "kurirska sluzba"
+        ]
+      },
+      {
+        "c": "Stalne diplomatske misije i ambasade",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "diplomacija",
+          "stalne diplomatske misije",
+          "ambasade",
+          "veleposlanstva",
+          "diplomatska mreza"
+        ]
+      },
+      {
+        "c": "Sekularizacija crkvenih posjeda",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "sekularizacija",
+          "oduzimanje crkvenih imanja",
+          "sekularizacija crkve",
+          "podvrgavanje crkve"
+        ]
+      },
+      {
+        "c": "Kodifikacija jedinstvenih zakona",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "kodifikacija prava",
+          "jedinstveni zakoni",
+          "zbornici zakona",
+          "kodifikacija",
+          "pravna unifikacija"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "game": 1,
+    "gameTitle": "Igra 1 – Nastanak moderne države i političke teorije",
+    "curriculumHours": "Nastavni sati 1–2",
+    "question": "Navedi jedno sredstvo kojim su ranonovovjekovni vladari jačali središnju vlast.",
+    "note": "Alati centralizacije monarhije nasuprot staleškom partikularizmu.",
+    "bonusFact": {
+      "q": "Kako se naziva politički sustav u kojem vladar vlada neograničeno, bez staleškog sabora?",
+      "a": "Apsolutizam"
+    },
+    "answers": [
+      {
+        "c": "Stajaća (stalna) vojska",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "stajaca vojska",
+          "stalna vojska",
+          "vojska",
+          "profesionalna vojska",
+          "najamnicka vojska"
+        ]
+      },
+      {
+        "c": "Uvođenje stalnih poreza",
+        "r": "common",
+        "km": 260,
+        "a": [
+          "stalni porezi",
+          "porezi",
+          "redoviti porezi",
+          "porezni sustav",
+          "ubiranje poreza"
+        ]
+      },
+      {
+        "c": "Stručno činovništvo (birokracija)",
+        "r": "common",
+        "km": 280,
+        "a": [
+          "cinovnistvo",
+          "birokracija",
+          "drzavni cinovnici",
+          "cinovnici",
+          "kraljevski cinovnici",
+          "upravni aparat"
+        ]
+      },
+      {
+        "c": "Centralizirano sudstvo i kraljevski sudovi",
+        "r": "common",
+        "km": 340,
+        "a": [
+          "sudstvo",
+          "kraljevski sudovi",
+          "centralizirano sudstvo",
+          "sudovi",
+          "jedinstveni sudovi"
+        ]
+      },
+      {
+        "c": "Kraljevska policija i redarstvo",
+        "r": "common",
+        "km": 380,
+        "a": [
+          "policija",
+          "kraljevska policija",
+          "redarstvo",
+          "javna sigurnost"
+        ]
+      },
+      {
+        "c": "Stalna diplomatska služba",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "diplomatska sluzba",
+          "diplomacija",
+          "stalni diplomati",
+          "veleposlanici",
+          "ambasadori"
+        ]
+      },
+      {
+        "c": "Popisi stanovništva (cenzus)",
+        "r": "medium",
+        "km": 800,
+        "a": [
+          "popisi stanovnistva",
+          "popis stanovnistva",
+          "cenzus",
+          "brojanje stanovnika"
+        ]
+      },
+      {
+        "c": "Zemljišni katastri i porezne knjige",
+        "r": "medium",
+        "km": 880,
+        "a": [
+          "katastar",
+          "zemljisni katastar",
+          "porezne knjige",
+          "popis imovine",
+          "urbari"
+        ]
+      },
+      {
+        "c": "Središnja državna riznica / ministarstvo financija",
+        "r": "medium",
+        "km": 760,
+        "a": [
+          "drzavna riznica",
+          "ministarstvo financija",
+          "financijska uprava",
+          "komora",
+          "sredisnja riznica"
+        ]
+      },
+      {
+        "c": "Vladarski dekreti i patenti (vladanje bez sabora)",
+        "r": "medium",
+        "km": 840,
+        "a": [
+          "dekreti",
+          "patenti",
+          "kraljevski dekreti",
+          "edikt",
+          "vladanje bez parlamenta",
+          "ediktom"
+        ]
+      },
+      {
+        "c": "Cenzura tiska i nadzor javne riječi",
+        "r": "medium",
+        "km": 920,
+        "a": [
+          "cenzura",
+          "cenzura tiska",
+          "nadzor tiskara",
+          "zabrana knjiga"
+        ]
+      },
+      {
+        "c": "Služba kraljevskih intendanta (intendanti)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "intendanti",
+          "intendantska sluzba",
+          "sluzba intendanta",
+          "kraljevski komesari"
+        ]
+      },
+      {
+        "c": "Zabrana privatnih plemićkih vojski i utvrda",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "zabrana plemickih vojski",
+          "razoruzavanje plemstva",
+          "rusenje privatnih utvrda",
+          "zabrana privatnih vojski"
+        ]
+      },
+      {
+        "c": "Krunsko vijeće (tajno dvorsko vijeće)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "krunsko vijece",
+          "tajno vijece",
+          "dvorsko vijece",
+          "drzavno vijece"
+        ]
+      },
+      {
+        "c": "Prizivni (apelacijski) sudovi pod krunom",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "apelacijski sudovi",
+          "prizivni sudovi",
+          "vrhovni prizivni sud",
+          "kraljevski priziv"
+        ]
+      },
+      {
+        "c": "Uvođenje državnog monopola (npr. sol, duhan)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "drzavni monopoli",
+          "monopol na sol",
+          "monopol na duhan",
+          "monopoli",
+          "kraljevski monopol"
+        ]
+      },
+      {
+        "c": "Podvrgavanje Crkve svjetovnoj vlasti (galikanizam / jozefinizam)",
+        "r": "rare",
+        "km": 3100,
+        "a": [
+          "podvrgavanje crkve",
+          "galikanizam",
+          "kontrola nad crkvom",
+          "placetum regium"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "game": 1,
+    "gameTitle": "Igra 1 – Nastanak moderne države i političke teorije",
+    "curriculumHours": "Nastavni sati 1–2",
+    "question": "Navedi jednog europskog vladara povezanog s apsolutizmom ili prosvijećenim apsolutizmom.",
+    "note": "Europski vladari 17. i 18. stoljeća.",
+    "bonusFact": {
+      "q": "Koji je francuski vladar poznat pod nadimkom 'Kralj Sunce'?",
+      "a": "Luj XIV."
+    },
+    "answers": [
+      {
+        "c": "Luj XIV. (Kralj Sunce)",
+        "r": "common",
+        "km": 180,
+        "a": [
+          "luj xiv",
+          "luj 14",
+          "louis xiv",
+          "kralj sunce",
+          "luj xiv.",
+          "louis 14"
+        ]
+      },
+      {
+        "c": "Marija Terezija",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "marija terezija",
+          "maria theresia",
+          "maria theresa",
+          "terezija"
+        ]
+      },
+      {
+        "c": "Josip II.",
+        "r": "common",
+        "km": 230,
+        "a": [
+          "josip ii",
+          "josip 2",
+          "joseph ii",
+          "josip ii.",
+          "joseph 2"
+        ]
+      },
+      {
+        "c": "Petar I. Veliki",
+        "r": "common",
+        "km": 270,
+        "a": [
+          "petar veliki",
+          "petar i",
+          "petar i.",
+          "petar 1",
+          "petar alexejevic",
+          "pyotr the great"
+        ]
+      },
+      {
+        "c": "Fridrik II. Veliki",
+        "r": "common",
+        "km": 290,
+        "a": [
+          "fridrik ii",
+          "fridrik 2",
+          "fridrik veliki",
+          "friedrich der grosse",
+          "fridrik ii. veliki",
+          "friedrich ii",
+          "fridrik pruski"
+        ]
+      },
+      {
+        "c": "Katarina II. Velika",
+        "r": "common",
+        "km": 310,
+        "a": [
+          "katarina velika",
+          "katarina ii",
+          "katarina 2",
+          "katarina ii.",
+          "ekaterina velika"
+        ]
+      },
+      {
+        "c": "Filip II. Španjolski",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "filip ii",
+          "filip 2",
+          "felipe ii",
+          "filip ii. span窮lski",
+          "filip habsburski"
+        ]
+      },
+      {
+        "c": "Luj XIII.",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "luj xiii",
+          "luj 13",
+          "louis xiii",
+          "luj xiii."
+        ]
+      },
+      {
+        "c": "Gustav III. Švedski",
+        "r": "medium",
+        "km": 920,
+        "a": [
+          "gustav iii",
+          "gustav 3",
+          "gustav iii.",
+          "gustaf iii"
+        ]
+      },
+      {
+        "c": "Karlo III. Španjolski",
+        "r": "medium",
+        "km": 980,
+        "a": [
+          "karlo iii",
+          "karlo 3",
+          "carlos iii",
+          "karlo iii. span窮lski"
+        ]
+      },
+      {
+        "c": "Leopold II. (Habsburški)",
+        "r": "medium",
+        "km": 890,
+        "a": [
+          "leopold ii",
+          "leopold 2",
+          "leopold ii."
+        ]
+      },
+      {
+        "c": "Karlo I. Stuart",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "karlo i",
+          "karlo i. stuart",
+          "charles i",
+          "karlo 1"
+        ]
+      },
+      {
+        "c": "Jakov II. Stuart",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "jakov ii",
+          "jakov ii.",
+          "james ii",
+          "jakov 2"
+        ]
+      },
+      {
+        "c": "Elizabeta Petrovna",
+        "r": "medium",
+        "km": 960,
+        "a": [
+          "elizabeta petrovna",
+          "carica elizabeta",
+          "elizabeta ruska"
+        ]
+      },
+      {
+        "c": "Fridrik Vilim I. (Kralj kaplar)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "fridrik vilim i",
+          "kralj kaplar",
+          "friedrich wilhelm i",
+          "fridrik vilim 1",
+          "kralj vojnik"
+        ]
+      },
+      {
+        "c": "Karlo XI. Švedski",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "karlo xi",
+          "karl xi",
+          "karlo 11",
+          "karlo xi."
+        ]
+      },
+      {
+        "c": "Josip I. Portugalski (i Pombal)",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "josip i portugalski",
+          "jose i",
+          "kralj jose",
+          "pombal",
+          "markiz de pombal"
+        ]
+      },
+      {
+        "c": "Kristijan VII. Danski",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "kristijan vii",
+          "christian vii",
+          "kristijan 7",
+          "struensee"
+        ]
+      },
+      {
+        "c": "Stanislav August Poniatowski",
+        "r": "rare",
+        "km": 3000,
+        "a": [
+          "stanislav august poniatowski",
+          "stanislav poniatowski",
+          "stanislaw august"
+        ]
+      },
+      {
+        "c": "Viktor Amadeo II. od Savoje",
+        "r": "rare",
+        "km": 3100,
+        "a": [
+          "viktor amadeo ii",
+          "vittorio amedeo ii",
+          "viktor amadeo"
+        ]
+      },
+      {
+        "c": "Ivan V. Portugalski",
+        "r": "rare",
+        "km": 3200,
+        "a": [
+          "ivan v portugalski",
+          "joao v",
+          "ivan 5 portugalski"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "game": 1,
+    "gameTitle": "Igra 1 – Nastanak moderne države i političke teorije",
+    "curriculumHours": "Nastavni sati 1–2",
+    "question": "Navedi jednu državu ili političku tvorevinu koja je sudjelovala u Tridesetogodišnjem ratu.",
+    "note": "Sukobi 1618. – 1648. i Vestfalski mir.",
+    "bonusFact": {
+      "q": "Koji je švedski kralj poginuo u bitci kod Lützena 1632. godine?",
+      "a": "Gustav II. Adolf"
+    },
+    "answers": [
+      {
+        "c": "Sveto Rimsko Carstvo",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "sveto rimsko carstvo",
+          "src",
+          "carstvo",
+          "sveto rimsko carstvo njemacke narodnosti",
+          "svetog rimskog carstva"
+        ]
+      },
+      {
+        "c": "Kraljevina Švedska",
+        "r": "common",
+        "km": 230,
+        "a": [
+          "svedska",
+          "kraljevina svedska",
+          "svedani",
+          "gustav adolf"
+        ]
+      },
+      {
+        "c": "Kraljevina Francuska",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "francuska",
+          "kraljevina francuska",
+          "francuzi",
+          "richelieu"
+        ]
+      },
+      {
+        "c": "Kraljevina Španjolska",
+        "r": "common",
+        "km": 260,
+        "a": [
+          "spanjolska",
+          "kraljevina spanjolska",
+          "spanjolci",
+          "habsburgovci spanjolski"
+        ]
+      },
+      {
+        "c": "Kraljevina Češka (Bohemija)",
+        "r": "common",
+        "km": 290,
+        "a": [
+          "ceska",
+          "bohemija",
+          "kraljevina ceska",
+          "ceski stalezi"
+        ]
+      },
+      {
+        "c": "Kraljevina Danska",
+        "r": "common",
+        "km": 320,
+        "a": [
+          "danska",
+          "kraljevina danska",
+          "danska norveska",
+          "kristijan iv"
+        ]
+      },
+      {
+        "c": "Vojvodstvo Bavarska (Katolička liga)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "bavarska",
+          "katolicka liga",
+          "maksimilijan bavarski",
+          "vojvodstvo bavarska"
+        ]
+      },
+      {
+        "c": "Kneževina Saska (Saksonija)",
+        "r": "medium",
+        "km": 780,
+        "a": [
+          "saska",
+          "saksonija",
+          "izborna knezevina saska",
+          "sasi"
+        ]
+      },
+      {
+        "c": "Brandenburg-Pruska",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "brandenburg",
+          "pruska",
+          "brandenburg pruska",
+          "izborna knezevina brandenburg"
+        ]
+      },
+      {
+        "c": "Nizozemska (Ujedinjene Provincije)",
+        "r": "medium",
+        "km": 890,
+        "a": [
+          "nizozemska",
+          "ujedinjene provincije",
+          "republika ujedinjenih provincija",
+          "holandija"
+        ]
+      },
+      {
+        "c": "Austrijske nasljedne zemlje (Habsburška Monarhija)",
+        "r": "medium",
+        "km": 740,
+        "a": [
+          "austrija",
+          "habsburska monarhija",
+          "austrijske nasljedne zemlje",
+          "habsburgovci"
+        ]
+      },
+      {
+        "c": "Falačka (Kneževina Palatinat)",
+        "r": "medium",
+        "km": 940,
+        "a": [
+          "falacka",
+          "palatinat",
+          "rajnska falacka",
+          "fridrik v palatinski",
+          "knezevina palatinat"
+        ]
+      },
+      {
+        "c": "Kneževina Erdelj (Transilvanija)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "erdelj",
+          "transilvanija",
+          "knezevina erdelj",
+          "gabriel bethlen",
+          "gyorgy rakoczi"
+        ]
+      },
+      {
+        "c": "Hessen-Kassel",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "hessen kassel",
+          "hessen",
+          "knezevina hessen"
+        ]
+      },
+      {
+        "c": "Vojvodstvo Savoja",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "savoja",
+          "vojvodstvo savoja",
+          "savojci"
+        ]
+      },
+      {
+        "c": "Osmansko Carstvo",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "osmansko carstvo",
+          "turska",
+          "osmanlije"
+        ]
+      },
+      {
+        "c": "Rusko Carstvo (kroz Smolenski rat)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "rusija",
+          "rusko carstvo",
+          "moskovska drzava"
+        ]
+      },
+      {
+        "c": "Papinska Država",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "papinska drzava",
+          "vatikan",
+          "rimski papa",
+          "rim"
+        ]
+      },
+      {
+        "c": "Švicarska Konfederacija",
+        "r": "rare",
+        "km": 3000,
+        "a": [
+          "svicarska",
+          "svicarska konfederacija",
+          "kantoni"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "game": 1,
+    "gameTitle": "Igra 1 – Nastanak moderne države i političke teorije",
+    "curriculumHours": "Nastavni sati 1–2",
+    "question": "Navedi jednog političkog mislioca iz razdoblja od 16. do 18. stoljeća.",
+    "note": "Ranonovovjekovna i prosvjetiteljska misao.",
+    "bonusFact": {
+      "q": "Tko je napisao čuveno djelo 'Levijatan' (1651.)?",
+      "a": "Thomas Hobbes"
+    },
+    "answers": [
+      {
+        "c": "Niccolò Machiavelli",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "machiavelli",
+          "makijaveli",
+          "niccolo machiavelli",
+          "nikolo makijaveli",
+          "macchiavelli"
+        ]
+      },
+      {
+        "c": "Thomas Hobbes",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "hobbes",
+          "tomas hobs",
+          "thomas hobbes",
+          "hobs"
+        ]
+      },
+      {
+        "c": "John Locke",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "locke",
+          "dzon lok",
+          "john locke",
+          "lok"
+        ]
+      },
+      {
+        "c": "Charles de Montesquieu",
+        "r": "common",
+        "km": 240,
+        "a": [
+          "montesquieu",
+          "monteskje",
+          "charles de montesquieu",
+          "charles montesquieu",
+          "montesquie"
+        ]
+      },
+      {
+        "c": "Jean-Jacques Rousseau",
+        "r": "common",
+        "km": 230,
+        "a": [
+          "rousseau",
+          "jean jacques rousseau",
+          "russo",
+          "zan zak ruso",
+          "jean-jacques rousseau",
+          "ruso"
+        ]
+      },
+      {
+        "c": "Immanuel Kant",
+        "r": "common",
+        "km": 280,
+        "a": [
+          "kant",
+          "immanuel kant",
+          "emanuel kant"
+        ]
+      },
+      {
+        "c": "Jean Bodin",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "bodin",
+          "zan boden",
+          "jean bodin",
+          "boden"
+        ]
+      },
+      {
+        "c": "Hugo Grotius (Hugo de Groot)",
+        "r": "medium",
+        "km": 810,
+        "a": [
+          "grotius",
+          "hugo grotius",
+          "grocije",
+          "hugo grocije",
+          "hugo de groot"
+        ]
+      },
+      {
+        "c": "Voltaire (François-Marie Arouet)",
+        "r": "medium",
+        "km": 620,
+        "a": [
+          "voltaire",
+          "volter",
+          "francois-marie arouet",
+          "voltere"
+        ]
+      },
+      {
+        "c": "Denis Diderot",
+        "r": "medium",
+        "km": 700,
+        "a": [
+          "diderot",
+          "deni didro",
+          "didro",
+          "denis diderot"
+        ]
+      },
+      {
+        "c": "Cesare Beccaria",
+        "r": "medium",
+        "km": 880,
+        "a": [
+          "beccaria",
+          "cesare beccaria",
+          "cezare bekarija",
+          "bekarija"
+        ]
+      },
+      {
+        "c": "Baruch de Spinoza",
+        "r": "medium",
+        "km": 850,
+        "a": [
+          "spinoza",
+          "baruch de spinoza",
+          "baruh spinoza",
+          "baruch spinoza"
+        ]
+      },
+      {
+        "c": "Thomas More (Morus)",
+        "r": "medium",
+        "km": 690,
+        "a": [
+          "thomas more",
+          "tomas mor",
+          "morus",
+          "thomas morus"
+        ]
+      },
+      {
+        "c": "Nikola Vitov Gučetić",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "gucetic",
+          "nikola vitov gucetic",
+          "nikola gucetic",
+          "nicolò vito di gozze",
+          "nikola v. gucetic"
+        ]
+      },
+      {
+        "c": "Samuel von Pufendorf",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "pufendorf",
+          "samuel von pufendorf",
+          "samuel pufendorf"
+        ]
+      },
+      {
+        "c": "Johannes Althusius",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "althusius",
+          "johannes althusius",
+          "altuzije"
+        ]
+      },
+      {
+        "c": "Gabriel Bonnot de Mably",
+        "r": "rare",
+        "km": 3100,
+        "a": [
+          "mably",
+          "gabriel bonnot de mably",
+          "mabli"
+        ]
+      },
+      {
+        "c": "James Harrington",
+        "r": "rare",
+        "km": 3000,
+        "a": [
+          "harrington",
+          "james harrington",
+          "harington"
+        ]
+      },
+      {
+        "c": "Algernon Sidney",
+        "r": "rare",
+        "km": 3150,
+        "a": [
+          "sidney",
+          "algernon sidney",
+          "sidni"
+        ]
+      },
+      {
+        "c": "Christian Wolff",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "wolff",
+          "christian wolff",
+          "kristijan volf",
+          "volf"
+        ]
+      },
+      {
+        "c": "Jacques-Bénigne Bossuet",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "bossuet",
+          "bosuet",
+          "jacques-benigne bossuet",
+          "zak beninj bosue"
+        ]
+      },
+      {
+        "c": "Giambattista Vico",
+        "r": "rare",
+        "km": 2950,
+        "a": [
+          "vico",
+          "giambattista vico",
+          "dambatica viko"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "game": 1,
+    "gameTitle": "Igra 1 – Nastanak moderne države i političke teorije",
+    "curriculumHours": "Nastavni sati 1–2",
+    "question": "Navedi jedno djelo ranonovovjekovne političke filozofije.",
+    "note": "Ključni tekstovi političke misli 16. – 18. stoljeća.",
+    "bonusFact": {
+      "q": "Kako se zove glavno političko djelo Niccolòa Machiavellija posvećeno Lorenzu de' Mediciju?",
+      "a": "Vladar (Il Principe)"
+    },
+    "answers": [
+      {
+        "c": "Vladar (Il Principe)",
+        "r": "common",
+        "km": 180,
+        "a": [
+          "vladar",
+          "il principe",
+          "machiavellijev vladar",
+          "makijavelijev vladar"
+        ]
+      },
+      {
+        "c": "Levijatan (Leviathan)",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "levijatan",
+          "leviathan",
+          "hobbesov levijatan"
+        ]
+      },
+      {
+        "c": "O duhu zakona (De l'esprit des lois)",
+        "r": "common",
+        "km": 230,
+        "a": [
+          "o duhu zakona",
+          "duh zakona",
+          "de l esprit des lois",
+          "de lesprit des lois",
+          "montesquieuov duh zakona"
+        ]
+      },
+      {
+        "c": "Društveni ugovor (Du contrat social)",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "drustveni ugovor",
+          "du contrat social",
+          "o drustvenom ugovoru",
+          "rousseauov drustveni ugovor"
+        ]
+      },
+      {
+        "c": "Dvije rasprave o vladavini",
+        "r": "common",
+        "km": 280,
+        "a": [
+          "dvije rasprave o vladavini",
+          "dvije rasprave o vladi",
+          "dva traktata o vladi",
+          "two treatises of government",
+          "lockeove dvije rasprave"
+        ]
+      },
+      {
+        "c": "Šest knjiga o republici",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "sest knjiga o republici",
+          "les six livres de la republique",
+          "o republici",
+          "bodinovih sest knjiga"
+        ]
+      },
+      {
+        "c": "O pravu rata i mira (De jure belli ac pacis)",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "o pravu rata i mira",
+          "de jure belli ac pacis",
+          "pravo rata i mira",
+          "grotius o pravu rata"
+        ]
+      },
+      {
+        "c": "Utopija (Thomas More)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "utopija",
+          "utopia",
+          "moreova utopija",
+          "o najboljem uredenju drzave i o novom otoku utopiji"
+        ]
+      },
+      {
+        "c": "O zločinima i kaznama (Beccaria)",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "o zlocinima i kaznama",
+          "dei delitti e delle pene",
+          "zlocini i kazne"
+        ]
+      },
+      {
+        "c": "Rasprava o podrijetlu i osnovama nejednakosti",
+        "r": "medium",
+        "km": 890,
+        "a": [
+          "rasprava o nejednakosti",
+          "rasprava o porijeklu nejednakosti",
+          "o nejednakosti"
+        ]
+      },
+      {
+        "c": "Filozofska pisma (Pisma o Englezima)",
+        "r": "medium",
+        "km": 860,
+        "a": [
+          "filozofska pisma",
+          "pisma o englezima",
+          "lettres philosophiques",
+          "voltaireova pisma"
+        ]
+      },
+      {
+        "c": "Teološko-politički traktat (Spinoza)",
+        "r": "medium",
+        "km": 940,
+        "a": [
+          "teolosko-politicki traktat",
+          "teolosko politicki traktat",
+          "tractatus theologico-politicus"
+        ]
+      },
+      {
+        "c": "O ustroju država (Dello stato delle republiche - Gučetić)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "o ustroju drzava",
+          "dello stato delle republiche",
+          "guceticevo djelo",
+          "upravljanje drzavom"
+        ]
+      },
+      {
+        "c": "O prirodnom pravu i pravu naroda (Pufendorf)",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "de jure naturae et gentium",
+          "o prirodnom pravu i pravu naroda",
+          "pufendorfovo djelo"
+        ]
+      },
+      {
+        "c": "Politika razložena metodom (Politica - Althusius)",
+        "r": "rare",
+        "km": 3000,
+        "a": [
+          "politica",
+          "althusiusova politika",
+          "politika razlozena metodom"
+        ]
+      },
+      {
+        "c": "Oceana (The Commonwealth of Oceana - Harrington)",
+        "r": "rare",
+        "km": 3100,
+        "a": [
+          "oceana",
+          "commonwealth of oceana",
+          "harringtonova oceana"
+        ]
+      },
+      {
+        "c": "Politika izvedena iz riječi Svetoga pisma (Bossuet)",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "politika izvedena iz svetog pisma",
+          "politique tiree des propres paroles",
+          "bossuetovo djelo"
+        ]
+      },
+      {
+        "c": "K vječnom miru (Zum ewigen Frieden - Kant)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "k vjecnom miru",
+          "vjecni mir",
+          "zum ewigen frieden",
+          "kantov vjecni mir"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "game": 1,
+    "gameTitle": "Igra 1 – Nastanak moderne države i političke teorije",
+    "curriculumHours": "Nastavni sati 1–2",
+    "question": "Navedi jedno staleško ili predstavničko tijelo europske države u ranom novom vijeku.",
+    "note": "Povijesna parlamentarna i staleška tijela Europe.",
+    "bonusFact": {
+      "q": "Koje je godine donesen engleski 'Bill of Rights' kojim je učvršćena vlast parlamenta?",
+      "a": "1689"
+    },
+    "answers": [
+      {
+        "c": "Hrvatski sabor (Congregatio Regni)",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "hrvatski sabor",
+          "sabor",
+          "sabor kraljevine hrvatske",
+          "hrvatsko-slavonski sabor",
+          "congregatio regni"
+        ]
+      },
+      {
+        "c": "Engleski parlament (Donji i Gornji dom)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "engleski parlament",
+          "parlament",
+          "britanski parlament",
+          "house of commons",
+          "donji dom",
+          "gornji dom"
+        ]
+      },
+      {
+        "c": "Francuski generalni staleži (États généraux)",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "generalni stalezi",
+          "etats generaux",
+          "francuski generalni stalezi",
+          "stalezi francuske",
+          "francuski sabor"
+        ]
+      },
+      {
+        "c": "Ugarski sabor (Dijeta)",
+        "r": "common",
+        "km": 250,
+        "a": [
+          "ugarski sabor",
+          "madarski sabor",
+          "ugarska dijeta",
+          "dijeta"
+        ]
+      },
+      {
+        "c": "Poljski Sejm",
+        "r": "common",
+        "km": 280,
+        "a": [
+          "sejm",
+          "poljski sejm",
+          "sejmovi",
+          "poljski sabor"
+        ]
+      },
+      {
+        "c": "Španjolski Cortes (Kortes)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "cortes",
+          "kortes",
+          "spanjolski cortes",
+          "spanjolski kortes",
+          "cortes de castilla"
+        ]
+      },
+      {
+        "c": "Švedski Riksdag",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "riksdag",
+          "svedski riksdag",
+          "svedski sabor",
+          "stalezi svedske"
+        ]
+      },
+      {
+        "c": "Državni sabor Svetog Rimskog Carstva (Reichstag)",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "reichstag",
+          "rajhstag",
+          "drzavni sabor svetog rimskog carstva",
+          "njemacki reichstag"
+        ]
+      },
+      {
+        "c": "Nizozemski generalni staleži (Staten-Generaal)",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "staten generaal",
+          "nizozemski generalni stalezi",
+          "nizozemski sabor",
+          "staten-generaal"
+        ]
+      },
+      {
+        "c": "Zemskij sabor (Rusko Carstvo)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "zemskij sabor",
+          "ruski zemskij sabor",
+          "zemski sabor"
+        ]
+      },
+      {
+        "c": "Češki sabor (Český sněm)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "ceski sabor",
+          "cesky snem",
+          "snem",
+          "ceska dijeta"
+        ]
+      },
+      {
+        "c": "Švicarska savezna skupština (Tagsatzung)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "tagsatzung",
+          "svicarska skupstina",
+          "savezna skupstina svicarske"
+        ]
+      },
+      {
+        "c": "Francuski provincijski staleži (États provinciaux)",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "provincijski stalezi",
+          "etats provinciaux",
+          "stalezi bretanje",
+          "stalezi languedoca"
+        ]
+      },
+      {
+        "c": "Lokalni plemićki sejmici (Sejmik u Poljskoj)",
+        "r": "rare",
+        "km": 3000,
+        "a": [
+          "sejmik",
+          "poljski sejmik",
+          "lokalni sejmici"
+        ]
+      },
+      {
+        "c": "Staleži Brabanta (Austrijska Nizozemska)",
+        "r": "rare",
+        "km": 3100,
+        "a": [
+          "stalezi brabanta",
+          "brabantski stalezi"
+        ]
+      },
+      {
+        "c": "Sicilijanski parlament",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "sicilijanski parlament",
+          "parlament sicilije"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "game": 1,
+    "gameTitle": "Igra 1 – Nastanak moderne države i političke teorije",
+    "curriculumHours": "Nastavni sati 1–2",
+    "question": "Navedi jedno pravo koje su isticali mislioci prirodnoga prava i prosvjetiteljstva.",
+    "note": "Temeljna ljudska i građanska prava prosvjetiteljske tradicije.",
+    "bonusFact": {
+      "q": "Koja su tri neotuđiva prava navedena u američkoj Deklaraciji o nezavisnosti 1776.?",
+      "a": "Život, sloboda i potraga za srećom"
+    },
+    "answers": [
+      {
+        "c": "Pravo na život",
+        "r": "common",
+        "km": 160,
+        "a": [
+          "zivot",
+          "pravo na zivot",
+          "nepovredivost zivota"
+        ]
+      },
+      {
+        "c": "Pravo na slobodu",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "sloboda",
+          "pravo na slobodu",
+          "osobna sloboda",
+          "individualna sloboda"
+        ]
+      },
+      {
+        "c": "Pravo na vlasništvo (privatno vlasništvo)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "vlasnistvo",
+          "pravo na vlasnistvo",
+          "privatno vlasnistvo",
+          "pravo na imovinu",
+          "imovina"
+        ]
+      },
+      {
+        "c": "Jednakost pred zakonom",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "jednakost",
+          "jednakost pred zakonom",
+          "pravna jednakost",
+          "ravnopravnost"
+        ]
+      },
+      {
+        "c": "Sloboda vjeroispovijesti (vjerska sloboda)",
+        "r": "common",
+        "km": 240,
+        "a": [
+          "vjerska sloboda",
+          "sloboda vjeroispovijesti",
+          "sloboda vjere",
+          "vjerska tolerancija"
+        ]
+      },
+      {
+        "c": "Pravo na osobnu sigurnost",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "sigurnost",
+          "pravo na sigurnost",
+          "osobna sigurnost"
+        ]
+      },
+      {
+        "c": "Pravo na otpor ugnjetavanju (otpor tiraniji)",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "otpor ugnjetavanju",
+          "pravo na otpor",
+          "otpor tiraniji",
+          "pravo na pobunu",
+          "rusenje tiranina"
+        ]
+      },
+      {
+        "c": "Sloboda govora i izražavanja",
+        "r": "medium",
+        "km": 650,
+        "a": [
+          "sloboda govora",
+          "sloboda izrazavanja",
+          "pravo na govor"
+        ]
+      },
+      {
+        "c": "Sloboda tiska (tiskane riječi)",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "sloboda tiska",
+          "pravo na slobodan tisak",
+          "tiskana rijec"
+        ]
+      },
+      {
+        "c": "Pravo na pošteno suđenje (presumpcija nevinosti)",
+        "r": "medium",
+        "km": 850,
+        "a": [
+          "posteno sudenje",
+          "pravo na posteno sudenje",
+          "presumpcija nevinosti",
+          "pravo na obranu"
+        ]
+      },
+      {
+        "c": "Pravo na tjelesnu nepovredivost (zabrana mučenja/torture)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "zabrana mucenja",
+          "tjelesna nepovredivost",
+          "zabrana torture",
+          "ukidanje mucenja"
+        ]
+      },
+      {
+        "c": "Pravo na potragu za srećom (pursuit of happiness)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "potraga za srecom",
+          "pravo na srecu",
+          "pravo na potragu za srecom",
+          "pursuit of happiness"
+        ]
+      },
+      {
+        "c": "Pravo na obrazovanje",
+        "r": "rare",
+        "km": 2100,
+        "a": [
+          "pravo na obrazovanje",
+          "obrazovanje",
+          "pravo na skolovanje"
+        ]
+      },
+      {
+        "c": "Sloboda savjesti",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "sloboda savjesti",
+          "pravo na slobodu savjesti"
+        ]
+      },
+      {
+        "c": "Pravo na peticiju (pritužbu vlastima)",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "pravo na peticiju",
+          "peticija",
+          "pravo na zalbu",
+          "pravo na prituzbu"
+        ]
+      },
+      {
+        "c": "Pravo na udruživanje",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "pravo na udruzivanje",
+          "sloboda udruzivanja"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "game": 2,
+    "gameTitle": "Igra 2 – Prosvjetiteljstvo i promjene političkih ideja",
+    "curriculumHours": "Nastavni sat 3",
+    "question": "Navedi jednog poznatog predstavnika europskog prosvjetiteljstva.",
+    "note": "Prosvjetitelji 18. stoljeća u Europi i Hrvatskoj.",
+    "bonusFact": {
+      "q": "Koji je francuski prosvjetitelj uredio znamenitu 'Enciklopediju' zajedno s d'Alembertom?",
+      "a": "Denis Diderot"
+    },
+    "answers": [
+      {
+        "c": "Voltaire (François-Marie Arouet)",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "voltaire",
+          "volter",
+          "francois marie arouet",
+          "voltere"
+        ]
+      },
+      {
+        "c": "Jean-Jacques Rousseau",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "rousseau",
+          "jean jacques rousseau",
+          "russo",
+          "zan zak ruso",
+          "ruso"
+        ]
+      },
+      {
+        "c": "Charles de Montesquieu",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "montesquieu",
+          "monteskje",
+          "charles de montesquieu",
+          "charles montesquieu"
+        ]
+      },
+      {
+        "c": "Denis Diderot",
+        "r": "common",
+        "km": 230,
+        "a": [
+          "diderot",
+          "didro",
+          "deni didro",
+          "denis diderot"
+        ]
+      },
+      {
+        "c": "Immanuel Kant",
+        "r": "common",
+        "km": 250,
+        "a": [
+          "kant",
+          "immanuel kant",
+          "emanuel kant"
+        ]
+      },
+      {
+        "c": "Jean le Rond d'Alembert",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "d alembert",
+          "dalembert",
+          "dalamber",
+          "jean le rond d alembert"
+        ]
+      },
+      {
+        "c": "David Hume",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "david hume",
+          "hume",
+          "dejvid hjum",
+          "hjum"
+        ]
+      },
+      {
+        "c": "Cesare Beccaria",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "beccaria",
+          "cesare beccaria",
+          "cezare bekarija",
+          "bekarija"
+        ]
+      },
+      {
+        "c": "Marquis de Condorcet",
+        "r": "medium",
+        "km": 880,
+        "a": [
+          "condorcet",
+          "marquis de condorcet",
+          "kondorse",
+          "marquis de kondorse"
+        ]
+      },
+      {
+        "c": "John Locke (preteča prosvjetiteljstva)",
+        "r": "medium",
+        "km": 600,
+        "a": [
+          "locke",
+          "john locke",
+          "dzon lok",
+          "lok"
+        ]
+      },
+      {
+        "c": "Gotthold Ephraim Lessing",
+        "r": "medium",
+        "km": 850,
+        "a": [
+          "lessing",
+          "gotthold ephraim lessing",
+          "lesing"
+        ]
+      },
+      {
+        "c": "Moses Mendelssohn",
+        "r": "medium",
+        "km": 940,
+        "a": [
+          "mendelssohn",
+          "moses mendelssohn",
+          "mojsije mendelson"
+        ]
+      },
+      {
+        "c": "Paul-Henri Thiry d'Holbach",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "d holbach",
+          "holbach",
+          "paul-henri thiry d holbach",
+          "barun holbah",
+          "holbah"
+        ]
+      },
+      {
+        "c": "Claude Adrien Helvétius",
+        "r": "rare",
+        "km": 2750,
+        "a": [
+          "helvetius",
+          "claude adrien helvetius",
+          "helvecije"
+        ]
+      },
+      {
+        "c": "Mary Wollstonecraft",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "mary wollstonecraft",
+          "wollstonecraft",
+          "meri vulstonkraft"
+        ]
+      },
+      {
+        "c": "Ruđer Bošković",
+        "r": "rare",
+        "km": 2200,
+        "a": [
+          "ruder boskovic",
+          "ruder josip boskovic",
+          "boskovic",
+          "roger boscovich"
+        ]
+      },
+      {
+        "c": "Matija Antun Relković",
+        "r": "rare",
+        "km": 2100,
+        "a": [
+          "matija antun relkovic",
+          "relkovic",
+          "matija relkovic"
+        ]
+      },
+      {
+        "c": "Mihalj Šilobod Bolšić",
+        "r": "rare",
+        "km": 3000,
+        "a": [
+          "mihalj silobod bolsic",
+          "silobod bolsic",
+          "mihalj silobod",
+          "silobod"
+        ]
+      },
+      {
+        "c": "Tituš Brezovački",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "titus brezovacki",
+          "brezovacki",
+          "titus brezovatsky"
+        ]
+      },
+      {
+        "c": "Ignjat Martinović",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "ignjat martinovic",
+          "martinovic",
+          "ignatius martinovics"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "game": 2,
+    "gameTitle": "Igra 2 – Prosvjetiteljstvo i promjene političkih ideja",
+    "curriculumHours": "Nastavni sat 3",
+    "question": "Navedi jedan način širenja prosvjetiteljskih ideja u Europi.",
+    "note": "Mediji, institucije i oblici komunikacije javne sfere 18. st.",
+    "bonusFact": {
+      "q": "Koje je godine izdan prvi svezak čuvene francuske 'Enciklopedije'?",
+      "a": "1751"
+    },
+    "answers": [
+      {
+        "c": "Tiskanje knjiga i rasprava",
+        "r": "common",
+        "km": 160,
+        "a": [
+          "knjige",
+          "tiskanje knjiga",
+          "knjiga",
+          "filozofske knjige",
+          "tiskane knjige"
+        ]
+      },
+      {
+        "c": "Novine i periodični tisak",
+        "r": "common",
+        "km": 180,
+        "a": [
+          "novine",
+          "casopisi",
+          "periodicni tisak",
+          "dnevni tisak",
+          "tisak"
+        ]
+      },
+      {
+        "c": "Enciklopedije (posebno Francuska enciklopedija)",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "enciklopedija",
+          "enciklopedije",
+          "francuska enciklopedija",
+          "encyclopedie"
+        ]
+      },
+      {
+        "c": "Književni i filozofski saloni",
+        "r": "common",
+        "km": 240,
+        "a": [
+          "saloni",
+          "knjizevni saloni",
+          "francuski saloni",
+          "filozofski saloni",
+          "saloni dama"
+        ]
+      },
+      {
+        "c": "Privatna pisma i korespondencija učenih ljudi",
+        "r": "common",
+        "km": 260,
+        "a": [
+          "pisma",
+          "korespondencija",
+          "dopisivanje",
+          "epistolarna komunikacija"
+        ]
+      },
+      {
+        "c": "Sveučilišta i visoke škole",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "sveucilista",
+          "sveuciliste",
+          "fakulteti",
+          "sveucilisna predavanja"
+        ]
+      },
+      {
+        "c": "Znanstvene akademije i učena društva",
+        "r": "medium",
+        "km": 740,
+        "a": [
+          "akademije",
+          "znanstvene akademije",
+          "kraljevska akademija",
+          "ucena drustva",
+          "akademija znanosti"
+        ]
+      },
+      {
+        "c": "Javne čitaonice i knjižnice",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "citaonice",
+          "knjiznice",
+          "javne citaonice",
+          "posudbene knjiznice"
+        ]
+      },
+      {
+        "c": "Gradske kavane (coffee houses)",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "kavane",
+          "gradske kavane",
+          "coffee houses",
+          "kavanarije",
+          "kafei"
+        ]
+      },
+      {
+        "c": "Kazališne predstave i drame",
+        "r": "medium",
+        "km": 860,
+        "a": [
+          "kazaliste",
+          "drame",
+          "kazalisne predstave",
+          "teatar"
+        ]
+      },
+      {
+        "c": "Slobodno zidarstvo (masonske lože)",
+        "r": "medium",
+        "km": 920,
+        "a": [
+          "masonske loze",
+          "masoni",
+          "slobodni zidari",
+          "slobodno zidarstvo",
+          "loze"
+        ]
+      },
+      {
+        "c": "Politički pamfleti i leci",
+        "r": "medium",
+        "km": 760,
+        "a": [
+          "pamfleti",
+          "leci",
+          "politicki pamfleti",
+          "brosure"
+        ]
+      },
+      {
+        "c": "Edukativna putovanja intelektualaca (Grand Tour)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "grand tour",
+          "putovanja intelektualaca",
+          "studijska putovanja",
+          "putovanja"
+        ]
+      },
+      {
+        "c": "Krijumčarenje i tajna prodaja zabranjenih knjiga",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "krijumcarenje knjiga",
+          "zabranjene knjige",
+          "ilegalni tisak",
+          "tajne tiskare"
+        ]
+      },
+      {
+        "c": "Botanički vrtovi i kabineti čuda",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "botanicki vrtovi",
+          "kabineti cuda",
+          "prirodoslovni kabineti",
+          "kabinet"
+        ]
+      },
+      {
+        "c": "Javna znanstvena predavanja i eksperimenti",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "javna predavanja",
+          "javni eksperimenti",
+          "eksperimentalne demonstracije"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "game": 2,
+    "gameTitle": "Igra 2 – Prosvjetiteljstvo i promjene političkih ideja",
+    "curriculumHours": "Nastavni sat 3",
+    "question": "Navedi jedno načelo ili vrijednost povezanu s prosvjetiteljstvom.",
+    "note": "Vrijednosni sustav prosvjetiteljstva.",
+    "bonusFact": {
+      "q": "Koji je njemački filozof definirao prosvjetiteljstvo kao 'izlazak čovjeka iz stanja samoskrivljene nezrelosti' (Sapere aude)?",
+      "a": "Immanuel Kant"
+    },
+    "answers": [
+      {
+        "c": "Vjera u razum (racionalizam)",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "razum",
+          "racionalizam",
+          "snaga razuma",
+          "ljudski razum",
+          "racionalnost"
+        ]
+      },
+      {
+        "c": "Sloboda (individualna i građanska sloboda)",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "sloboda",
+          "gradanska sloboda",
+          "individualna sloboda",
+          "sloboda pojedinca"
+        ]
+      },
+      {
+        "c": "Vjerska tolerancija (snošljivost)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "tolerancija",
+          "vjerska tolerancija",
+          "snosljivost",
+          "vjerska snosljivost"
+        ]
+      },
+      {
+        "c": "Obrazovanje i prosvjećivanje puka",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "obrazovanje",
+          "skolstvo",
+          "prosvjecivanje",
+          "opismenjavanje",
+          "znanje"
+        ]
+      },
+      {
+        "c": "Jednakost pred zakonom",
+        "r": "common",
+        "km": 240,
+        "a": [
+          "jednakost",
+          "jednakost pred zakonom",
+          "pravna jednakost",
+          "ravnopravnost"
+        ]
+      },
+      {
+        "c": "Kritičko mišljenje i propitivanje autoriteta",
+        "r": "common",
+        "km": 260,
+        "a": [
+          "kriticko misljenje",
+          "kritika",
+          "propitivanje autoriteta",
+          "sumnja"
+        ]
+      },
+      {
+        "c": "Znanstvena metoda i empirizam",
+        "r": "medium",
+        "km": 690,
+        "a": [
+          "znanost",
+          "empirizam",
+          "znanstvena metoda",
+          "iskustvo",
+          "promatranje"
+        ]
+      },
+      {
+        "c": "Ideja stalnog društvenog napretka (progres)",
+        "r": "medium",
+        "km": 740,
+        "a": [
+          "napredak",
+          "progres",
+          "drustveni napredak",
+          "vjera u napredak"
+        ]
+      },
+      {
+        "c": "Sekularizam (odvojenost Crkve i države)",
+        "r": "medium",
+        "km": 780,
+        "a": [
+          "sekularizam",
+          "sekularnost",
+          "odvajanje crkve i drzave",
+          "odvojenost crkve od drzave"
+        ]
+      },
+      {
+        "c": "Humanost i čovjekoljublje (filantropija)",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "humanost",
+          "filantropija",
+          "covjekoljublje",
+          "humanizam"
+        ]
+      },
+      {
+        "c": "Opće dobro i društvena korist",
+        "r": "medium",
+        "km": 850,
+        "a": [
+          "opce dobro",
+          "drustvena korist",
+          "javni interes"
+        ]
+      },
+      {
+        "c": "Deizam (Bog kao urar svemira)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "deizam",
+          "deisticko shvacanje",
+          "bog kao urar"
+        ]
+      },
+      {
+        "c": "Kozmopolitizam (građanin svijeta)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "kozmopolitizam",
+          "gradanin svijeta",
+          "svjetsko gradanstvo"
+        ]
+      },
+      {
+        "c": "Borba protiv praznovjerja i fanatizma",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "suzbijanje praznovjerja",
+          "borba protiv praznovjerja",
+          "antifanatizam",
+          "protiv praznovjerja"
+        ]
+      },
+      {
+        "c": "Pacifizam i osuda osvajačkih ratova",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "pacifizam",
+          "mir",
+          "osuda rata"
+        ]
+      },
+      {
+        "c": "Utilitarizam (najveća sreća za najveći broj ljudi)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "utilitarizam",
+          "najveca sreca za najveci broj"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "game": 2,
+    "gameTitle": "Igra 2 – Prosvjetiteljstvo i promjene političkih ideja",
+    "curriculumHours": "Nastavni sat 3",
+    "question": "Navedi jedno poznato djelo prosvjetiteljske književnosti, filozofije ili znanosti.",
+    "note": "Značajna djela europskog i hrvatskog prosvjetiteljstva.",
+    "bonusFact": {
+      "q": "Koje je čuveno djelo Voltairea satira na račun Leibnizova optimizma da živimo u 'najboljem od svih mogućih svjetova'?",
+      "a": "Candide"
+    },
+    "answers": [
+      {
+        "c": "Enciklopedija (Diderot & d'Alembert)",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "enciklopedija",
+          "francuska enciklopedija",
+          "encyclopedie",
+          "diderotova enciklopedija"
+        ]
+      },
+      {
+        "c": "Candide (Voltaire)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "candide",
+          "kandid",
+          "voltaireov candide",
+          "kandid ili optimizam"
+        ]
+      },
+      {
+        "c": "Društveni ugovor (Rousseau)",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "drustveni ugovor",
+          "du contrat social",
+          "rousseauov drustveni ugovor"
+        ]
+      },
+      {
+        "c": "O duhu zakona (Montesquieu)",
+        "r": "common",
+        "km": 230,
+        "a": [
+          "o duhu zakona",
+          "duh zakona",
+          "de lesprit des lois",
+          "montesquieuov duh zakona"
+        ]
+      },
+      {
+        "c": "Kritika čistoga uma (Kant)",
+        "r": "common",
+        "km": 260,
+        "a": [
+          "kritika cistoga uma",
+          "kritika cistog uma",
+          "kritik der reinen vernunft",
+          "kantova kritika"
+        ]
+      },
+      {
+        "c": "O zločinima i kaznama (Beccaria)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "o zlocinima i kaznama",
+          "zlocini i kazne",
+          "beccarijino djelo",
+          "dei delitti e delle pene"
+        ]
+      },
+      {
+        "c": "Emil ili o odgoju (Rousseau)",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "emil",
+          "emil ili o odgoju",
+          "emile",
+          "o odgoju"
+        ]
+      },
+      {
+        "c": "Filozofska pisma (Voltaire)",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "filozofska pisma",
+          "lettres philosophiques",
+          "pisma o englezima"
+        ]
+      },
+      {
+        "c": "Perzijska pisma (Montesquieu)",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "perzijska pisma",
+          "lettres persanes",
+          "montesquieuova perzijska pisma"
+        ]
+      },
+      {
+        "c": "Bogatstvo naroda (Adam Smith)",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "bogatstvo naroda",
+          "istrazivanje prirode i uzroka bogatstva naroda",
+          "the wealth of nations"
+        ]
+      },
+      {
+        "c": "Satir iliti divji čovik (M. A. Relković)",
+        "r": "medium",
+        "km": 860,
+        "a": [
+          "satir",
+          "satir iliti divji covik",
+          "satir iliti divlji covjek",
+          "relkovicev satir"
+        ]
+      },
+      {
+        "c": "Sustav prirode (Système de la nature - d'Holbach)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "sustav prirode",
+          "systeme de la nature",
+          "holbachov sustav prirode"
+        ]
+      },
+      {
+        "c": "Rasprava o toleranciji (Traité sur la tolérance - Voltaire)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "rasprava o toleranciji",
+          "traite sur la tolerance",
+          "o toleranciji"
+        ]
+      },
+      {
+        "c": "Obrana prava žena (A Vindication of the Rights of Woman - Wollstonecraft)",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "obrana prava zena",
+          "a vindication of the rights of woman",
+          "prava zena"
+        ]
+      },
+      {
+        "c": "Dijalozi o prirodnoj religiji (David Hume)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "dijalozi o prirodnoj religiji",
+          "dialogues concerning natural religion"
+        ]
+      },
+      {
+        "c": "Školnik (Matija Antun Relković)",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "skolnik",
+          "relkovicev skolnik",
+          "skolski prirucnik skolnik"
+        ]
+      },
+      {
+        "c": "Arithmetika Horvatszka (Mihalj Šilobod Bolšić)",
+        "r": "rare",
+        "km": 3100,
+        "a": [
+          "arithmetika horvatszka",
+          "aritmetika horvatska",
+          "silobodova aritmetika",
+          "hrvatska aritmetika"
+        ]
+      },
+      {
+        "c": "Matijaš grabancijaš dijak (Tituš Brezovački)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "matijas grabancijas dijak",
+          "grabancijas dijak",
+          "matijas grabancijas"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "game": 2,
+    "gameTitle": "Igra 2 – Prosvjetiteljstvo i promjene političkih ideja",
+    "curriculumHours": "Nastavni sat 3",
+    "question": "Navedi jedan europski grad koji je bio važno intelektualno središte prosvjetiteljstva.",
+    "note": "Gradovi kao rasadišta prosvjetiteljskog pokreta.",
+    "bonusFact": {
+      "q": "U kojem je pruskom gradu rođen i proveo čitav život filozof Immanuel Kant?",
+      "a": "Königsberg"
+    },
+    "answers": [
+      {
+        "c": "Pariz",
+        "r": "common",
+        "km": 140,
+        "a": [
+          "pariz",
+          "paris"
+        ]
+      },
+      {
+        "c": "London",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "london"
+        ]
+      },
+      {
+        "c": "Beč (Wien)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "bec",
+          "wien",
+          "vienna"
+        ]
+      },
+      {
+        "c": "Berlin",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "berlin"
+        ]
+      },
+      {
+        "c": "Ženeva (Genève)",
+        "r": "common",
+        "km": 250,
+        "a": [
+          "zeneva",
+          "geneva",
+          "geneve"
+        ]
+      },
+      {
+        "c": "Edinburgh (Škotsko prosvjetiteljstvo)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "edinburgh",
+          "edinburg"
+        ]
+      },
+      {
+        "c": "Amsterdam",
+        "r": "medium",
+        "km": 620,
+        "a": [
+          "amsterdam"
+        ]
+      },
+      {
+        "c": "Königsberg (danas Kalinjingrad)",
+        "r": "medium",
+        "km": 740,
+        "a": [
+          "konigsberg",
+          "koenigsberg",
+          "kenigsberg",
+          "kalinjingrad"
+        ]
+      },
+      {
+        "c": "Milano",
+        "r": "medium",
+        "km": 710,
+        "a": [
+          "milano",
+          "milan"
+        ]
+      },
+      {
+        "c": "Rim (Roma)",
+        "r": "medium",
+        "km": 650,
+        "a": [
+          "rim",
+          "roma"
+        ]
+      },
+      {
+        "c": "Sankt-Peterburg (Petrograd)",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "sankt peterburg",
+          "petrograd",
+          "peterburg",
+          "st petersburg"
+        ]
+      },
+      {
+        "c": "Weimar",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "weimar",
+          "vajmar"
+        ]
+      },
+      {
+        "c": "Halle",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "halle",
+          "hale"
+        ]
+      },
+      {
+        "c": "Göttingen",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "gottingen",
+          "goettingen",
+          "getingen"
+        ]
+      },
+      {
+        "c": "Leiden",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "leiden",
+          "lejden"
+        ]
+      },
+      {
+        "c": "Uppsala",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "uppsala",
+          "upsala"
+        ]
+      },
+      {
+        "c": "Napulj (Napoli)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "napulj",
+          "napoli",
+          "naples"
+        ]
+      },
+      {
+        "c": "Zagreb",
+        "r": "rare",
+        "km": 2000,
+        "a": [
+          "zagreb",
+          "agram"
+        ]
+      },
+      {
+        "c": "Varaždin",
+        "r": "rare",
+        "km": 2100,
+        "a": [
+          "varazdin",
+          "warasdin"
+        ]
+      },
+      {
+        "c": "Dubrovnik (Ragusa)",
+        "r": "rare",
+        "km": 2200,
+        "a": [
+          "dubrovnik",
+          "ragusa"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "game": 2,
+    "gameTitle": "Igra 2 – Prosvjetiteljstvo i promjene političkih ideja",
+    "curriculumHours": "Nastavni sat 3",
+    "question": "Navedi jedno područje društva na koje su utjecale prosvjetiteljske ideje.",
+    "note": "Područja društvenog i državnog života pod utjecajem reformi.",
+    "bonusFact": {
+      "q": "Koje je barbarsko sredstvo iznuđivanja priznanja ukinuto u Habsburškoj Monarhiji 1776. pod utjecajem prosvjetiteljstva?",
+      "a": "Mučenje (tortura)"
+    },
+    "answers": [
+      {
+        "c": "Obrazovanje i školstvo",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "obrazovanje",
+          "skolstvo",
+          "skole",
+          "osnovno skolstvo",
+          "nastava"
+        ]
+      },
+      {
+        "c": "Sudstvo i pravosuđe",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "sudstvo",
+          "pravosude",
+          "pravni sustav",
+          "sudovi",
+          "zakonodavstvo"
+        ]
+      },
+      {
+        "c": "Politika i državno uređenje",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "politika",
+          "drzavno uredenje",
+          "drzavna vlast",
+          "uprava",
+          "drzava"
+        ]
+      },
+      {
+        "c": "Religija i položaj Crkve",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "religija",
+          "crkva",
+          "vjera",
+          "crkvena pitanja",
+          "odnos drzave i crkve"
+        ]
+      },
+      {
+        "c": "Znanost i znanstvena istraživanja",
+        "r": "common",
+        "km": 230,
+        "a": [
+          "znanost",
+          "prirodne znanosti",
+          "znanstvena istrazivanja",
+          "znanstveni rad"
+        ]
+      },
+      {
+        "c": "Gospodarstvo i ekonomija",
+        "r": "medium",
+        "km": 620,
+        "a": [
+          "gospodarstvo",
+          "ekonomija",
+          "trgovina",
+          "financije"
+        ]
+      },
+      {
+        "c": "Zdravstvo i javna higijena",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "zdravstvo",
+          "medicina",
+          "javno zdravstvo",
+          "higijena",
+          "bolnice"
+        ]
+      },
+      {
+        "c": "Kazneni sustav i zatvori (humanizacija kazni)",
+        "r": "medium",
+        "km": 740,
+        "a": [
+          "kazneni sustav",
+          "zatvori",
+          "kazne",
+          "humanizacija kazni",
+          "penitencijarni sustav"
+        ]
+      },
+      {
+        "c": "Vojska i vojna organizacija",
+        "r": "medium",
+        "km": 710,
+        "a": [
+          "vojska",
+          "vojna organizacija",
+          "vojna obuka",
+          "oruzane snage"
+        ]
+      },
+      {
+        "c": "Izdavaštvo i sloboda medija",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "izdavastvo",
+          "mediji",
+          "tiskarstvo",
+          "novinarstvo",
+          "sloboda tiska"
+        ]
+      },
+      {
+        "c": "Agrarni odnosi i položaj seljaštva (kmetstvo)",
+        "r": "rare",
+        "km": 2200,
+        "a": [
+          "kmetstvo",
+          "polozaj seljaka",
+          "agrarni odnosi",
+          "seljastvo",
+          "poljoprivreda"
+        ]
+      },
+      {
+        "c": "Socijalna skrb i ubožnice",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "socijalna skrb",
+          "uboznice",
+          "sirotista",
+          "briga za siromasne"
+        ]
+      },
+      {
+        "c": "Urbanizam i komunalno uređenje gradova",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "urbanizam",
+          "komunalno uredenje",
+          "planiranje gradova",
+          "groblja izvan gradova"
+        ]
+      },
+      {
+        "c": "Položaj žena u društvu i obitelji",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "polozaj zena",
+          "prava zena",
+          "zensko pitanje",
+          "zene u drustvu"
+        ]
+      },
+      {
+        "c": "Bračno i obiteljsko pravo (građanski brak)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "bracno pravo",
+          "obiteljsko pravo",
+          "gradanski brak",
+          "brak"
+        ]
+      },
+      {
+        "c": "Književnost i kazališna umjetnost",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "knjizevnost",
+          "kazaliste",
+          "umjetnost",
+          "teatar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "game": 2,
+    "gameTitle": "Igra 2 – Prosvjetiteljstvo i promjene političkih ideja",
+    "curriculumHours": "Nastavni sat 3",
+    "question": "Navedi jedan način ograničavanja samovoljne vladarske vlasti.",
+    "note": "Ustavni i politički mehanizmi protiv tiranije i apsolutizma.",
+    "bonusFact": {
+      "q": "Koji je mislilac u djelu 'O duhu zakona' formulirao podjelu vlasti na zakonodavnu, izvršnu i sudsku?",
+      "a": "Montesquieu"
+    },
+    "answers": [
+      {
+        "c": "Donošenje ustava (ustavnost)",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "ustav",
+          "donosenje ustava",
+          "pisani ustav",
+          "ustavnost",
+          "konstitucija"
+        ]
+      },
+      {
+        "c": "Parlament i narodno predstavništvo",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "parlament",
+          "sabor",
+          "narodno predstavnistvo",
+          "skupstina",
+          "predstavnicko tijelo"
+        ]
+      },
+      {
+        "c": "Dioba (trodioba) vlasti",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "dioba vlasti",
+          "trodioba vlasti",
+          "podjela vlasti",
+          "trodioba",
+          "razdvajanje vlasti"
+        ]
+      },
+      {
+        "c": "Neovisno sudstvo",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "neovisno sudstvo",
+          "neovisni sudovi",
+          "samostalno sudstvo",
+          "sudbena vlast"
+        ]
+      },
+      {
+        "c": "Vladavina prava (svi podređeni zakonu)",
+        "r": "common",
+        "km": 240,
+        "a": [
+          "vladavina prava",
+          "zakonitost",
+          "podredivanje zakonu",
+          "jednakost pred zakonom"
+        ]
+      },
+      {
+        "c": "Deklaracije o pravima (npr. Bill of Rights)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "bill of rights",
+          "deklaracija o pravima",
+          "povelja o pravima",
+          "zakon o pravima"
+        ]
+      },
+      {
+        "c": "Zakonska jamstva temeljnih sloboda građana",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "jamstvo sloboda",
+          "zakonska jamstva",
+          "temeljna prava",
+          "zastita prava"
+        ]
+      },
+      {
+        "c": "Ministarska i politička odgovornost vlasti",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "odgovornost vlasti",
+          "ministarska odgovornost",
+          "opoziv vlasti",
+          "odgovornost vladara"
+        ]
+      },
+      {
+        "c": "Sloboda tiska i javne kritike",
+        "r": "medium",
+        "km": 760,
+        "a": [
+          "sloboda tiska",
+          "javna kritika",
+          "nadzor javnosti",
+          "sloboda medija"
+        ]
+      },
+      {
+        "c": "Periodični i slobodni izbori",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "izbori",
+          "slobodni izbori",
+          "periodicni izbori",
+          "izborno pravo"
+        ]
+      },
+      {
+        "c": "Nadzor nad državnim proračunom (odobravanje poreza)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "odobravanje poreza",
+          "proracunski nadzor",
+          "kontrola proracuna",
+          "pravo odobravanja poreza"
+        ]
+      },
+      {
+        "c": "Pravo na otpor tiraniji (građanski neposluh)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "pravo na otpor tiraniji",
+          "otpor tiraninu",
+          "pravo na pobunu",
+          "pravo na otpor"
+        ]
+      },
+      {
+        "c": "Ustavna kontrola i ocjena ustavnosti",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "kontrola ustavnosti",
+          "ocjena ustavnosti",
+          "sudska kontrola"
+        ]
+      },
+      {
+        "c": "Jačanje lokalne samouprave i općina",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "lokalna samouprava",
+          "opcinska autonomija",
+          "decentralizacija"
+        ]
+      },
+      {
+        "c": "Pravo građana na peticiju",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "pravo na peticiju",
+          "peticija",
+          "prituzba vladaru"
+        ]
+      },
+      {
+        "c": "Ograničenje mandata vladara ili dužnosnika",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "ogranicenje mandata",
+          "vremensko ogranicenje vlasti"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "game": 2,
+    "gameTitle": "Igra 2 – Prosvjetiteljstvo i promjene političkih ideja",
+    "curriculumHours": "Nastavni sat 3",
+    "question": "Navedi jednu znanstvenu disciplinu koja se razvijala tijekom znanstvene revolucije i prosvjetiteljstva.",
+    "note": "Procvat prirodnih i humanističkih znanosti 17. i 18. st.",
+    "bonusFact": {
+      "q": "Koji je švedski botaničar uveo dvoimeno nazivlje (binomnu nomenklaturu) u biologiji?",
+      "a": "Carl von Linné (Linnaeus)"
+    },
+    "answers": [
+      {
+        "c": "Astronomija",
+        "r": "common",
+        "km": 140,
+        "a": [
+          "astronomija",
+          "zvjezdoznanstvo"
+        ]
+      },
+      {
+        "c": "Fizika (posebno klasična mehanika)",
+        "r": "common",
+        "km": 160,
+        "a": [
+          "fizika",
+          "mehanika",
+          "klasicna mehanika"
+        ]
+      },
+      {
+        "c": "Kemija (moderna kemija - Lavoisier)",
+        "r": "common",
+        "km": 180,
+        "a": [
+          "kemija",
+          "moderna kemija"
+        ]
+      },
+      {
+        "c": "Matematika (posebno infinitezimalni račun)",
+        "r": "common",
+        "km": 200,
+        "a": [
+          "matematika",
+          "infinitezimalni racun",
+          "racun"
+        ]
+      },
+      {
+        "c": "Medicina",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "medicina",
+          "lijecnistvo"
+        ]
+      },
+      {
+        "c": "Anatomija",
+        "r": "common",
+        "km": 230,
+        "a": [
+          "anatomija",
+          "ljudska anatomija"
+        ]
+      },
+      {
+        "c": "Botanika",
+        "r": "medium",
+        "km": 640,
+        "a": [
+          "botanika",
+          "biljke"
+        ]
+      },
+      {
+        "c": "Zoologija",
+        "r": "medium",
+        "km": 670,
+        "a": [
+          "zoologija",
+          "zivotinje"
+        ]
+      },
+      {
+        "c": "Geologija",
+        "r": "medium",
+        "km": 710,
+        "a": [
+          "geologija"
+        ]
+      },
+      {
+        "c": "Biologija (rana biologija)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "biologija"
+        ]
+      },
+      {
+        "c": "Optika",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "optika"
+        ]
+      },
+      {
+        "c": "Geografija i kartografija",
+        "r": "medium",
+        "km": 730,
+        "a": [
+          "geografija",
+          "kartografija",
+          "zemljopis"
+        ]
+      },
+      {
+        "c": "Biološka taksonomija (Linneov sustav)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "taksonomija",
+          "bioloska taksonomija",
+          "sistematika",
+          "linneov sustav"
+        ]
+      },
+      {
+        "c": "Istraživanje elektriciteta (elektrostatika)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "elektricitet",
+          "elektrostatika",
+          "znanost o elektricitetu"
+        ]
+      },
+      {
+        "c": "Mehanika fluida i hidrodinamika",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "mehanika fluida",
+          "hidrodinamika"
+        ]
+      },
+      {
+        "c": "Demografija i statistika (politička aritmetika)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "demografija",
+          "statistika",
+          "politicka aritmetika"
+        ]
+      },
+      {
+        "c": "Mineralogija",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "mineralogija"
+        ]
+      },
+      {
+        "c": "Meteorologija",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "meteorologija"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "game": 3,
+    "gameTitle": "Igra 3 – Prosvijećeni apsolutizam i Habsburška Monarhija",
+    "curriculumHours": "Nastavni sat 4",
+    "question": "Navedi jednog europskog vladara povezanog s prosvijećenim apsolutizmom.",
+    "note": "Prosvijećeni monarsi 18. stoljeća.",
+    "bonusFact": {
+      "q": "Koji je pruski kralj sebe nazivao 'prvim slugom svoje države'?",
+      "a": "Fridrik II. Veliki"
+    },
+    "answers": [
+      {
+        "c": "Marija Terezija",
+        "r": "common",
+        "km": 160,
+        "a": [
+          "marija terezija",
+          "maria theresia",
+          "maria theresa",
+          "terezija"
+        ]
+      },
+      {
+        "c": "Josip II.",
+        "r": "common",
+        "km": 180,
+        "a": [
+          "josip ii",
+          "josip 2",
+          "joseph ii",
+          "josip ii.",
+          "joseph 2"
+        ]
+      },
+      {
+        "c": "Fridrik II. Veliki (Pruska)",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "fridrik ii",
+          "fridrik veliki",
+          "friedrich der grosse",
+          "fridrik 2",
+          "fridrik ii. veliki",
+          "fridrik pruski"
+        ]
+      },
+      {
+        "c": "Katarina II. Velika (Rusija)",
+        "r": "common",
+        "km": 230,
+        "a": [
+          "katarina velika",
+          "katarina ii",
+          "katarina ii.",
+          "katarina 2",
+          "carica katarina"
+        ]
+      },
+      {
+        "c": "Karlo III. Španjolski",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "karlo iii",
+          "carlos iii",
+          "karlo 3",
+          "karlo iii. span窮lski"
+        ]
+      },
+      {
+        "c": "Gustav III. Švedski",
+        "r": "medium",
+        "km": 760,
+        "a": [
+          "gustav iii",
+          "gustaf iii",
+          "gustav 3",
+          "gustav iii."
+        ]
+      },
+      {
+        "c": "Leopold II. (Veliki vojvoda Toskane i car)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "leopold ii",
+          "leopold toskanski",
+          "leopold ii.",
+          "leopold 2",
+          "petar leopold"
+        ]
+      },
+      {
+        "c": "Petar I. Veliki (kao preteča modernizatora)",
+        "r": "medium",
+        "km": 600,
+        "a": [
+          "petar veliki",
+          "petar i",
+          "petar i.",
+          "petar 1"
+        ]
+      },
+      {
+        "c": "Josip I. Portugalski (kroz Markiza de Pombala)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "josip i portugalski",
+          "jose i",
+          "markiz de pombal",
+          "pombal"
+        ]
+      },
+      {
+        "c": "Kristijan VII. Danski (kroz Johanna Struenseea)",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "kristijan vii",
+          "christian vii",
+          "kristijan 7",
+          "struensee",
+          "johann friedrich struensee"
+        ]
+      },
+      {
+        "c": "Stanislav August Poniatowski (Poljska)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "stanislav august poniatowski",
+          "stanislav poniatowski",
+          "stanislaw august"
+        ]
+      },
+      {
+        "c": "Karlo Emanuel III. od Savoje",
+        "r": "rare",
+        "km": 3000,
+        "a": [
+          "karlo emanuel iii",
+          "carlo emanuele iii",
+          "karlo emanuel"
+        ]
+      },
+      {
+        "c": "Fridrik II. od Hessen-Kassela",
+        "r": "rare",
+        "km": 3100,
+        "a": [
+          "fridrik od hessen kassela",
+          "fridrik ii hessen",
+          "friedrich ii hessen"
+        ]
+      },
+      {
+        "c": "Maksimilijan III. Josip Bavarski",
+        "r": "rare",
+        "km": 3150,
+        "a": [
+          "maksimilijan iii josip",
+          "maksimilijan bavarski",
+          "maximilian iii joseph"
+        ]
+      },
+      {
+        "c": "Karlo Fridrik Badenski (reformator kmetstva u Baden)",
+        "r": "rare",
+        "km": 3200,
+        "a": [
+          "karlo fridrik badenski",
+          "karl friedrich von baden",
+          "karlo badenski"
+        ]
+      },
+      {
+        "c": "Luj XVI. (u ranoj fazi s Turgotom)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "luj xvi",
+          "louis xvi",
+          "luj 16"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "game": 3,
+    "gameTitle": "Igra 3 – Prosvijećeni apsolutizam i Habsburška Monarhija",
+    "curriculumHours": "Nastavni sat 4",
+    "question": "Navedi jedno područje koje su reformirali Marija Terezija ili Josip II.",
+    "note": "Terezijanske i jozefinske reforme u Habsburškoj Monarhiji.",
+    "bonusFact": {
+      "q": "Koje je godine carica Marija Terezija izdala 'Opću školsku naredbu' kojom uvodi obvezno osnovno školstvo?",
+      "a": "1774"
+    },
+    "answers": [
+      {
+        "c": "Školstvo i obrazovanje (Opća školska naredba 1774.)",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "skolstvo",
+          "obrazovanje",
+          "skole",
+          "osnovno skolstvo",
+          "skolska reforma"
+        ]
+      },
+      {
+        "c": "Vojska i vojni ustroj (Vojna akademija, novačenje)",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "vojska",
+          "vojni ustroj",
+          "vojna reforma",
+          "oruzane snage",
+          "vojna akademija"
+        ]
+      },
+      {
+        "c": "Porezni sustav i oporezivanje (oporezivanje plemstva)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "porezi",
+          "porezni sustav",
+          "oporezivanje",
+          "porezna reforma"
+        ]
+      },
+      {
+        "c": "Sudstvo i kazneno pravo (ukidanje progona vještica i mučenja)",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "sudstvo",
+          "kazneno pravo",
+          "zakonodavstvo",
+          "pravosude",
+          "ukidanje mucenja",
+          "ukidanje lova na vjestice"
+        ]
+      },
+      {
+        "c": "Položaj kmetova i seljačke obveze (urbari, ukidanje kmetstva)",
+        "r": "common",
+        "km": 230,
+        "a": [
+          "seljaci",
+          "kmetovi",
+          "kmetstvo",
+          "seljacke obveze",
+          "urbari",
+          "ukidanje kmetstva",
+          "polozaj kmetova"
+        ]
+      },
+      {
+        "c": "Crkveni odnosi i status vjerskih manjina (jozefinizam, Patent o toleranciji)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "crkva",
+          "crkvena reforma",
+          "patent o vjerskoj toleranciji",
+          "vjerska tolerancija",
+          "odnos s crkvom"
+        ]
+      },
+      {
+        "c": "Zdravstvo i javna higijena (sanitarni kordon)",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "zdravstvo",
+          "medicina",
+          "sanitarni kordon",
+          "higijena",
+          "bolnice"
+        ]
+      },
+      {
+        "c": "Državna uprava i centralizacija (Hrvatsko kraljevsko vijeće)",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "uprava",
+          "drzavna uprava",
+          "centralizacija",
+          "cinovnistvo",
+          "kraljevsko vijece"
+        ]
+      },
+      {
+        "c": "Gospodarstvo i trgovina (slobodna plovidba, manufakture)",
+        "r": "medium",
+        "km": 780,
+        "a": [
+          "gospodarstvo",
+          "trgovina",
+          "manufakture",
+          "slobodna trgovina"
+        ]
+      },
+      {
+        "c": "Carinski sustav (stvaranje jedinstvenog carinskog područja)",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "carine",
+          "carinski sustav",
+          "carinska unija",
+          "ukidanje unutarnjih carina"
+        ]
+      },
+      {
+        "c": "Zemljišni premjer i katastar (terezijanski katastar)",
+        "r": "rare",
+        "km": 2200,
+        "a": [
+          "katastar",
+          "premjer zemlje",
+          "terezijanski katastar",
+          "zemljisne knjige"
+        ]
+      },
+      {
+        "c": "Cenzura tiska (stavljanje cenzure pod državni nadzor)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "cenzura",
+          "ublazavanje cenzure",
+          "drzavna cenzura"
+        ]
+      },
+      {
+        "c": "Vođenje matičnih knjiga rođenih, vjenčanih i umrlih",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "maticne knjige",
+          "vodenje matica",
+          "drzavne matice"
+        ]
+      },
+      {
+        "c": "Komunalni red i higijena ukopa (groblja izvan naselja)",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "groblja izvan naselja",
+          "higijena ukopa",
+          "komunalni red",
+          "zabrana pokopa u crkvama"
+        ]
+      },
+      {
+        "c": "Cestovna infrastruktura i poštanski promet (cesta Karolina, Jozefina)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "ceste",
+          "izgradnja cesta",
+          "karolina",
+          "jozefina",
+          "postanski promet"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "game": 3,
+    "gameTitle": "Igra 3 – Prosvijećeni apsolutizam i Habsburška Monarhija",
+    "curriculumHours": "Nastavni sat 4",
+    "question": "Navedi jednu zemlju ili pokrajinu Habsburške Monarhije u 18. stoljeću.",
+    "note": "Povijesne krunske zemlje pod habsburškom vlašću.",
+    "bonusFact": {
+      "q": "Koje je godine sklopljena Hrvatska pragmatička sankcija kojom je priznato žensko nasljedno pravo Habsburgovaca?",
+      "a": "1712"
+    },
+    "answers": [
+      {
+        "c": "Kraljevina Hrvatska",
+        "r": "common",
+        "km": 140,
+        "a": [
+          "hrvatska",
+          "kraljevina hrvatska",
+          "civilna hrvatska"
+        ]
+      },
+      {
+        "c": "Kraljevina Slavonija",
+        "r": "common",
+        "km": 160,
+        "a": [
+          "slavonija",
+          "kraljevina slavonija"
+        ]
+      },
+      {
+        "c": "Kraljevina Ugarska (Mađarska)",
+        "r": "common",
+        "km": 180,
+        "a": [
+          "ugarska",
+          "kraljevina ugarska",
+          "madarska"
+        ]
+      },
+      {
+        "c": "Kraljevina Češka (Bohemija)",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "ceska",
+          "bohemija",
+          "kraljevina ceska"
+        ]
+      },
+      {
+        "c": "Austrija (Nadbiskupija / Nadvojvodstvo Donja i Gornja Austrija)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "austrija",
+          "donja austrija",
+          "gornja austrija",
+          "nadvojvodstvo austrija"
+        ]
+      },
+      {
+        "c": "Moravska",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "moravska",
+          "margrofovija moravska"
+        ]
+      },
+      {
+        "c": "Štajerska",
+        "r": "medium",
+        "km": 690,
+        "a": [
+          "stajerska",
+          "vojvodstvo stajerska"
+        ]
+      },
+      {
+        "c": "Koruška",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "koruska",
+          "vojvodstvo koruska"
+        ]
+      },
+      {
+        "c": "Kranjska",
+        "r": "medium",
+        "km": 710,
+        "a": [
+          "kranjska",
+          "vojvodstvo kranjska"
+        ]
+      },
+      {
+        "c": "Tirol",
+        "r": "medium",
+        "km": 740,
+        "a": [
+          "tirol",
+          "grofovija tirol"
+        ]
+      },
+      {
+        "c": "Erdelj (Transilvanija / Kneževina Veliki Erdelj)",
+        "r": "medium",
+        "km": 780,
+        "a": [
+          "erdelj",
+          "transilvanija",
+          "velika knezevina erdelj"
+        ]
+      },
+      {
+        "c": "Vojna krajina (Hrvatsko-slavonska vojna granica)",
+        "r": "medium",
+        "km": 650,
+        "a": [
+          "vojna krajina",
+          "vojna granica",
+          "hrvatska vojna krajina",
+          "slavonska vojna krajina"
+        ]
+      },
+      {
+        "c": "Galicija i Lodomerija (pripojena 1772.)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "galicija",
+          "galicija i lodomerija",
+          "kraljevstvo galicije i lodomerije"
+        ]
+      },
+      {
+        "c": "Bukovina (pripojena 1775.)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "bukovina",
+          "vojvodstvo bukovina"
+        ]
+      },
+      {
+        "c": "Austrijska Nizozemska (današnja Belgija)",
+        "r": "rare",
+        "km": 2200,
+        "a": [
+          "austrijska nizozemska",
+          "belgija",
+          "juzna nizozemska"
+        ]
+      },
+      {
+        "c": "Lombardija (Milansko Vojvodstvo)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "lombardija",
+          "milansko vojvodstvo",
+          "milano"
+        ]
+      },
+      {
+        "c": "Austrijsko Primorje (Trst i Gorica)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "austrijsko primorje",
+          "trst",
+          "gorica i gradiska",
+          "primorje"
+        ]
+      },
+      {
+        "c": "Šleska (veći dio izgubljen u korist Pruske 1742.)",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "sleska",
+          "austrijska sleska"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "game": 3,
+    "gameTitle": "Igra 3 – Prosvijećeni apsolutizam i Habsburška Monarhija",
+    "curriculumHours": "Nastavni sat 4",
+    "question": "Navedi jedan važniji grad na području Habsburške Monarhije u 18. stoljeću.",
+    "note": "Urbana središta Habsburškog Carstva.",
+    "bonusFact": {
+      "q": "Koji je hrvatski grad stradao u velikom požaru 1776., nakon čega se sjedište Hrvatskog kraljevskog vijeća seli u Zagreb?",
+      "a": "Varaždin"
+    },
+    "answers": [
+      {
+        "c": "Beč (Wien)",
+        "r": "common",
+        "km": 130,
+        "a": [
+          "bec",
+          "wien",
+          "vienna"
+        ]
+      },
+      {
+        "c": "Prag (Praha)",
+        "r": "common",
+        "km": 160,
+        "a": [
+          "prag",
+          "praha"
+        ]
+      },
+      {
+        "c": "Zagreb",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "zagreb",
+          "agram"
+        ]
+      },
+      {
+        "c": "Budim (Buda)",
+        "r": "common",
+        "km": 180,
+        "a": [
+          "budim",
+          "buda"
+        ]
+      },
+      {
+        "c": "Pešta (Pest)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "pesta",
+          "pest"
+        ]
+      },
+      {
+        "c": "Graz",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "graz",
+          "gradac"
+        ]
+      },
+      {
+        "c": "Bratislava (Požun / Pressburg)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "bratislava",
+          "pozun",
+          "pressburg"
+        ]
+      },
+      {
+        "c": "Varaždin (glavni grad Hrvatske 1767. – 1776.)",
+        "r": "medium",
+        "km": 620,
+        "a": [
+          "varazdin",
+          "warasdin"
+        ]
+      },
+      {
+        "c": "Osijek (Essegg)",
+        "r": "medium",
+        "km": 640,
+        "a": [
+          "osijek",
+          "essegg",
+          "esek"
+        ]
+      },
+      {
+        "c": "Trst (slobodna luka)",
+        "r": "medium",
+        "km": 670,
+        "a": [
+          "trst",
+          "trieste"
+        ]
+      },
+      {
+        "c": "Rijeka (Fiume, slobodna luka)",
+        "r": "medium",
+        "km": 660,
+        "a": [
+          "rijeka",
+          "fiume"
+        ]
+      },
+      {
+        "c": "Ljubljana (Laibach)",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "ljubljana",
+          "laibach"
+        ]
+      },
+      {
+        "c": "Milano",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "milano"
+        ]
+      },
+      {
+        "c": "Bruxelles (Brisel)",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "bruxelles",
+          "brisel",
+          "brussels"
+        ]
+      },
+      {
+        "c": "Karlovac",
+        "r": "rare",
+        "km": 2100,
+        "a": [
+          "karlovac",
+          "karlstadt"
+        ]
+      },
+      {
+        "c": "Senj",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "senj",
+          "zengg"
+        ]
+      },
+      {
+        "c": "Bakar (proglašen slobodnim kraljevskim gradom)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "bakar",
+          "buccari"
+        ]
+      },
+      {
+        "c": "Požega",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "pozega",
+          "slavonska pozega"
+        ]
+      },
+      {
+        "c": "Vukovar",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "vukovar"
+        ]
+      },
+      {
+        "c": "Innsbruck",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "innsbruck",
+          "insbruk"
+        ]
+      },
+      {
+        "c": "Linz",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "linz",
+          "linc"
+        ]
+      },
+      {
+        "c": "Brno (Brünn)",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "brno",
+          "brunn"
+        ]
+      },
+      {
+        "c": "Temišvar (Timișoara)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "temisvar",
+          "timisoara"
+        ]
+      },
+      {
+        "c": "Lavov (Lemberg / Lwów)",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "lavov",
+          "lemberg",
+          "lwow",
+          "lviv"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "game": 3,
+    "gameTitle": "Igra 3 – Prosvijećeni apsolutizam i Habsburška Monarhija",
+    "curriculumHours": "Nastavni sat 4",
+    "question": "Navedi jedno područje crkvenog ili društvenog života koje je država nastojala snažnije nadzirati reformama Josipa II.",
+    "note": "Jozefinizam i državni nadzor nad Crkvom i društvom.",
+    "bonusFact": {
+      "q": "Kojim je dokumentom iz 1781. Josip II. dao vjersku slobodu protestantima, pravoslavcima i Židovima?",
+      "a": "Patent o vjerskoj toleranciji"
+    },
+    "answers": [
+      {
+        "c": "Samostani (raspuštanje kontemplativnih redova)",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "samostani",
+          "ukidanje samostana",
+          "zatvaranje samostana",
+          "redovnicki redovi",
+          "redovnici"
+        ]
+      },
+      {
+        "c": "Vjerska tolerancija (Patent o vjerskoj toleranciji 1781.)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "vjerska tolerancija",
+          "patent o toleranciji",
+          "tolerancija",
+          "vjerska prava nekatolika",
+          "status nekatolika"
+        ]
+      },
+      {
+        "c": "Obrazovanje svećenika (državna opća sjemeništa)",
+        "r": "common",
+        "km": 240,
+        "a": [
+          "sjemenista",
+          "obrazovanje svecenika",
+          "opca sjemenista",
+          "odgoj klera",
+          "skolovanje svecenika"
+        ]
+      },
+      {
+        "c": "Crkvena imovina (stvaranje Vjerskog fonda)",
+        "r": "common",
+        "km": 260,
+        "a": [
+          "crkvena imovina",
+          "vjerski fond",
+          "oduzimanje imovine samostana",
+          "crkvena dobra"
+        ]
+      },
+      {
+        "c": "Sklapanje braka (Bračni patent 1783., uvođenje građanskog braka)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "brak",
+          "bracni patent",
+          "gradanski brak",
+          "sklapanje braka"
+        ]
+      },
+      {
+        "c": "Župna organizacija (prekrajanje župa radi dostupnosti narodu)",
+        "r": "medium",
+        "km": 730,
+        "a": [
+          "zupna organizacija",
+          "granice zupa",
+          "osnivanje novih zupa",
+          "zupe"
+        ]
+      },
+      {
+        "c": "Javno bogoslužje i liturgija (uvođenje narodnog jezika, pojednostavljenje)",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "javno bogosluzje",
+          "liturgija",
+          "obredi",
+          "bogosluzje na narodnom jeziku",
+          "pojednostavljenje obreda"
+        ]
+      },
+      {
+        "c": "Pokopi i groblja (higijenske reforme, groblja izvan gradova)",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "pokopi",
+          "groblja",
+          "sahranjivanje",
+          "higijenski ukopi",
+          "zabrana pokopa u crkvama"
+        ]
+      },
+      {
+        "c": "Ukidanje vjerskih bratovština i cehovskih pobožnosti",
+        "r": "medium",
+        "km": 870,
+        "a": [
+          "bratovstine",
+          "ukidanje bratovstina",
+          "cehovske poboznosti"
+        ]
+      },
+      {
+        "c": "Državni ispit i zakletva svećenika caru",
+        "r": "medium",
+        "km": 910,
+        "a": [
+          "zakletva svecenika",
+          "drzavni ispit za kler",
+          "prisega caru"
+        ]
+      },
+      {
+        "c": "Ograničenje korištenja crkvenih zvona",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "zvonjava zvona",
+          "crkvena zvona",
+          "ogranicenje zvonjave",
+          "zvona"
+        ]
+      },
+      {
+        "c": "Zabrana rasipanja voska i svijeća u crkvama",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "svijece",
+          "vosak",
+          "koristenje voska",
+          "zabrana svijeca",
+          "stednja voska"
+        ]
+      },
+      {
+        "c": "Smanjenje broja crkvenih blagdana",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "crkveni blagdani",
+          "smanjenje broja blagdana",
+          "blagdani",
+          "ukidanje blagdana"
+        ]
+      },
+      {
+        "c": "Zabrana dugih i masovnih hodočašća i procesija",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "hodocasca",
+          "zabrana hodocasca",
+          "procesije",
+          "zabrana procesija"
+        ]
+      },
+      {
+        "c": "Državno odobrenje papinskih bula (placetum regium)",
+        "r": "rare",
+        "km": 3000,
+        "a": [
+          "placetum regium",
+          "odobrenje papinskih bula",
+          "papinske bule",
+          "nadzor nad papom"
+        ]
+      },
+      {
+        "c": "Zabrana trgovine lažnim relikvijama i 'čudotvornim' slikama",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "relikvije",
+          "lazna cuda",
+          "trgovina relikvijama",
+          "praznovjerje u crkvi"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "game": 3,
+    "gameTitle": "Igra 3 – Prosvijećeni apsolutizam i Habsburška Monarhija",
+    "curriculumHours": "Nastavni sat 4",
+    "question": "Navedi jednog političara, činovnika ili vladara povezanog s habsburškim reformama 18. stoljeća.",
+    "note": "Nositelji i tvorci reformi u Beču i hrvatskim zemljama.",
+    "bonusFact": {
+      "q": "Kako se zvao znameniti bečki dvorski kancelar koji je vodio vanjsku politiku Marije Terezije i Josipa II.?",
+      "a": "Wenzel Anton von Kaunitz"
+    },
+    "answers": [
+      {
+        "c": "Marija Terezija",
+        "r": "common",
+        "km": 140,
+        "a": [
+          "marija terezija",
+          "maria theresia",
+          "maria theresa",
+          "terezija"
+        ]
+      },
+      {
+        "c": "Josip II.",
+        "r": "common",
+        "km": 160,
+        "a": [
+          "josip ii",
+          "josip 2",
+          "joseph ii",
+          "josip ii."
+        ]
+      },
+      {
+        "c": "Leopold II.",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "leopold ii",
+          "leopold 2",
+          "leopold ii."
+        ]
+      },
+      {
+        "c": "Wenzel Anton von Kaunitz (kancelar Kaunitz)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "kaunitz",
+          "wenzel anton von kaunitz",
+          "kancelar kaunitz",
+          "grof kaunitz",
+          "wenzel kaunitz"
+        ]
+      },
+      {
+        "c": "Friedrich Wilhelm von Haugwitz (grof Haugwitz)",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "haugwitz",
+          "friedrich wilhelm von haugwitz",
+          "grof haugwitz",
+          "haugvic"
+        ]
+      },
+      {
+        "c": "Gerard van Swieten (reformator medicine i sveučilišta)",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "gerard van swieten",
+          "van swieten",
+          "van sviten"
+        ]
+      },
+      {
+        "c": "Johann Ignaz von Felbiger (autor školske reforme)",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "felbiger",
+          "johann ignaz von felbiger",
+          "johann felbiger"
+        ]
+      },
+      {
+        "c": "Joseph von Sonnenfels (pravnik i kameralist)",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "sonnenfels",
+          "joseph von sonnenfels",
+          "sonenfels",
+          "jozef sonenfels"
+        ]
+      },
+      {
+        "c": "Nikola Škrlec Lomnički (hrvatski pravnik i ekonomist)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "nikola skrlec lomnicki",
+          "nikola skrlec",
+          "skrlec",
+          "skrlec lomnicki"
+        ]
+      },
+      {
+        "c": "Baltazar Adam Krčelić (kraljevski savjetnik i povjesničar)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "baltazar adam krcelic",
+          "krcelic",
+          "baltazar krcelic"
+        ]
+      },
+      {
+        "c": "Grof Franjo Leopold Nádasdy (hrvatski ban)",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "franjo nadasdy",
+          "ban nadasdy",
+          "nadasdy",
+          "grof nadasdy"
+        ]
+      },
+      {
+        "c": "Karl von Zinzendorf",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "zinzendorf",
+          "karl von zinzendorf",
+          "grof zinzendorf"
+        ]
+      },
+      {
+        "c": "Anton von Martini (autor kaznenog zakona)",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "anton von martini",
+          "martini",
+          "karl anton von martini"
+        ]
+      },
+      {
+        "c": "Grof Franjo Balassa (hrvatski ban u vrijeme Josipa II.)",
+        "r": "rare",
+        "km": 3100,
+        "a": [
+          "franjo balassa",
+          "balassa",
+          "ban balassa"
+        ]
+      },
+      {
+        "c": "Adam Franjo Kollár (slovačko-ugarski dvorski knjižničar i savjetnik)",
+        "r": "rare",
+        "km": 3050,
+        "a": [
+          "adam franjo kollar",
+          "adam kollar",
+          "kollar"
+        ]
+      },
+      {
+        "c": "Grof Rudolf Chotek (ministar financija)",
+        "r": "rare",
+        "km": 2950,
+        "a": [
+          "chotek",
+          "rudolf chotek",
+          "grof chotek"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "game": 3,
+    "gameTitle": "Igra 3 – Prosvijećeni apsolutizam i Habsburška Monarhija",
+    "curriculumHours": "Nastavni sat 4",
+    "question": "Navedi jednu društvenu skupinu na čiji su položaj utjecale habsburške reforme.",
+    "note": "Staleži i slojevi stanovništva u 18. stoljeću.",
+    "bonusFact": {
+      "q": "Koji je patent Josipa II. iz 1785. omogućio seljacima u Ugarskoj i Hrvatskoj slobodno seljenje, ženidbu i učenje zanata?",
+      "a": "Patent o ukidanju kmetstva (osobne ovisnosti)"
+    },
+    "answers": [
+      {
+        "c": "Kmetovi (seljaci)",
+        "r": "common",
+        "km": 140,
+        "a": [
+          "kmetovi",
+          "seljaci",
+          "kmet",
+          "seljastvo",
+          "zavisni seljaci"
+        ]
+      },
+      {
+        "c": "Plemstvo (feudalci)",
+        "r": "common",
+        "km": 160,
+        "a": [
+          "plemstvo",
+          "plemici",
+          "feudalci",
+          "velikasi",
+          "plemicki stalez"
+        ]
+      },
+      {
+        "c": "Svećenstvo (kler)",
+        "r": "common",
+        "km": 180,
+        "a": [
+          "svecenstvo",
+          "kler",
+          "crkveni stalez",
+          "svecenici",
+          "biskupi"
+        ]
+      },
+      {
+        "c": "Redovnici i redovnice (samostanci)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "redovnici",
+          "redovnice",
+          "samostanci",
+          "redovnicki redovi",
+          "pavlini",
+          "isusovci"
+        ]
+      },
+      {
+        "c": "Državni činovnici (birokracija)",
+        "r": "medium",
+        "km": 650,
+        "a": [
+          "cinovnici",
+          "drzavni cinovnici",
+          "birokracija",
+          "drzavni sluzbenici"
+        ]
+      },
+      {
+        "c": "Vojnici i graničari (krajišnici)",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "granicari",
+          "vojnici",
+          "krajisnici",
+          "vojno osoblje"
+        ]
+      },
+      {
+        "c": "Učitelji i školsko osoblje",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "ucitelji",
+          "skolnici",
+          "pedagozi",
+          "nastavnici"
+        ]
+      },
+      {
+        "c": "Građanstvo i trgovci",
+        "r": "medium",
+        "km": 690,
+        "a": [
+          "gradani",
+          "gradanstvo",
+          "trgovci",
+          "gradski stalez"
+        ]
+      },
+      {
+        "c": "Cehovski obrtnici",
+        "r": "medium",
+        "km": 730,
+        "a": [
+          "obrtnici",
+          "cehovski majstori",
+          "cehovi",
+          "majstori"
+        ]
+      },
+      {
+        "c": "Židovi (priznavanje građanskih prava Josipovim ediktom)",
+        "r": "rare",
+        "km": 2200,
+        "a": [
+          "zidovi",
+          "zidovsko stanovnistvo",
+          "zidovska zajednica"
+        ]
+      },
+      {
+        "c": "Protestanti (luterani i kalvinisti / vjerske manjine)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "protestanti",
+          "luterani",
+          "kalvinisti",
+          "evangelici"
+        ]
+      },
+      {
+        "c": "Pravoslavni kršćani (grkoistočnjaci u Vojnoj krajini)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "pravoslavci",
+          "pravoslavno stanovnistvo",
+          "grkoistocnjaci"
+        ]
+      },
+      {
+        "c": "Manufakturni radnici",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "manufakturni radnici",
+          "radnici u manufakturama",
+          "radnistvo"
+        ]
+      },
+      {
+        "c": "Rudari (rudarsko zakonodavstvo)",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "rudari",
+          "rudarsko osoblje"
+        ]
+      },
+      {
+        "c": "Pomorci i lučki radnici (u slobodnim lukama Rijeci i Trstu)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "pomorci",
+          "lucki radnici",
+          "mornari"
+        ]
+      },
+      {
+        "c": "Liječnici i ranarnici (zdravstveni propisi)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "lijecnici",
+          "ranarnici",
+          "ljekarnici"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "game": 3,
+    "gameTitle": "Igra 3 – Prosvijećeni apsolutizam i Habsburška Monarhija",
+    "curriculumHours": "Nastavni sat 4",
+    "question": "Navedi jedan cilj prosvijećenih apsolutista prilikom provođenja reformi.",
+    "note": "Politički i ekonomski motivi prosvijećene monarhije.",
+    "bonusFact": {
+      "q": "Koje je vrhovno upravno tijelo za Hrvatsku osnovala Marija Terezija 1767. sa sjedištem u Varaždinu?",
+      "a": "Hrvatsko kraljevsko vijeće"
+    },
+    "answers": [
+      {
+        "c": "Centralizacija državne vlasti",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "centralizacija",
+          "centralizacija vlasti",
+          "jacanje sredisnje vlasti",
+          "centraliziranje drzave"
+        ]
+      },
+      {
+        "c": "Povećanje poreznih prihoda države",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "veci porezi",
+          "povecanje poreznih prihoda",
+          "punjenje riznice",
+          "porezni prihodi",
+          "financijsko jacanje"
+        ]
+      },
+      {
+        "c": "Stvaranje snažne i opremljene stajaće vojske",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "snazna vojska",
+          "jacanje vojske",
+          "stajaca vojska",
+          "vojna moc",
+          "obrana monarhije"
+        ]
+      },
+      {
+        "c": "Učinkovita i profesionalna državna uprava",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "ucinkovita uprava",
+          "bolja uprava",
+          "profesionalno cinovnistvo",
+          "modernizacija uprave"
+        ]
+      },
+      {
+        "c": "Obrazovanje i opismenjavanje stanovništva",
+        "r": "common",
+        "km": 240,
+        "a": [
+          "opismenjavanje",
+          "obrazovanje stanovnistva",
+          "bolje obrazovanje",
+          "skolovanje"
+        ]
+      },
+      {
+        "c": "Gospodarski napredak i razvoj manufaktura",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "gospodarski rast",
+          "razvoj manufaktura",
+          "gospodarski napredak",
+          "razvoj trgovine"
+        ]
+      },
+      {
+        "c": "Zaštita seljaka od prekomjerne samovlasti plemića",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "zastita seljaka",
+          "zastita kmetova",
+          "smanjenje tlake",
+          "ogranicenje samovlasti plemica"
+        ]
+      },
+      {
+        "c": "Podvrgavanje Crkve državnom nadzoru (sekularizacija moći)",
+        "r": "medium",
+        "km": 760,
+        "a": [
+          "nadzor nad crkvom",
+          "smanjenje utjecaja crkve",
+          "podvrgavanje crkve drzavi"
+        ]
+      },
+      {
+        "c": "Modernizacija sudstva i ukidanje torture",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "modernizacija sudstva",
+          "ukidanje mucenja",
+          "pravna sigurnost",
+          "pravednije sudstvo"
+        ]
+      },
+      {
+        "c": "Unapređenje javnog zdravstva i higijene",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "javno zdravstvo",
+          "sprecavanje zaraza",
+          "bolje zdravstvo",
+          "higijena"
+        ]
+      },
+      {
+        "c": "Uvođenje jedinstvenog jezika uprave (germanizacija Josipa II.)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "germanizacija",
+          "jedinstveni jezik",
+          "njemacki kao sluzbeni jezik",
+          "njemacki jezik"
+        ]
+      },
+      {
+        "c": "Stvaranje jedinstvenog tržišta i ukidanje unutarnjih carina",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "jedinstveno trziste",
+          "ukidanje unutarnjih carina",
+          "slobodan protok roba"
+        ]
+      },
+      {
+        "c": "Demografski rast (populacionistička politika)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "demografski rast",
+          "porast stanovnistva",
+          "populacionizam",
+          "rast broja stanovnika"
+        ]
+      },
+      {
+        "c": "Kodifikacija jedinstvenih građanskih i kaznenih zakona",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "kodifikacija zakona",
+          "jedinstveni zakoni",
+          "jedinstveni zakonik"
+        ]
+      },
+      {
+        "c": "Smanjenje zaduženosti države i uspostava stabilne valute",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "stabilna valuta",
+          "smanjenje dugova",
+          "monetarna stabilnost"
+        ]
+      },
+      {
+        "c": "Suzbijanje gladi i osiguranje zaliha žita (magazini)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "zalihe zita",
+          "suzbijanje gladi",
+          "zitni magazini"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "game": 4,
+    "gameTitle": "Igra 4 – Gospodarske teorije i hrvatske zemlje",
+    "curriculumHours": "Nastavni sati 5–6",
+    "question": "Navedi jednu europsku državu koja je provodila merkantilističku gospodarsku politiku.",
+    "note": "Zemlje europskog merkantilizma 17. i 18. stoljeća.",
+    "bonusFact": {
+      "q": "Kako se nazivao francuski oblik merkantilizma po ministru Luja XIV.?",
+      "a": "Kolbertizam"
+    },
+    "answers": [
+      {
+        "c": "Kraljevina Francuska (kolbertizam)",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "francuska",
+          "kraljevina francuska",
+          "kolbertizam"
+        ]
+      },
+      {
+        "c": "Kraljevina Engleska (Velika Britanija)",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "engleska",
+          "velika britanija",
+          "britanija"
+        ]
+      },
+      {
+        "c": "Kraljevina Španjolska (bulionizam)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "spanjolska",
+          "kraljevina spanjolska"
+        ]
+      },
+      {
+        "c": "Habsburška Monarhija (Austrija)",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "habsburska monarhija",
+          "austrija",
+          "austrijsko carstvo"
+        ]
+      },
+      {
+        "c": "Kraljevina Portugal",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "portugal",
+          "kraljevina portugal"
+        ]
+      },
+      {
+        "c": "Kraljevina Pruska",
+        "r": "medium",
+        "km": 650,
+        "a": [
+          "pruska",
+          "kraljevina pruska",
+          "brandenburg"
+        ]
+      },
+      {
+        "c": "Nizozemska (Ujedinjene Provincije)",
+        "r": "medium",
+        "km": 710,
+        "a": [
+          "nizozemska",
+          "holandija",
+          "ujedinjene provincije"
+        ]
+      },
+      {
+        "c": "Kraljevina Švedska",
+        "r": "medium",
+        "km": 740,
+        "a": [
+          "svedska",
+          "kraljevina svedska"
+        ]
+      },
+      {
+        "c": "Rusko Carstvo (Petar Veliki)",
+        "r": "medium",
+        "km": 760,
+        "a": [
+          "rusija",
+          "rusko carstvo"
+        ]
+      },
+      {
+        "c": "Kraljevina Pijemont-Sardinija",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "sardinija",
+          "pijemont",
+          "sardinija pijemont",
+          "kraljevina pijemont-sardinija"
+        ]
+      },
+      {
+        "c": "Danska-Norveška",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "danska",
+          "danska norveska"
+        ]
+      },
+      {
+        "c": "Vojvodstvo Bavarska",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "bavarska"
+        ]
+      },
+      {
+        "c": "Mletačka Republika (kasni merkantilizam)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "mletacka republika",
+          "venecija",
+          "mleci"
+        ]
+      },
+      {
+        "c": "Veliko Vojvodstvo Toskana",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "toskana",
+          "veliko vojvodstvo toskana"
+        ]
+      },
+      {
+        "c": "Napuljsko Kraljevstvo",
+        "r": "rare",
+        "km": 3000,
+        "a": [
+          "napulj",
+          "napuljsko kraljevstvo",
+          "kraljevstvo dviju sicilija"
+        ]
+      },
+      {
+        "c": "Poljsko-Litavska Unija (u doba reformi)",
+        "r": "rare",
+        "km": 3100,
+        "a": [
+          "poljska",
+          "poljsko litavska unija"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "game": 4,
+    "gameTitle": "Igra 4 – Gospodarske teorije i hrvatske zemlje",
+    "curriculumHours": "Nastavni sati 5–6",
+    "question": "Navedi jednu gospodarsku mjeru povezanu s merkantilizmom.",
+    "note": "Mjere za stvaranje pozitivne trgovačke bilance.",
+    "bonusFact": {
+      "q": "Koja je temeljna ekonomska teorija 18. stoljeća tvrdila da je jedini stvarni izvor novoga bogatstva poljoprivreda?",
+      "a": "Fiziokratizam"
+    },
+    "answers": [
+      {
+        "c": "Zaštitne uvozne carine (protekcionizam)",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "carine",
+          "zastitne carine",
+          "visoke carine",
+          "protekcionizam",
+          "uvozne carine"
+        ]
+      },
+      {
+        "c": "Poticanje izvoza gotovih proizvoda",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "poticanje izvoza",
+          "izvoz",
+          "subvencije za izvoz",
+          "izvoz gotove robe"
+        ]
+      },
+      {
+        "c": "Ograničavanje ili zabrana uvoza strane robe",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "ogranicavanje uvoza",
+          "zabrana uvoza",
+          "smanjenje uvoza"
+        ]
+      },
+      {
+        "c": "Osnivanje i subvencioniranje manufaktura",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "manufakture",
+          "osnivanje manufaktura",
+          "kraljevske manufakture",
+          "drzavne manufakture",
+          "poticanje manufaktura"
+        ]
+      },
+      {
+        "c": "Gomilanje plemenitih metala (zlata i srebra / bulionizam)",
+        "r": "common",
+        "km": 240,
+        "a": [
+          "gomilanje zlata",
+          "plemeniti metali",
+          "bulionizam",
+          "zlato i srebro",
+          "skupljanje zlata"
+        ]
+      },
+      {
+        "c": "Državni monopoli na stratešku robu",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "monopoli",
+          "drzavni monopoli",
+          "kraljevski monopol",
+          "monopol na sol"
+        ]
+      },
+      {
+        "c": "Kolonijalna eksploatacija (kolonije kao izvor sirovina)",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "kolonije",
+          "kolonijalna trgovina",
+          "kolonijalna eksploatacija",
+          "uvoz sirovina iz kolonija"
+        ]
+      },
+      {
+        "c": "Izgradnja trgovačke mornarice, luka i kanala",
+        "r": "medium",
+        "km": 760,
+        "a": [
+          "mornarica",
+          "trgovacka mornarica",
+          "gradnja luka",
+          "kanali",
+          "luke"
+        ]
+      },
+      {
+        "c": "Zabrana izvoza domaćih sirovina",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "zabrana izvoza sirovina",
+          "cuvanje sirovina",
+          "zabrana odljeva sirovina"
+        ]
+      },
+      {
+        "c": "Zakon o plovidbi (Navigacijski akti u Engleskoj)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "navigacijski akt",
+          "navigacijski akti",
+          "zakon o plovidbi",
+          "navigation acts"
+        ]
+      },
+      {
+        "c": "Osnivanje povlaštenih trgovačkih kompanija (npr. Istočnoindijska)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "trgovacke kompanije",
+          "istocnoindijska kompanija",
+          "povlastene kompanije"
+        ]
+      },
+      {
+        "c": "Zabrana iseljavanja stručnih majstora i radnika",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "zabrana iseljavanja",
+          "zabrana odlaska radnika",
+          "cuvanje majstora"
+        ]
+      },
+      {
+        "c": "Državna kontrola kvalitete izvoznih proizvoda",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "kontrola kvalitete",
+          "standardizacija proizvoda",
+          "drzavni standardi"
+        ]
+      },
+      {
+        "c": "Dovođenje stranih stručnjaka i majstora (privlačenje zanatlija)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "dovodenje stranih majstora",
+          "privlacenje strucnjaka",
+          "uvoz obrtnika"
+        ]
+      },
+      {
+        "c": "Porezne olakšice za ulagače u nove industrije",
+        "r": "rare",
+        "km": 2550,
+        "a": [
+          "porezne olaksice",
+          "subvencije",
+          "oslobadanje od poreza"
+        ]
+      },
+      {
+        "c": "Standardizacija trgovačkog prava i valute",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "trgovacko pravo",
+          "standardizacija novca",
+          "jedinstvena valuta"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "game": 4,
+    "gameTitle": "Igra 4 – Gospodarske teorije i hrvatske zemlje",
+    "curriculumHours": "Nastavni sati 5–6",
+    "question": "Navedi jedno područje kojim su se bavili kameralisti.",
+    "note": "Kameralne znanosti i državna uprava u njemačkim i habsburškim zemljama.",
+    "bonusFact": {
+      "q": "Koje je godine Adam Smith objavio temeljno djelo klasične ekonomije 'Bogatstvo naroda'?",
+      "a": "1776"
+    },
+    "answers": [
+      {
+        "c": "Državne financije i punjenje riznice",
+        "r": "common",
+        "km": 160,
+        "a": [
+          "financije",
+          "drzavne financije",
+          "riznica",
+          "drzavna riznica",
+          "prihodi drzave"
+        ]
+      },
+      {
+        "c": "Ubiranje i uređenje poreza",
+        "r": "common",
+        "km": 180,
+        "a": [
+          "porezi",
+          "ubiranje poreza",
+          "porezni sustav",
+          "oporezivanje"
+        ]
+      },
+      {
+        "c": "Unapređenje poljoprivrede i agrara",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "poljoprivreda",
+          "agrar",
+          "unapredenje poljoprivrede",
+          "obrada zemlje"
+        ]
+      },
+      {
+        "c": "Razvoj trgovine i trgovačkih puteva",
+        "r": "common",
+        "km": 230,
+        "a": [
+          "trgovina",
+          "razvoj trgovine",
+          "trgovacki tokovi",
+          "trgovanje"
+        ]
+      },
+      {
+        "c": "Poticanje obrta i industrije (manufaktura)",
+        "r": "common",
+        "km": 250,
+        "a": [
+          "obrt",
+          "obrti",
+          "manufakture",
+          "industrija",
+          "poticanje obrta"
+        ]
+      },
+      {
+        "c": "Državna uprava i upravno pravo",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "uprava",
+          "drzavna uprava",
+          "upravno pravo",
+          "ustroj vlasti"
+        ]
+      },
+      {
+        "c": "Šumarstvo i planska sječa drva",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "sumarstvo",
+          "sume",
+          "planska sjeca",
+          "upravljanje sumama"
+        ]
+      },
+      {
+        "c": "Rudarstvo i kovanje novca",
+        "r": "medium",
+        "km": 760,
+        "a": [
+          "rudarstvo",
+          "rudnici",
+          "kovanje novca",
+          "rude"
+        ]
+      },
+      {
+        "c": "Demografska politika i rast stanovništva (populacionizam)",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "stanovnistvo",
+          "demografija",
+          "rast stanovnistva",
+          "porast stanovnistva",
+          "populacionizam"
+        ]
+      },
+      {
+        "c": "Policijska znanost i javna sigurnost (Polizeiwissenschaft)",
+        "r": "medium",
+        "km": 860,
+        "a": [
+          "policija",
+          "policijska znanost",
+          "polizeiwissenschaft",
+          "javni red",
+          "sigurnost"
+        ]
+      },
+      {
+        "c": "Sanitarni kordon i zdravstvena prevencija",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "sanitarni kordon",
+          "zdravstvo",
+          "sprecavanje kuge",
+          "zdravstvena prevencija"
+        ]
+      },
+      {
+        "c": "Upravljanje komorskim (krunskim) dobrima",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "komorska dobra",
+          "krunska imovina",
+          "komore",
+          "upravljanje komorom"
+        ]
+      },
+      {
+        "c": "Izgradnja prometne infrastrukture i kanala",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "prometnice",
+          "ceste",
+          "gradnja cesta",
+          "kanali"
+        ]
+      },
+      {
+        "c": "Strukovno obrazovanje poljoprivrednika i obrtnika",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "strukovno obrazovanje",
+          "poljoprivredne skole",
+          "edukacija seljaka"
+        ]
+      },
+      {
+        "c": "Melioracija močvara i isušivanje tla",
+        "r": "rare",
+        "km": 2850,
+        "a": [
+          "melioracija",
+          "isusivanje mocvara",
+          "regulacija rijeka"
+        ]
+      },
+      {
+        "c": "Protupožarna zaštita i građevinski red u gradovima",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "protupozarna zastita",
+          "gradevinski red",
+          "zastita od pozara"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "game": 4,
+    "gameTitle": "Igra 4 – Gospodarske teorije i hrvatske zemlje",
+    "curriculumHours": "Nastavni sati 5–6",
+    "question": "Navedi jednog ekonomista ili državnika povezanog s razvojem gospodarskih teorija 17. i 18. stoljeća.",
+    "note": "Merkantilisti, kameralisti, fiziokrati i rani klasični ekonomisti.",
+    "bonusFact": {
+      "q": "Koji je škotski filozof i ekonomist napisao 'Bogatstvo naroda' i postavio načelo 'nevidljive ruke'?",
+      "a": "Adam Smith"
+    },
+    "answers": [
+      {
+        "c": "Jean-Baptiste Colbert (merkantilizam)",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "colbert",
+          "kolber",
+          "jean baptiste colbert",
+          "jean-baptiste colbert"
+        ]
+      },
+      {
+        "c": "Adam Smith (klasična liberalna ekonomija)",
+        "r": "common",
+        "km": 160,
+        "a": [
+          "adam smith",
+          "smith",
+          "adam smit",
+          "smit"
+        ]
+      },
+      {
+        "c": "François Quesnay (fiziokratizam)",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "quesnay",
+          "kene",
+          "francois quesnay",
+          "fransoa kene"
+        ]
+      },
+      {
+        "c": "Anne Robert Jacques Turgot (fiziokrat)",
+        "r": "common",
+        "km": 240,
+        "a": [
+          "turgot",
+          "tirgo",
+          "anne robert jacques turgot",
+          "robert turgot"
+        ]
+      },
+      {
+        "c": "Thomas Mun (engleski merkantilist)",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "thomas mun",
+          "mun",
+          "tomas man",
+          "tomas mun"
+        ]
+      },
+      {
+        "c": "Johann Joachim Becher (kameralist)",
+        "r": "medium",
+        "km": 780,
+        "a": [
+          "becher",
+          "johann joachim becher",
+          "beher"
+        ]
+      },
+      {
+        "c": "Philipp Wilhelm von Hörnigk (kameralist)",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "hornigk",
+          "philipp wilhelm von hornigk",
+          "hornik"
+        ]
+      },
+      {
+        "c": "Joseph von Sonnenfels (habsburški kameralist)",
+        "r": "medium",
+        "km": 790,
+        "a": [
+          "sonnenfels",
+          "joseph von sonnenfels",
+          "sonenfels"
+        ]
+      },
+      {
+        "c": "David Hume (ekonomski eseji)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "david hume",
+          "hume",
+          "dejvid hjum"
+        ]
+      },
+      {
+        "c": "Richard Cantillon",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "cantillon",
+          "richard cantillon",
+          "kantijon"
+        ]
+      },
+      {
+        "c": "Bernard Mandeville (Basna o pčelama)",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "mandeville",
+          "bernard mandeville",
+          "mandevil"
+        ]
+      },
+      {
+        "c": "John Law (financijska teorija / Mississippi mjehur)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "john law",
+          "law",
+          "dzon lo"
+        ]
+      },
+      {
+        "c": "Antonio Genovesi (talijanski prosvjetitelj-ekonomist)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "genovesi",
+          "antonio genovesi",
+          "denovezi"
+        ]
+      },
+      {
+        "c": "William Petty (politička aritmetika)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "petty",
+          "william petty",
+          "vilijam peti"
+        ]
+      },
+      {
+        "c": "Nikola Škrlec Lomnički (hrvatski ekonomski mislilac)",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "nikola skrlec lomnicki",
+          "nikola skrlec",
+          "skrlec lomnicki",
+          "skrlec"
+        ]
+      },
+      {
+        "c": "Ivan Kapistran Adamović Čepinski (napredni gospodarstvenik)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "adamovic",
+          "ivan kapistran adamovic",
+          "ivan adamovic",
+          "adamovic cepinski"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "game": 4,
+    "gameTitle": "Igra 4 – Gospodarske teorije i hrvatske zemlje",
+    "curriculumHours": "Nastavni sati 5–6",
+    "question": "Navedi jednu gospodarsku ideju ili mjeru koju su zastupali fiziokrati.",
+    "note": "Fiziokratska škola - poljoprivreda kao temelj i načelo slobode.",
+    "bonusFact": {
+      "q": "Kako glasi čuvena francuska krilatica koja izražava zahtjev za slobodnim tržištem i nemiješanjem države?",
+      "a": "Laissez-faire, laissez-passer"
+    },
+    "answers": [
+      {
+        "c": "Poljoprivreda kao jedini izvor stvarnog novog bogatstva",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "poljoprivreda",
+          "zemlja kao izvor bogatstva",
+          "zemljoradnja",
+          "obrada zemlje",
+          "poljoprivreda stvara bogatstvo"
+        ]
+      },
+      {
+        "c": "Slobodna trgovina (ukidanje carina i zapreka)",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "slobodna trgovina",
+          "slobodan protok robe",
+          "slobodna razmjena",
+          "ukidanje carina"
+        ]
+      },
+      {
+        "c": "Laissez-faire, laissez-passer (nemiješanje države u gospodarstvo)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "laissez faire",
+          "laissez-faire",
+          "nemijesanje drzave",
+          "pustite neka ide",
+          "slobodno trziste"
+        ]
+      },
+      {
+        "c": "Poštovanje prirodnoga poretka (ordre naturel)",
+        "r": "common",
+        "km": 240,
+        "a": [
+          "prirodni poredak",
+          "ordre naturel",
+          "zakoni prirode",
+          "prirodni ekonomski zakoni"
+        ]
+      },
+      {
+        "c": "Jedinstveni porez na dohodak od zemlje (zemljišna renta)",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "jedinstveni porez",
+          "porez na zemlju",
+          "porez na zemljisnu rentu",
+          "oporezivanje samo zemlje",
+          "zemljisni porez"
+        ]
+      },
+      {
+        "c": "Slobodan izvoz i uvoz žitarica",
+        "r": "medium",
+        "km": 760,
+        "a": [
+          "slobodan izvoz zita",
+          "trgovina zitom",
+          "slobodna trgovina zitaricama",
+          "izvoz zita"
+        ]
+      },
+      {
+        "c": "Oštra kritika merkantilizma i protekcionizma",
+        "r": "medium",
+        "km": 690,
+        "a": [
+          "kritika merkantilizma",
+          "odbacivanje merkantilizma",
+          "protiv merkantilizma"
+        ]
+      },
+      {
+        "c": "Ukidanje državnih monopola i trgovačkih povlastica",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "ukidanje monopola",
+          "protiv monopola",
+          "ukidanje povlastica"
+        ]
+      },
+      {
+        "c": "Ekonomska tablica (Tableau économique Françoisa Quesnaya)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "ekonomska tablica",
+          "tableau economique",
+          "quesnayeva tablica"
+        ]
+      },
+      {
+        "c": "Podjela društva na proizvodnu, sterilnu i vlasničku klasu",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "podjela na klase",
+          "proizvodna klasa",
+          "sterilna klasa",
+          "klasa vlasnika"
+        ]
+      },
+      {
+        "c": "Apsolutna zaštita privatnog vlasništva nad zemljom",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "privatno vlasnistvo nad zemljom",
+          "zastita zemljisnog vlasnistva"
+        ]
+      },
+      {
+        "c": "Ukidanje cehovskih stega i privilegija",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "ukidanje cehova",
+          "protiv cehova",
+          "sloboda obrta"
+        ]
+      },
+      {
+        "c": "Koncept čistog proizvoda (produit net)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "produit net",
+          "cisti proizvod",
+          "neto proizvod"
+        ]
+      },
+      {
+        "c": "Slobodno formiranje cijena prema ponudi i potražnji",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "slobodne cijene",
+          "ponuda i potraznja",
+          "cijena zita"
+        ]
+      },
+      {
+        "c": "Ukidanje unutarnjih cestarina i mostarina",
+        "r": "rare",
+        "km": 2750,
+        "a": [
+          "ukidanje cestarina",
+          "ukidanje mostarina",
+          "unutarnje zapreke"
+        ]
+      },
+      {
+        "c": "Poticanje kapitalističkog zakupa velikih imanja",
+        "r": "rare",
+        "km": 3000,
+        "a": [
+          "zakup imanja",
+          "kapitalisticki zakup",
+          "velika poljoprivredna imanja"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "game": 4,
+    "gameTitle": "Igra 4 – Gospodarske teorije i hrvatske zemlje",
+    "curriculumHours": "Nastavni sati 5–6",
+    "question": "Navedi jednu poljoprivrednu kulturu koja se uzgajala u hrvatskim zemljama u 18. stoljeću.",
+    "note": "Tradicionalne i novoiznikle kulture u banskoj Hrvatskoj, Slavoniji i Dalmaciji.",
+    "bonusFact": {
+      "q": "Koja je nova poljoprivredna kultura podrijetlom iz Amerike planski širena u Hrvatskoj naredbama Marije Terezije radi suzbijanja gladi?",
+      "a": "Krumpir"
+    },
+    "answers": [
+      {
+        "c": "Pšenica",
+        "r": "common",
+        "km": 120,
+        "a": [
+          "psenica",
+          "bjelica"
+        ]
+      },
+      {
+        "c": "Kukuruz (kuruza)",
+        "r": "common",
+        "km": 140,
+        "a": [
+          "kukuruz",
+          "kuruza",
+          "turkinja"
+        ]
+      },
+      {
+        "c": "Ječam",
+        "r": "common",
+        "km": 160,
+        "a": [
+          "jecam"
+        ]
+      },
+      {
+        "c": "Raž",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "raz"
+        ]
+      },
+      {
+        "c": "Vinova loza (grožđe / vino)",
+        "r": "common",
+        "km": 180,
+        "a": [
+          "vinova loza",
+          "grozde",
+          "vino",
+          "vinograd"
+        ]
+      },
+      {
+        "c": "Krumpir (širenje terezijanskim naredbama)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "krumpir",
+          "krumper",
+          "krumpiri"
+        ]
+      },
+      {
+        "c": "Zob",
+        "r": "medium",
+        "km": 620,
+        "a": [
+          "zob"
+        ]
+      },
+      {
+        "c": "Lan",
+        "r": "medium",
+        "km": 650,
+        "a": [
+          "lan"
+        ]
+      },
+      {
+        "c": "Konoplja",
+        "r": "medium",
+        "km": 670,
+        "a": [
+          "konoplja"
+        ]
+      },
+      {
+        "c": "Proso",
+        "r": "medium",
+        "km": 710,
+        "a": [
+          "proso"
+        ]
+      },
+      {
+        "c": "Maslina (u Dalmaciji i Istri)",
+        "r": "medium",
+        "km": 640,
+        "a": [
+          "maslina",
+          "masline",
+          "maslinovo ulje"
+        ]
+      },
+      {
+        "c": "Kupus (zelje)",
+        "r": "medium",
+        "km": 690,
+        "a": [
+          "kupus",
+          "zelje"
+        ]
+      },
+      {
+        "c": "Duhan (državni monopol i plantaže)",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "duhan",
+          "sadnja duhana"
+        ]
+      },
+      {
+        "c": "Dud / murva (za uzgoj dudova svilca i svilogojstvo)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "dud",
+          "murva",
+          "svilogojstvo",
+          "dudov svilac",
+          "uzgoj svile"
+        ]
+      },
+      {
+        "c": "Lucerna i djetelina (za plodored i prehranu stoke)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "lucerna",
+          "djetelina",
+          "krmno bilje"
+        ]
+      },
+      {
+        "c": "Tikva / bundeva",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "tikva",
+          "bundeva",
+          "buca"
+        ]
+      },
+      {
+        "c": "Repa (stočna i kiseljena repa)",
+        "r": "rare",
+        "km": 2200,
+        "a": [
+          "repa",
+          "bijela repa"
+        ]
+      },
+      {
+        "c": "Bob",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "bob"
+        ]
+      },
+      {
+        "c": "Leća",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "leca"
+        ]
+      },
+      {
+        "c": "Heljda (hajdina)",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "heljda",
+          "hajdina"
+        ]
+      },
+      {
+        "c": "Smokva",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "smokva",
+          "smokve"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "game": 4,
+    "gameTitle": "Igra 4 – Gospodarske teorije i hrvatske zemlje",
+    "curriculumHours": "Nastavni sati 5–6",
+    "question": "Navedi jedan grad na hrvatskom povijesnom prostoru u kojem su se u 18. stoljeću razvijali trgovina ili obrt.",
+    "note": "Trgovačka i obrtnička središta u banskoj Hrvatskoj, Slavoniji i Primorju.",
+    "bonusFact": {
+      "q": "Koje je godine Karlo VI. proglasio slobodnu plovidbu Jadranom i Trst i Rijeku slobodnim lukama?",
+      "a": "1719"
+    },
+    "answers": [
+      {
+        "c": "Zagreb (Gradec i Kaptol)",
+        "r": "common",
+        "km": 130,
+        "a": [
+          "zagreb",
+          "gradec",
+          "kaptol",
+          "agram"
+        ]
+      },
+      {
+        "c": "Varaždin (obrtničko središte i cehovi)",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "varazdin",
+          "warasdin"
+        ]
+      },
+      {
+        "c": "Rijeka (slobodna luka od 1719.)",
+        "r": "common",
+        "km": 170,
+        "a": [
+          "rijeka",
+          "fiume"
+        ]
+      },
+      {
+        "c": "Osijek (Tvrđa i trgovačka predgrađa)",
+        "r": "common",
+        "km": 180,
+        "a": [
+          "osijek",
+          "essegg"
+        ]
+      },
+      {
+        "c": "Karlovac (trgovačko čvorište i plovidba Kupom)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "karlovac",
+          "karlstadt"
+        ]
+      },
+      {
+        "c": "Dubrovnik (Dubrovačka Republika)",
+        "r": "common",
+        "km": 210,
+        "a": [
+          "dubrovnik",
+          "ragusa"
+        ]
+      },
+      {
+        "c": "Bakar (slobodna luka i trgovačko središte)",
+        "r": "medium",
+        "km": 680,
+        "a": [
+          "bakar",
+          "buccari"
+        ]
+      },
+      {
+        "c": "Senj (lučki i trgovački grad)",
+        "r": "medium",
+        "km": 640,
+        "a": [
+          "senj",
+          "zengg"
+        ]
+      },
+      {
+        "c": "Vukovar (dunavska trgovina žitom)",
+        "r": "medium",
+        "km": 670,
+        "a": [
+          "vukovar"
+        ]
+      },
+      {
+        "c": "Požega (obrtnički i cehovski centar)",
+        "r": "medium",
+        "km": 690,
+        "a": [
+          "pozega",
+          "slavonska pozega"
+        ]
+      },
+      {
+        "c": "Sisak (riječna trgovina Savom i Kupom)",
+        "r": "medium",
+        "km": 650,
+        "a": [
+          "sisak",
+          "sissek"
+        ]
+      },
+      {
+        "c": "Zadar",
+        "r": "medium",
+        "km": 660,
+        "a": [
+          "zadar",
+          "zara"
+        ]
+      },
+      {
+        "c": "Split",
+        "r": "medium",
+        "km": 670,
+        "a": [
+          "split",
+          "spalato"
+        ]
+      },
+      {
+        "c": "Bjelovar (planski građen krajiški grad)",
+        "r": "rare",
+        "km": 2200,
+        "a": [
+          "bjelovar"
+        ]
+      },
+      {
+        "c": "Petrinja",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "petrinja"
+        ]
+      },
+      {
+        "c": "Brod na Savi (Slavonski Brod)",
+        "r": "rare",
+        "km": 2100,
+        "a": [
+          "brod na savi",
+          "slavonski brod",
+          "brod"
+        ]
+      },
+      {
+        "c": "Vinkovci",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "vinkovci"
+        ]
+      },
+      {
+        "c": "Samobor",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "samobor"
+        ]
+      },
+      {
+        "c": "Križevci",
+        "r": "rare",
+        "km": 2300,
+        "a": [
+          "krizevci",
+          "creutz"
+        ]
+      },
+      {
+        "c": "Rovinj",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "rovinj",
+          "rovigno"
+        ]
+      },
+      {
+        "c": "Šibenik",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "sibenik",
+          "sebenico"
+        ]
+      },
+      {
+        "c": "Ilok",
+        "r": "rare",
+        "km": 2700,
+        "a": [
+          "ilok"
+        ]
+      },
+      {
+        "c": "Kastav",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "kastav"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "game": 4,
+    "gameTitle": "Igra 4 – Gospodarske teorije i hrvatske zemlje",
+    "curriculumHours": "Nastavni sati 5–6",
+    "question": "Navedi jedno slavonsko mjesto ili vlastelinstvo povezano s posjedima Ivana Kapistrana Adamovića Čepinskoga.",
+    "note": "Posjedi, zakupi i gospodarska djelatnost Ivana Kapistrana Adamovića Čepinskoga.",
+    "bonusFact": {
+      "q": "Koje je znamenito djelo o naprednom poljodjelstvu i gospodarstvu Slavonije 1774. napisao Ivan Kapistran Adamović?",
+      "a": "Ogledalo slavonskoga gospodarstva (ili rasprave o agronomiji)"
+    },
+    "answers": [
+      {
+        "c": "Čepin (glavno sjedište i pridjevak Čepinski)",
+        "r": "common",
+        "km": 150,
+        "a": [
+          "cepin",
+          "cepin vlastelinstvo",
+          "vlastelinstvo cepin",
+          "posjed cepin"
+        ]
+      },
+      {
+        "c": "Erdut (erdutsko vlastelinstvo)",
+        "r": "common",
+        "km": 190,
+        "a": [
+          "erdut",
+          "erdutsko vlastelinstvo",
+          "posjed erdut"
+        ]
+      },
+      {
+        "c": "Aljmaš (dio posjeda)",
+        "r": "common",
+        "km": 220,
+        "a": [
+          "aljmas",
+          "aljmaski posjed"
+        ]
+      },
+      {
+        "c": "Valpovo (dugogodišnji zakup valpovačkoga vlastelinstva)",
+        "r": "common",
+        "km": 250,
+        "a": [
+          "valpovo",
+          "valpovacko vlastelinstvo",
+          "zakup valpova",
+          "valpovo zakup"
+        ]
+      },
+      {
+        "c": "Sarvaš",
+        "r": "medium",
+        "km": 720,
+        "a": [
+          "sarvas",
+          "posjed sarvas"
+        ]
+      },
+      {
+        "c": "Tenja",
+        "r": "medium",
+        "km": 750,
+        "a": [
+          "tenja",
+          "tenje",
+          "posjed tenja"
+        ]
+      },
+      {
+        "c": "Dalj (posjedi u okolici / Podunavlju)",
+        "r": "medium",
+        "km": 820,
+        "a": [
+          "dalj",
+          "podunavlje"
+        ]
+      },
+      {
+        "c": "Bijelo Brdo",
+        "r": "medium",
+        "km": 860,
+        "a": [
+          "bijelo brdo"
+        ]
+      },
+      {
+        "c": "Kitišanci (selo valpovačkoga vlastelinstva pod zakupom)",
+        "r": "rare",
+        "km": 2800,
+        "a": [
+          "kitisanci"
+        ]
+      },
+      {
+        "c": "Bizovac (selo valpovačkoga vlastelinstva pod zakupom)",
+        "r": "rare",
+        "km": 2600,
+        "a": [
+          "bizovac"
+        ]
+      },
+      {
+        "c": "Petrijevci (selo valpovačkoga vlastelinstva pod zakupom)",
+        "r": "rare",
+        "km": 2500,
+        "a": [
+          "petrijevci"
+        ]
+      },
+      {
+        "c": "Brođanci (dio vlastelinstva)",
+        "r": "rare",
+        "km": 2900,
+        "a": [
+          "brodanci"
+        ]
+      },
+      {
+        "c": "Habjanovci (dio vlastelinstva)",
+        "r": "rare",
+        "km": 2950,
+        "a": [
+          "habjanovci"
+        ]
+      },
+      {
+        "c": "Ladimirevci (dio valpovačkoga vlastelinstva)",
+        "r": "rare",
+        "km": 3000,
+        "a": [
+          "ladimirevci"
+        ]
+      },
+      {
+        "c": "Osijek (gradske kuće, trgovina i posjedi)",
+        "r": "rare",
+        "km": 2400,
+        "a": [
+          "osijek",
+          "osjecke kuce",
+          "posjedi u osijeku"
+        ]
+      },
+      {
+        "c": "Kopačevo (ribolovni i močvarni posjedi u Baranji)",
+        "r": "rare",
+        "km": 3100,
+        "a": [
+          "kopacevo",
+          "baranja"
+        ]
+      }
+    ]
+  }
+]

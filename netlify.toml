@@ -1,0 +1,24 @@
+# Netlify konfiguracijska datoteka za aplikaciju "Povijesni Dokle?"
+# Omogućuje ispravno posluživanje statičke stranice i sigurnosnih zaglavlja
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Preusmjeravanje svih ruta na index.html (SPA podrška)
+[[redirects]]
+  from = "/igra"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/skripta"
+  to = "/index.html"
+  status = 200

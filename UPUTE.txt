@@ -1,0 +1,44 @@
+POVIJESNI DOKLE? – VUKOVAR I DOMOVINSKI RAT
+POPIS ODGOVORA I PREPOZNAVANJE TIPFELERA
+
+DATOTEKE
+1) odgovori_vukovar_dokle.json – 32 zadatka i 6 dodatnih pitanja, s prihvaćenim kanonskim odgovorima, sinonimima, nadimcima i čestim pogreškama u pisanju.
+2) popis_odgovora_za_nastavnika.txt – isti sadržaj u čitljivom obliku.
+3) provjera_odgovora.js – JavaScript funkcija za prepoznavanje odgovora i prijedlog bodovanja.
+
+KAKO SE PROVJERAVA ODGOVOR
+1. Pretvori tekst u mala slova; zanemari višestruke razmake, interpunkciju, č/ć/š/ž/đ i njihovo pisanje bez dijakritičkih znakova.
+2. Usporedi točan oblik ili ručno odobrenu varijantu (npr. „Mladi Jastreb” = „Branko Borković”).
+3. Ako je duži odgovor udaljen točno jedno slovo i samo je jedno moguće rješenje, prihvati ga kao vjerojatan tipfeler (npr. „Blgo Zadro”).
+4. Ako postoji više sličnih rješenja, kratak sumnjiv unos ili točan odgovor koji još nije u bazi, pošalji na nastavničku provjeru. Ne odbacuj automatski nepoznate izraze.
+5. U istom pitanju broji sve varijante istog kanonskog pojma zajedno; čuvaj originalni učenički unos za kasniji pregled.
+
+PRIMJERI
+Škabrnja = Skabrnja = Skabranja = Škabarnja (kada je zadatak vezan uz Škabrnju).
+Ovčara = Ovcara = Ovćara = Ovcra.
+Mile Dedaković = Mile Dedakovic = Mile Dedakovc.
+Branko Borković = Branko Borkovic = Mladi Jastreb (nadimak).
+Hrvatske obrambene snage = HOS (naziv postrojbi).
+Trpinjska cesta = Trpinska cesta = Trpinjska.
+UNPROFOR je naziv međunarodne misije; nije sinonim za sve misije UN-a i ne smije se automatski spojiti s UNTAES-om.
+
+POVIJESNE NAPOMENE
+- Zadatak 9 odnosi se na mjesta i položaje povezane s napadima 18.–19. studenoga. Škabrnja i Nadin bili su napadnuti i zauzeti, dok se druga mjesta navode kao polazišta, smjerovi ili lokaliteti; ta se razlika mora objasniti učenicima.
+- U zadatku 20 neke hrvatske operacije provedene su na teritoriju Bosne i Hercegovine zajedno s HVO-om. Za pitanje isključivo o operacijama na teritoriju Republike Hrvatske treba ih ukloniti.
+- Zadatci s mnogo mogućih odgovora nisu popis iscrpne povijesne istine. Dopuštanje nastavničkog pregleda nužno je za pošteno bodovanje.
+- Nadimke, sinonime i tipfelere ne tretirati kao rijetke zasebne odgovore; bodovi se određuju po kanonskom odgovoru.
+
+PRIMJER UPOTREBE U JAVASCRIPTU
+import { checkAnswer, rarityPoints } from './provjera_odgovora.js';
+const result = checkAnswer(data, 9, 'Skabranja');
+// result.status === 'accepted'; result.canonical === 'Škabrnja'
+
+BODOVI PREMA UČESTALOSTI KANONSKIH ODGOVORA U JEDNOM PITANJU
+1 učenik = 10 bodova
+2–3 učenika = 7 bodova
+4–5 učenika = 5 bodova
+6+ učenika = 3 boda
+Netocan odgovor (nakon provjere) = 0 bodova.
+
+NAPOMENA O IZVORIMA
+Provjereno prema podacima MORH-a, Hrvatskoga sabora, Općine Škabrnja, zakonu o mjestima posebnog domovinskog pijeteta te historiografskom radu Brigovića i Radoša.
