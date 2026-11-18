@@ -212,6 +212,217 @@ HTML_CONTENT = r'''<!DOCTYPE html>
       display: none;
     }
 
+    /* ================================================================= */
+    /* RESPONSIVE DIZAJN & FORMATIRANJE NA RAZLIČITIM VELIČINAMA EKRANA  */
+    /* ================================================================= */
+
+    /* Okvir za unos odgovora - iznimno prilagodljiv na svim uređajima */
+    .dokle-answer-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+    }
+
+    .dokle-input-wrapper {
+      position: relative;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .dokle-answer-input {
+      width: 100%;
+      height: 48px;
+      font-size: 16px !important; /* Sprječava automatski iOS zoom */
+      font-weight: 600;
+      border-radius: 0.875rem;
+      padding: 0.625rem 2.25rem 0.625rem 0.875rem;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      outline: none;
+      font-family: inherit;
+      -webkit-appearance: none;
+    }
+
+    @media (min-width: 640px) {
+      .dokle-answer-input {
+        height: 52px;
+        padding-left: 1.125rem;
+        padding-right: 2.75rem;
+        font-size: 17px !important;
+        border-radius: 1rem;
+      }
+    }
+
+    /* Dark Mode: okvir unosa */
+    html.theme-dark .dokle-answer-input {
+      background-color: rgba(6, 20, 12, 0.9);
+      color: #ffffff;
+      border: 2px solid rgba(96, 170, 117, 0.5);
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+    html.theme-dark .dokle-answer-input::placeholder {
+      color: #72967e;
+      font-weight: 400;
+    }
+    html.theme-dark .dokle-answer-input:focus {
+      border-color: #60aa75;
+      box-shadow: 0 0 0 3px rgba(96, 170, 117, 0.35), inset 0 1px 2px rgba(0, 0, 0, 0.3);
+      background-color: rgba(8, 26, 16, 0.98);
+    }
+
+    /* Light Mode: okvir unosa */
+    html.theme-light .dokle-answer-input {
+      background-color: #ffffff;
+      color: #0f172a;
+      border: 2px solid #60aa75;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 2px 6px rgba(96, 170, 117, 0.1);
+    }
+    html.theme-light .dokle-answer-input::placeholder {
+      color: #64748b;
+      font-weight: 400;
+    }
+    html.theme-light .dokle-answer-input:focus {
+      border-color: #2d633d;
+      box-shadow: 0 0 0 3px rgba(45, 99, 61, 0.25), inset 0 1px 2px rgba(0, 0, 0, 0.05);
+      background-color: #ffffff;
+    }
+
+    /* Dugme za brisanje (Clear ✖) */
+    .dokle-clear-btn {
+      position: absolute;
+      right: 0.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      background: rgba(148, 184, 160, 0.25);
+      color: #94b8a0;
+      transition: all 0.15s ease;
+      padding: 0;
+      z-index: 10;
+    }
+    @media (min-width: 640px) {
+      .dokle-clear-btn {
+        right: 0.75rem;
+        width: 28px;
+        height: 28px;
+        font-size: 13px;
+      }
+    }
+    .dokle-clear-btn:hover {
+      background: rgba(239, 68, 68, 0.35);
+      color: #fca5a5;
+    }
+    html.theme-light .dokle-clear-btn {
+      background: rgba(100, 116, 139, 0.15);
+      color: #64748b;
+    }
+
+    /* Gumb za potvrdu odgovora */
+    .dokle-submit-btn {
+      height: 48px;
+      padding: 0 0.875rem;
+      border-radius: 0.875rem;
+      font-weight: 800;
+      font-size: 0.8125rem;
+      letter-spacing: 0.025em;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      flex-shrink: 0;
+      cursor: pointer;
+      border: none;
+      background: linear-gradient(135deg, #478b5c 0%, #60aa75 100%);
+      color: #ffffff !important;
+      box-shadow: 0 4px 12px rgba(71, 139, 92, 0.35);
+      transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @media (min-width: 640px) {
+      .dokle-submit-btn {
+        height: 52px;
+        padding: 0 1.25rem;
+        font-size: 0.875rem;
+        border-radius: 1rem;
+      }
+    }
+    .dokle-submit-btn:hover:not(:disabled) {
+      background: linear-gradient(135deg, #3d774f 0%, #529465 100%);
+      box-shadow: 0 6px 16px rgba(71, 139, 92, 0.45);
+      transform: translateY(-1px);
+    }
+    .dokle-submit-btn:active:not(:disabled) {
+      transform: scale(0.96);
+    }
+    .dokle-submit-btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      filter: grayscale(0.5);
+      transform: none;
+    }
+
+    /* Inputi za modalne prozore (Ime, Lozinka) */
+    .dokle-modal-input {
+      width: 100%;
+      height: 48px;
+      font-size: 16px !important;
+      font-weight: 500;
+      border-radius: 0.75rem;
+      padding: 0.625rem 1rem;
+      transition: all 0.2s ease;
+      outline: none;
+    }
+    html.theme-dark .dokle-modal-input {
+      background-color: rgba(6, 17, 10, 0.85);
+      color: #ffffff;
+      border: 2px solid rgba(96, 170, 117, 0.4);
+    }
+    html.theme-dark .dokle-modal-input:focus {
+      border-color: #60aa75;
+      box-shadow: 0 0 0 3px rgba(96, 170, 117, 0.3);
+    }
+    html.theme-light .dokle-modal-input {
+      background-color: #ffffff;
+      color: #0f172a;
+      border: 2px solid #60aa75;
+    }
+    html.theme-light .dokle-modal-input:focus {
+      border-color: #2d633d;
+      box-shadow: 0 0 0 3px rgba(45, 99, 61, 0.2);
+    }
+
+    /* Prilagodbe za male ekrane (mobiteli < 640px) */
+    @media (max-width: 639px) {
+      #europeMapSvg {
+        max-height: 180px;
+      }
+      .map-container {
+        border-radius: 0.75rem;
+      }
+      /* U vodoravnom prikazu na mobitelu smanji kartu radi unosa odgovora */
+      @media (orientation: landscape) and (max-height: 480px) {
+        #mapViewport {
+          height: 60px !important;
+        }
+      }
+    }
+
+    /* Sprječavanje prelijevanja tablica na uskim ekranima */
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
     input[type="text"], input[type="email"], input[type="password"] {
       font-size: 16px !important;
     }
@@ -412,7 +623,7 @@ HTML_CONTENT = r'''<!DOCTYPE html>
             </summary>
             <div class="p-4 sm:p-6 text-xs sm:text-sm text-muted space-y-3 border-t leading-relaxed border-slate-700/30">
               <p><strong>Montesquieu:</strong> <em>O duhu zakona</em> (1748.) – dioba vlasti na zakonodavnu, izvršnu i sudbenu.<br>
-              <strong>Jean-Jacques Rousseau:</strong> <em>Društveni ugovor</em> (1762.) – pojam opće volje i narodni suverenitet.<br>
+              <strong>Jean-Jacques Rousseau:</strong> <em>Društveni ugovor</em> (1762.) – pojam opće volje i narodni suverenitet.</p>
               
               <div class="my-3 p-3 bg-card-inner rounded-2xl border max-w-sm mx-auto sm:mx-0">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Encyclopedie_frontispice_section.jpg/640px-Encyclopedie_frontispice_section.jpg"
@@ -494,7 +705,6 @@ HTML_CONTENT = r'''<!DOCTYPE html>
               <span class="text-amber-400 group-open:rotate-180 transition-transform">▼</span>
             </summary>
             <div class="p-4 sm:p-6 text-xs sm:text-sm text-muted space-y-3 border-t leading-relaxed border-slate-700/30">
-              <p>
               <div class="my-3 p-3 bg-card-inner rounded-2xl border max-w-sm mx-auto sm:mx-0">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%C5%A0kabrnja_spomen-obilje%C5%BEje.jpg/640px-%C5%A0kabrnja_spomen-obilje%C5%BEje.jpg"
                      alt="Spomen-obilježje u Škabrnji" class="w-full h-40 object-cover rounded-xl" loading="lazy" onerror="this.style.display='none'" />
@@ -625,7 +835,7 @@ HTML_CONTENT = r'''<!DOCTYPE html>
         </div>
 
         <!-- POPIS IGARA ZA ODABRANI MODUL -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4" id="gamesGrid">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4" id="gamesGrid">
           <!-- Popunjava se u JS -->
         </div>
 <div class="bg-surface rounded-3xl p-4 sm:p-6 shadow-2xl space-y-4 border-2 border-[#60aa75]/40">
@@ -890,32 +1100,35 @@ HTML_CONTENT = r'''<!DOCTYPE html>
           </div>
         </div>
 
-        <!-- PITANJE I UNOS ODGOVORA -->
-        <div class="bg-surface rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl space-y-4 sm:space-y-6 border">
-          <div class="flex items-center justify-between gap-2 border-b pb-3 border-slate-700/30">
-            <div class="flex items-center gap-2.5 min-w-0">
-              <button onclick="confirmExitGame()" title="Prekini kviz i vrati se na izbor" class="p-2 sm:px-2.5 sm:py-1.5 bg-card-inner hover:bg-red-950/40 hover:border-red-500/40 border rounded-xl text-muted hover:text-red-300 transition shrink-0 text-xs flex items-center gap-1">
+        <!-- PITANJE I UNOS ODGOVORA (POTPUNO RESPONSIVE ZA MOBITELE, TABLETE I DESKTOP) -->
+        <div id="questionCard" class="bg-surface rounded-2xl sm:rounded-3xl p-3.5 xs:p-4 sm:p-6 md:p-8 shadow-2xl space-y-3 sm:space-y-5 border transition-all">
+          
+          <!-- ZAGLAVLJE KARTICE: IZLAZ + KATEGORIJA/NASLOV + OSVOJENO + TAJMER -->
+          <div class="flex items-center justify-between gap-2 border-b pb-2.5 sm:pb-3 border-slate-700/30">
+            <div class="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
+              <button onclick="confirmExitGame()" title="Prekini kviz i vrati se na izbor" class="p-2 sm:px-2.5 sm:py-1.5 bg-card-inner hover:bg-red-950/40 hover:border-red-500/40 border rounded-xl text-muted hover:text-red-300 transition shrink-0 text-xs flex items-center gap-1 min-h-[38px] active:scale-95">
                 <span>🏠</span>
                 <span class="hidden sm:inline">Izlaz</span>
               </button>
-              <div class="min-w-0">
+              <div class="min-w-0 flex-1">
                 <span class="text-[10px] sm:text-xs uppercase tracking-widest font-mono-num text-[#60aa75] font-bold block truncate" id="gameCatBadge">
                   Igra 1 · Pitanje 1 / 8
                 </span>
-              <h3 class="text-sm sm:text-lg font-bold text-white truncate mt-0.5" id="gameActiveTitle">
-                Nastanak moderne države
-              </h3>
+                <h3 class="text-xs sm:text-base md:text-lg font-bold text-white truncate mt-0.5" id="gameActiveTitle">
+                  Nastanak moderne države
+                </h3>
+              </div>
             </div>
 
-            <div class="flex items-center gap-3 sm:gap-5 shrink-0">
+            <div class="flex items-center gap-2.5 sm:gap-4 shrink-0">
               <div class="text-right">
                 <div class="text-[9px] text-muted font-mono-num uppercase font-semibold">Osvojeno</div>
-                <div class="text-lg sm:text-2xl font-black font-mono-num text-[#60aa75]" id="liveKmCounter">
+                <div class="text-base sm:text-2xl font-black font-mono-num text-[#60aa75]" id="liveKmCounter">
                   0 <span class="text-[10px] font-normal text-muted">km</span>
                 </div>
               </div>
 
-              <!-- Tajmer -->
+              <!-- Tajmer (25s) -->
               <div id="timerContainer" class="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-card-inner border-2 border-[#60aa75]/50 flex flex-col items-center justify-center font-mono-num shadow-lg transition shrink-0">
                 <span id="timerSeconds" class="text-base sm:text-xl font-black text-[#60aa75] leading-none">25</span>
                 <span class="text-[8px] sm:text-[9px] uppercase tracking-tighter text-muted mt-0.5">sek</span>
@@ -923,36 +1136,42 @@ HTML_CONTENT = r'''<!DOCTYPE html>
             </div>
           </div>
 
+          <!-- PROGRESS BAR VREMENA -->
           <div class="w-full h-1.5 sm:h-2 bg-card-inner rounded-full overflow-hidden">
             <div id="timerProgressBar" class="h-full bg-gradient-to-r from-[#2d633d] to-[#60aa75] transition-all duration-100 ease-linear" style="width: 100%;"></div>
           </div>
 
-          <div class="space-y-1 py-1">
-            <h2 id="questionText" class="text-lg sm:text-xl md:text-2xl font-serif-title font-bold text-white leading-snug">
+          <!-- TEKST PITANJA I UPUTA -->
+          <div class="space-y-1 py-0.5 sm:py-1">
+            <h2 id="questionText" class="text-base sm:text-xl md:text-2xl font-serif-title font-bold text-white leading-snug">
               Učitavanje pitanja...
             </h2>
-            <p id="questionHint" class="text-xs text-muted italic">
+            <p id="questionHint" class="text-xs sm:text-sm text-muted italic">
               Navedi pojam, osobu, djelo ili državu...
             </p>
           </div>
 
-          <form id="answerForm" onsubmit="handleAnswerSubmit(event)" class="space-y-3">
-            <div class="flex flex-col sm:flex-row gap-2.5">
-              <div class="relative flex-1">
+          <!-- OKVIR ZA UNOS ODGOVORA (LINIJSKI FORM, CLEAR GUMB, POTPUNO RESPONZIVNO) -->
+          <form id="answerForm" onsubmit="handleAnswerSubmit(event)" class="w-full pt-1">
+            <div class="dokle-answer-container">
+              <div class="dokle-input-wrapper">
                 <input type="text" id="answerInput" 
                        autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"
                        inputmode="text" enterkeyhint="go"
                        placeholder="Upiši svoj odgovor ovdje..."
-                       class="w-full px-4 py-3 sm:py-3.5 bg-card-inner border-2 border-slate-700/50 focus:border-[#60aa75] rounded-xl text-white font-medium placeholder-slate-400 focus:outline-none transition shadow-inner min-h-[48px]" />
+                       class="dokle-answer-input" />
+                <button type="button" id="clearAnswerBtn" onclick="clearAnswerInput()" class="dokle-clear-btn hidden" title="Izbriši unos" aria-label="Izbriši unos">
+                  ✕
+                </button>
               </div>
-              <button type="submit" id="submitBtn" 
-                      class="px-6 py-3 sm:py-3.5 bg-gradient-to-r from-[#478b5c] to-[#60aa75] hover:from-[#3d774f] hover:to-[#529465] text-white font-black rounded-xl text-sm sm:text-base tracking-wide transition shadow-lg shadow-[#478b5c]/30 active:scale-95 flex items-center justify-center gap-2 min-h-[48px] shrink-0">
-                <span>POTVRDI</span>
+              <button type="submit" id="submitBtn" class="dokle-submit-btn">
+                <span class="hidden xs:inline">POTVRDI</span>
                 <span>➔</span>
               </button>
             </div>
           </form>
 
+          <!-- POVRATNA INFORMACIJA -->
           <div id="feedbackBanner" class="hidden rounded-xl p-3.5 sm:p-4 transition-all">
           </div>
         </div>
@@ -1147,7 +1366,7 @@ HTML_CONTENT = r'''<!DOCTYPE html>
           <input type="text" id="inputPlayerName" maxlength="30" required
                  placeholder="Upiši svoje ime ili nadimak..."
                  inputmode="text" autocomplete="nickname"
-                 class="w-full px-4 py-3 bg-card-inner border-2 border-slate-700/60 focus:border-[#60aa75] rounded-xl text-white font-medium text-sm focus:outline-none min-h-[48px] transition" />
+                 class="dokle-modal-input" />
         </div>
 
         <div>
@@ -1610,17 +1829,30 @@ HTML_CONTENT = r'''<!DOCTYPE html>
     function toggleMapFold() {
       const vp = document.getElementById('mapViewport');
       const icon = document.getElementById('mapFoldIcon');
+      const label = document.getElementById('mapFoldLabel');
       isMapFolded = !isMapFolded;
       if (isMapFolded) {
         vp.style.height = '0px';
         vp.style.opacity = '0';
         vp.style.margin = '0';
-        icon.textContent = '▼';
+        if (icon) icon.textContent = '▼';
+        if (label) label.textContent = 'Prikaži kartu';
       } else {
         vp.style.height = '';
         vp.style.opacity = '1';
         vp.style.margin = '';
-        icon.textContent = '▲';
+        if (icon) icon.textContent = '▲';
+        if (label) label.textContent = 'Sakrij kartu';
+      }
+    }
+
+    function clearAnswerInput() {
+      const input = document.getElementById('answerInput');
+      if (input) {
+        input.value = '';
+        input.focus();
+        const clearBtn = document.getElementById('clearAnswerBtn');
+        if (clearBtn) clearBtn.classList.add('hidden');
       }
     }
 
@@ -1990,10 +2222,21 @@ Otključavanje za: ${formatCooldownTime(cooldown.remaining_ms)}.`);
       const input = document.getElementById('answerInput');
       input.value = '';
       input.disabled = false;
-      input.focus();
+      const clearBtn = document.getElementById('clearAnswerBtn');
+      if (clearBtn) clearBtn.classList.add('hidden');
 
       document.getElementById('submitBtn').disabled = false;
       document.getElementById('feedbackBanner').classList.add('hidden');
+
+      // Na mobilnim ekranima centriraj karticu pitanja u vidno polje
+      if (window.innerWidth < 768) {
+        const qCard = document.getElementById('questionCard');
+        if (qCard) {
+          qCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+
+      input.focus();
 
       startTimer();
     }
