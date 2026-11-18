@@ -523,27 +523,76 @@ function sanitizeText(str) {
     .trim();
 }
 
-// Filtar vulgarnih pojmova i lažnih nadimaka
-const BANNED_PATTERNS = [
-  'admin', 'test', 'asdf', 'fake', 'bot', 'glup', 'debil', 'idiot',
-  'fuck', 'shit', 'kurac', 'pizda', 'jeb', 'sranje', 'govno', 'pedofil',
-  'hitler', 'ustasa', 'cetnik', 'xxx', 'anonim', 'nobody', 'none', 'troll',
-  'gamer', 'destroyer', 'ninja', 'pro'
+// STROGI FILTAR VULGARNIH, UVREDLJIVIH POJMOVA I GOVORA MRŽNJE
+const PROFANITY_ROOTS = [
+  // Hrvatski/regionalni vulgarni korijeni i psovke
+  'jeb', 'jebo', 'jebat', 'jebem', 'jebi', 'jebiga', 'jebote', 'jebate', 'jebanje', 'jebac', 'jebavac',
+  'kurac', 'kurca', 'kurcina', 'kurce', 'kurcu', 'kurcev', 'karindj', 'karat',
+  'picka', 'pička', 'picu', 'piču', 'picke', 'pičke', 'pizda', 'pizde', 'pizdo', 'pizdetina', 'pizdarija',
+  'govno', 'govna', 'govnar', 'govnjar', 'govnarija', 'govnence',
+  'seronja', 'sranje', 'posran', 'posrati', 'poserem', 'usrani', 'kenjam', 'kenjator', 'kenjac',
+  'drkadzija', 'drkadžija', 'drkati', 'drkam', 'drkanje',
+  'drolja', 'droljo', 'droljetina', 'kurva', 'kurvetina', 'kurvetino', 'kucka', 'kučka',
+  'supak', 'šupak', 'supcina', 'šupčina', 'cmar', 'čmar',
+  // Uvrede, slurs i govor mržnje
+  'peder', 'pederu', 'pedercina', 'pederčina', 'pedofil', 'lezba', 'lezbijka',
+  'cigan', 'cigani', 'cigo', 'balija', 'cetnik', 'četnik', 'ustasa', 'ustaša',
+  'hitler', 'nacist', 'fasist', 'fašist', 'siegheil', 'svastika',
+  'debil', 'idiot', 'retard', 'moron',
+  // Engleski vulgarni izrazi
+  'fuck', 'fucker', 'fucking', 'shit', 'bitch', 'dick', 'pussy', 'asshole', 'cunt', 'whore', 'bastard', 'nigger', 'nigga'
 ];
 
-function validateRealName(name) {
-  if (!name || typeof name !== 'string') return false;
-  const clean = name.trim().toLowerCase();
-  if (clean.length < 2 || clean.length > 35) return false;
-  
-  // Mora sadržavati stvarna slova (hrvatska ili engleska)
-  const lettersOnly = clean.replace(/[^a-zA-ZčćžšđČĆŽŠĐ\s\-'.]/g, '');
-  if (lettersOnly.length < 2) return false;
+function isProfaneName(name) {
+  if (!name || typeof name !== 'string') return true;
+  const raw = name.trim().toLowerCase();
+  if (raw.length < 2 || raw.length > 35) return true;
 
-  for (const bad of BANNED_PATTERNS) {
-    if (clean.includes(bad)) return false;
+  // 1. Zamjena leetspeak simbola i brojeva
+  const leetMap = {
+    '0': 'o', '1': 'i', '3': 'e', '4': 'a', '5': 's', '7': 't', '8': 'b',
+    '@': 'a', '$': 's', 'v': 'u', 'w': 'v'
+  };
+  let leetStr = '';
+  for (const ch of raw) {
+    leetStr += leetMap[ch] || ch;
   }
-  return true;
+
+  // 2. Čišćenje znakova koji nisu slova
+  const clean1 = raw.replace(/[^a-zčćžšđ]/g, '');
+  const clean2 = leetStr.replace(/[^a-zčćžšđ]/g, '');
+  // Sažimanje uzastopnih ponovljenih slova (npr. kuuuuuraaac -> kurac)
+  const dedup1 = clean1.replace(/(.)\1+/g, '$1');
+  const dedup2 = clean2.replace(/(.)\1+/g, '$1');
+
+  const candidates = [clean1, clean2, dedup1, dedup2, raw.replace(/\s+/g, ''), leetStr.replace(/\s+/g, '')];
+
+  for (const cand of candidates) {
+    if (!cand) continue;
+    const candNorm = cand
+      .replace(/[čć]/g, 'c')
+      .replace(/[ž]/g, 'z')
+      .replace(/[š]/g, 's')
+      .replace(/[đ]/g, 'dj');
+
+    for (const bad of PROFANITY_ROOTS) {
+      const badNorm = bad
+        .replace(/[čć]/g, 'c')
+        .replace(/[ž]/g, 'z')
+        .replace(/[š]/g, 's')
+        .replace(/[đ]/g, 'dj');
+
+      if (candNorm.includes(badNorm)) {
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
+
+function validateRealName(name) {
+  return !isProfaneName(name);
 }
 
 function parseJsonBody(req) {
@@ -880,32 +929,37 @@ const server = http.createServer(async (req, res) => {
       return sendJson(res, 404, { error: 'Podaci nisu pronađeni' });
     }
 
-    // API: Registracija i slanje verifikacijskog OTP koda (Maksimalno 70 profila)
+    // API: Registracija i prijava (Maksimalno 70 profila, strogi filtar vulgarnosti)
     if (req.method === 'POST' && pathname === '/api/auth/register') {
       const data = await parseJsonBody(req);
-      const email = sanitizeText(data.email || '').toLowerCase();
-      const firstName = sanitizeText(data.firstName || '');
-      const lastName = sanitizeText(data.lastName || '');
-      const className = sanitizeText(data.className || '');
+      const name = sanitizeText(data.name || data.firstName || '').trim();
+      const className = sanitizeText(data.className || '').trim();
+      let email = sanitizeText(data.email || '').toLowerCase().trim();
 
-      if (!email || !email.includes('@') || email.length < 5) {
+      if (!name || name.length < 2) {
         return sendJson(res, 400, {
           success: false,
-          message_hr: 'Molimo unesite valjanu e-mail adresu.',
-          message_en: 'Please enter a valid email address.'
+          message_hr: 'Molimo upišite ime ili pseudonim (barem 2 slova).',
+          message_en: 'Please enter a name or pseudonym (at least 2 characters).'
         });
       }
 
-      if (!validateRealName(firstName)) {
+      if (isProfaneName(name)) {
         return sendJson(res, 400, {
           success: false,
-          message_hr: 'Molimo unesite svoje STVARNO osobno ime (npr. Ivan, Marko, Ana). Izmišljeni ili vulgarni nadimci nisu dopušteni i ocjena se neće priznati.',
-          message_en: 'Please enter your REAL first name (e.g. John, Anna). Nicknames and vulgar entries are not permitted.'
+          message_hr: 'Odabrano ime ili pseudonim sadrži neprimjeren, vulgaran ili uvredljiv izraz. Molimo odaberite pristojno ime.',
+          message_en: 'The chosen name contains inappropriate or offensive language. Please choose a suitable name.'
         });
+      }
+
+      // Ako e-mail nije unesen, stvori stabilan identifikator za bazu
+      if (!email || !email.includes('@')) {
+        const cleanSlug = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+        email = `${cleanSlug || 'ucenik'}@dokle.school`;
       }
 
       // Provjera postojećeg korisnika
-      const existingUser = db.prepare('SELECT * FROM users WHERE email = ?').get(email);
+      let existingUser = db.prepare('SELECT * FROM users WHERE first_name = ? OR email = ?').get(name, email);
 
       // OGRANIČENJE NA MAKSIMALNO 70 PROFILA
       if (!existingUser) {
@@ -924,27 +978,27 @@ const server = http.createServer(async (req, res) => {
       if (existingUser) {
         db.prepare(`
           UPDATE users 
-          SET first_name = ?, last_name = ?, class_name = ?, is_verified = 1, verification_code = NULL, last_login = CURRENT_TIMESTAMP
+          SET first_name = ?, class_name = ?, is_verified = 1, verification_code = NULL, last_login = CURRENT_TIMESTAMP
           WHERE id = ?
-        `).run(firstName, lastName, className, existingUser.id);
+        `).run(name, className, existingUser.id);
         userId = existingUser.id;
       } else {
         const info = db.prepare(`
           INSERT INTO users (email, first_name, last_name, class_name, verification_code, code_expires_at, is_verified)
-          VALUES (?, ?, ?, ?, NULL, NULL, 1)
-        `).run(email, firstName, lastName, className);
+          VALUES (?, ?, '', ?, NULL, NULL, 1)
+        `).run(email, name, className);
         userId = info.lastInsertRowid;
       }
 
       const activeUser = db.prepare('SELECT id, email, first_name, last_name, class_name, is_verified FROM users WHERE id = ?').get(userId);
 
-      console.log(`[PRIJAVA] Uspješno prijavljen učenik: ${email} (${firstName} ${lastName}, ${className})`);
+      console.log(`[PRIJAVA] Uspješno prijavljen: ${name} (${className || 'Bez razreda'})`);
 
       return sendJson(res, 200, {
         success: true,
         user: activeUser,
-        message_hr: `Uspješna prijava! Dobrodošli, ${firstName}.`,
-        message_en: `Welcome, ${firstName}!`
+        message_hr: `Uspješna prijava! Dobrodošli, ${name}.`,
+        message_en: `Welcome, ${name}!`
       });
     }
 

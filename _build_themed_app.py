@@ -224,8 +224,12 @@ HTML_CONTENT = r'''<!DOCTYPE html>
 
     <!-- TOP BAR SA ZELENIM UĐBENIČKIM AKCENTOM -->
     <header class="bg-surface backdrop-blur-md rounded-2xl p-3 sm:p-5 shadow-xl flex items-center justify-between gap-2 border">
-      <!-- LOGO & NASLOV -->
+      <!-- LOGO & NASLOV S TIPKOM POČETNA -->
       <div class="flex items-center space-x-2.5 sm:space-x-3 min-w-0">
+        <button onclick="returnToHome()" title="Povratak na početnu stranicu / izbor modula" 
+                class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-tr from-[#2d633d] to-[#60aa75] hover:opacity-90 flex items-center justify-center text-xl sm:text-2xl shadow-lg shadow-[#60aa75]/25 shrink-0 text-white font-serif-title font-bold transition active:scale-95">
+          🏠
+        </button>
         <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-tr from-[#2d633d] to-[#60aa75] flex items-center justify-center text-xl sm:text-2xl shadow-lg shadow-[#60aa75]/25 shrink-0 text-white font-serif-title font-bold">
           I.
         </div>
@@ -237,13 +241,19 @@ HTML_CONTENT = r'''<!DOCTYPE html>
             </span>
           </h1>
           <p class="text-[10px] sm:text-xs text-muted truncate" id="headerSubtitle">
-            Doba prosvjetiteljstva u Europi i Hrvatskoj (16.–18. st.)
+            Gimnazijski kurikulum (Prosvjetiteljstvo) & Dan sjećanja (Vukovar i Škabrnja)
           </p>
         </div>
       </div>
 
-      <!-- KONTROLE: DARK/LIGHT, SKRIPTA, ZVUK, JEZIK, PROFIL, NASTAVNIK -->
+      <!-- KONTROLE: POČETNA, DARK/LIGHT, SKRIPTA, ZVUK, JEZIK, PROFIL, NASTAVNIK -->
       <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        <!-- Dugme Početna -->
+        <button onclick="returnToHome()" title="Povratak na izbor kvizova i modula"
+                class="px-2.5 py-2 sm:px-3 sm:py-2 bg-[#60aa75]/20 hover:bg-[#60aa75]/30 text-[#60aa75] rounded-xl text-xs font-bold border border-[#60aa75]/40 flex items-center gap-1.5 transition active:scale-95 min-h-[38px]">
+          <span>🏠</span>
+          <span class="hidden md:inline">Početna</span>
+        </button>
         <!-- Prekidač Dark / Light Mode -->
         <button id="themeToggleBtn" onclick="toggleTheme()" title="Promijeni temu (Svijetlo / Tamno)"
                 class="p-2 sm:px-3 sm:py-2 bg-surface hover:border-[#60aa75] rounded-xl text-xs font-semibold border flex items-center gap-1 transition active:scale-95 min-h-[38px] min-w-[38px] justify-center">
@@ -311,6 +321,21 @@ HTML_CONTENT = r'''<!DOCTYPE html>
       <!-- ============================================================== -->
       <section id="studySection" class="hidden space-y-4 sm:space-y-5">
         <div class="bg-surface rounded-2xl p-4 sm:p-7 shadow-xl space-y-3 border">
+          <!-- GORNJA NAVIGACIJA SKRIPTE -->
+          <div class="flex items-center justify-between gap-2 border-b pb-3 mb-2 flex-wrap">
+            <button onclick="returnToHome()" class="px-3.5 py-2 bg-card-inner hover:border-[#60aa75] rounded-xl text-xs font-bold border flex items-center gap-1.5 transition text-muted hover:text-white">
+              <span>🏠</span> <span>Početna</span>
+            </button>
+            <div class="flex items-center gap-1.5 overflow-x-auto text-xs">
+              <button onclick="filterStudyScript('all')" id="studyTabAll" class="study-tab-btn active px-3 py-1.5 rounded-xl font-bold bg-[#60aa75] text-white">Sve lekcije (1–8)</button>
+              <button onclick="filterStudyScript('enlightenment')" id="studyTabEnl" class="study-tab-btn px-3 py-1.5 rounded-xl font-bold bg-card-inner text-muted hover:text-white border">🏛️ Prosvjetiteljstvo</button>
+              <button onclick="filterStudyScript('vukovar')" id="studyTabVuk" class="study-tab-btn px-3 py-1.5 rounded-xl font-bold bg-card-inner text-muted hover:text-white border">🕯️ Vukovar & Škabrnja</button>
+            </div>
+            <button onclick="switchToGameLobby()" class="px-4 py-2 bg-[#478b5c] hover:bg-[#3d774f] text-white font-bold rounded-xl text-xs flex items-center gap-1.5 shadow">
+              <span>🎮 Kviz</span> <span>➔</span>
+            </button>
+          </div>
+
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b pb-4 border-slate-700/40">
             <div>
               <span class="text-xs uppercase font-mono-num font-bold text-[#60aa75] tracking-wider">
@@ -388,7 +413,16 @@ HTML_CONTENT = r'''<!DOCTYPE html>
             <div class="p-4 sm:p-6 text-xs sm:text-sm text-muted space-y-3 border-t leading-relaxed border-slate-700/30">
               <p><strong>Montesquieu:</strong> <em>O duhu zakona</em> (1748.) – dioba vlasti na zakonodavnu, izvršnu i sudbenu.<br>
               <strong>Jean-Jacques Rousseau:</strong> <em>Društveni ugovor</em> (1762.) – pojam opće volje i narodni suverenitet.<br>
-              <strong>Immanuel Kant:</strong> <em>Kritika čistoga uma</em> (1781.), <em>Prema vječnom miru</em> (1795.).<br>
+              
+              <div class="my-3 p-3 bg-card-inner rounded-2xl border max-w-sm mx-auto sm:mx-0">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Encyclopedie_frontispice_section.jpg/640px-Encyclopedie_frontispice_section.jpg"
+                     alt="Frontispis Enciklopedije" class="w-full h-40 object-cover rounded-xl" loading="lazy" onerror="this.style.display='none'" />
+                <p class="text-[10px] text-muted mt-1.5 italic text-center leading-snug">
+                  Frontispis Francuske enciklopedije (Cochin, 1772)<br>
+                  <span class="opacity-75">Izvor: Wikimedia Commons (Javno dobro)</span>
+                </p>
+              </div>
+              <p><strong>Immanuel Kant:</strong> <em>Kritika čistoga uma</em> (1781.), <em>Prema vječnom miru</em> (1795.).<br>
               <strong>Voltaire:</strong> vjerska tolerancija i sloboda govora.<br>
               <strong>Cesare Beccaria:</strong> <em>O zločinima i kaznama</em> (1764.) – razmjernost kazni, protiv torture.</p>
             </div>
@@ -460,6 +494,15 @@ HTML_CONTENT = r'''<!DOCTYPE html>
               <span class="text-amber-400 group-open:rotate-180 transition-transform">▼</span>
             </summary>
             <div class="p-4 sm:p-6 text-xs sm:text-sm text-muted space-y-3 border-t leading-relaxed border-slate-700/30">
+              <p>
+              <div class="my-3 p-3 bg-card-inner rounded-2xl border max-w-sm mx-auto sm:mx-0">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%C5%A0kabrnja_spomen-obilje%C5%BEje.jpg/640px-%C5%A0kabrnja_spomen-obilje%C5%BEje.jpg"
+                     alt="Spomen-obilježje u Škabrnji" class="w-full h-40 object-cover rounded-xl" loading="lazy" onerror="this.style.display='none'" />
+                <p class="text-[10px] text-muted mt-1.5 italic text-center leading-snug">
+                  Spomen-obilježje masovne grobnice u Škabrnji<br>
+                  <span class="opacity-75">Izvor: Wikimedia Commons (CC BY-SA 4.0)</span>
+                </p>
+              </div>
               <p><strong>18. i 19. studenoga 1991.:</strong> Istoga dana kada je slomljen otpor u Vukovaru, postrojbe 9. korpusa JNA i paravojne formacije izvele su brutalan napad na ravnokotarsko selo Škabrnju i susjedni Nadin.</p>
               <p><strong>Položaji otpora i zaseoci:</strong> Ambar, Ražovljeva glavica, Ulica Slavka Šegarića, crkva Uznesenja BDM.</p>
               <p><strong>Posljedice:</strong> Ubijena su 43 civila i 15 branitelja u samom napadu (tijekom rata ukupno 84 škabrnjske žrtve). Škabrnja je uz Vukovar postala trajni simbol hrvatske žrtve i otpora.</p>
@@ -502,62 +545,90 @@ HTML_CONTENT = r'''<!DOCTYPE html>
       <!-- PREDVORJE (LOBBY)                                              -->
       <!-- ============================================================== -->
       <section id="lobbySection" class="space-y-4 md:space-y-6">
-        <!-- SPOMEN BANNER POVODOM OBLJETNICE VUKOVARA I ŠKABRNJE -->
-        <div class="relative overflow-hidden bg-gradient-to-r from-red-950/70 via-slate-900/90 to-blue-950/70 border-2 border-amber-500/40 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-3">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="space-y-1">
-              <div class="flex items-center gap-2">
-                <span class="text-base sm:text-xl">🕯️</span>
-                <span class="text-[10px] sm:text-xs uppercase tracking-widest font-mono-num font-bold text-amber-400 bg-amber-950/60 border border-amber-500/40 px-2.5 py-0.5 rounded-full">
-                  18. STUDENOGA · DAN SJEĆANJA
-                </span>
-                <span class="text-base sm:text-xl">🕊️</span>
+        <!-- DVIJE GLAVNE TEMATSKE CJELINE (MODULI) S WIKIPEDIA SLIKAMA -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 pt-1">
+          
+          <!-- MODUL 1: REDOVNA NASTAVA (PROSVJETITELJSTVO) -->
+          <div onclick="setLobbySection('enlightenment')"
+               class="group cursor-pointer rounded-3xl bg-surface border-2 border-[#60aa75]/40 hover:border-[#60aa75] p-4 sm:p-6 shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="relative h-44 sm:h-52 w-full rounded-2xl overflow-hidden border border-[#60aa75]/30 bg-black/40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Encyclopedie_frontispice_section.jpg/640px-Encyclopedie_frontispice_section.jpg"
+                     alt="Frontispis Francuske enciklopedije (1772)"
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                     loading="lazy" onerror="this.style.display='none'" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+                <div class="absolute bottom-3 left-3 right-3 text-white">
+                  <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#478b5c] text-white">
+                    🏛️ Redovna nastava · Povijest 3
+                  </span>
+                  <h3 class="text-base sm:text-xl font-serif-title font-bold mt-1 text-white">
+                    Doba prosvjetiteljstva u Europi i Hrvatskoj
+                  </h3>
+                </div>
               </div>
-              <h2 class="text-lg sm:text-2xl font-serif-title font-bold text-white">
-                Povodom obljetnice sjećanja na Vukovar i Škabrnju
-              </h2>
-              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl">
-                Zasebna tematska cjelina u čast žrtvama Domovinskog rata. Učenici kroz 4 spomen-kviza (Igre 5–8) odaju počast herojima poznavanjem povijesnih činjenica.
+              <p class="text-xs text-muted leading-relaxed">
+                Apsolutizam, birokracija, stajaća vojska, prosvjetiteljski mislioci (Locke, Montesquieu, Rousseau, Voltaire), reforme Marije Terezije i Josipa II., merkantilizam i fiziokrati.
               </p>
+              <div class="text-[10px] text-muted opacity-75 italic pt-0.5">
+                📷 Slika: Frontispis Encyclopédie (Cochin, 1772) · Izvor: Wikimedia Commons (Javno dobro)
+              </div>
             </div>
-            <button onclick="setLobbySection('vukovar')" class="px-5 py-2.5 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-slate-950 font-black rounded-xl text-xs sm:text-sm transition shadow-lg shadow-amber-500/20 shrink-0 self-start sm:self-center flex items-center gap-1.5 active:scale-95">
-              <span>🕯️ OTVORI SPOMEN-KVIZOVE</span>
-              <span>➔</span>
-            </button>
+            <div class="pt-3.5 flex items-center justify-between border-t border-slate-700/30 mt-3">
+              <span class="text-xs font-mono-num font-bold text-[#60aa75]">Kvizovi 1–4 · 32 kategorije</span>
+              <button class="px-4 py-2 bg-[#478b5c] group-hover:bg-[#3d774f] text-white font-black rounded-xl text-xs transition shadow-lg shadow-[#478b5c]/30 flex items-center gap-1.5">
+                <span>Otvori kvizove 1–4</span>
+                <span>➔</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- MODUL 2: DAN SJEĆANJA (VUKOVAR I ŠKABRNJA) -->
+          <div onclick="setLobbySection('vukovar')"
+               class="group cursor-pointer rounded-3xl bg-surface border-2 border-amber-500/40 hover:border-amber-400 p-4 sm:p-6 shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="relative h-44 sm:h-52 w-full rounded-2xl overflow-hidden border border-amber-500/30 bg-black/40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Vukovar_Water_Tower_2020.jpg/600px-Vukovar_Water_Tower_2020.jpg"
+                     alt="Vukovarski vodotoranj"
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                     loading="lazy" onerror="this.style.display='none'" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+                <div class="absolute bottom-3 left-3 right-3 text-white">
+                  <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-700 text-white">
+                    🕯️ 18. studenoga · Dan sjećanja
+                  </span>
+                  <h3 class="text-base sm:text-xl font-serif-title font-bold mt-1 text-white">
+                    Vukovar i Škabrnja – Domovinski rat
+                  </h3>
+                </div>
+              </div>
+              <p class="text-xs text-muted leading-relaxed">
+                Herojska obrana Vukovara, 204. brigada, bolnica, stradanje Škabrnje u zadarskom zaleđu, osamostaljenje, međunarodno priznanje Republike Hrvatske i kultura trajnog sjećanja.
+              </p>
+              <div class="text-[10px] text-muted opacity-75 italic pt-0.5">
+                📷 Slika: Vukovarski vodotoranj · Izvor: Wikimedia Commons (CC BY-SA 4.0)
+              </div>
+            </div>
+            <div class="pt-3.5 flex items-center justify-between border-t border-slate-700/30 mt-3">
+              <span class="text-xs font-mono-num font-bold text-amber-400">Kvizovi 5–8 · 32 kategorije</span>
+              <button class="px-4 py-2 bg-gradient-to-r from-amber-600 to-amber-500 group-hover:from-amber-500 group-hover:to-amber-400 text-slate-950 font-black rounded-xl text-xs transition shadow-lg shadow-amber-500/20 flex items-center gap-1.5">
+                <span>Otvori kvizove 5–8</span>
+                <span>➔</span>
+              </button>
+            </div>
           </div>
         </div>
 
-        <!-- ODABIR MODULA NASTAVE U LOBBYJU -->
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
-          <div>
-            <h3 class="text-lg sm:text-xl font-serif-title font-bold text-[#60aa75]" id="lobbyTitle">
-              Odaberi nastavnu igru
-            </h3>
-            <p class="text-xs text-muted" id="lobbyDesc">
-              8 otvorenih kategorija po igri · 25 sekundi po pitanju. Rjeđi odgovori donose veću kilometražu!
-            </p>
-          </div>
-
-          <!-- Prebacivanje prikaza -->
-          <div class="flex items-center gap-1.5 bg-surface p-1 rounded-2xl border text-xs self-start sm:self-auto overflow-x-auto">
-            <button onclick="setLobbySection('all')" class="module-tab-btn px-3 py-1.5 rounded-xl font-bold transition text-[11px] bg-[#60aa75] text-white shadow">
-              📋 Sve igre (1–8)
-            </button>
-            <button onclick="setLobbySection('enlightenment')" class="module-tab-btn px-3 py-1.5 rounded-xl font-bold transition text-[11px] bg-card-inner text-muted hover:text-white">
-              🏛️ Prosvjetiteljstvo (1–4)
-            </button>
-            <button onclick="setLobbySection('vukovar')" class="module-tab-btn px-3 py-1.5 rounded-xl font-bold transition text-[11px] bg-card-inner text-muted hover:text-white">
-              🕯️ Vukovar & Škabrnja (5–8)
-            </button>
-          </div>
+        <!-- TRENUTNO AKTIVNI MODUL S BRZIM PRIJELAZOM I BREADCRUMBOM -->
+        <div id="moduleStatusBanner" class="p-3.5 sm:p-4 rounded-2xl border transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-surface shadow-md">
+          <!-- Dinamički se popunjava u JS -->
         </div>
 
+        <!-- POPIS IGARA ZA ODABRANI MODUL -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4" id="gamesGrid">
           <!-- Popunjava se u JS -->
         </div>
-
-        <!-- NATJECATELJSKA 24H RANG LISTA S PODIJEM -->
-        <div class="bg-surface rounded-3xl p-4 sm:p-6 shadow-2xl space-y-4 border-2 border-[#60aa75]/40">
+<div class="bg-surface rounded-3xl p-4 sm:p-6 shadow-2xl space-y-4 border-2 border-[#60aa75]/40">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 border-b pb-3 border-slate-700/30">
             <div>
               <div class="flex items-center gap-2">
@@ -822,10 +893,15 @@ HTML_CONTENT = r'''<!DOCTYPE html>
         <!-- PITANJE I UNOS ODGOVORA -->
         <div class="bg-surface rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl space-y-4 sm:space-y-6 border">
           <div class="flex items-center justify-between gap-2 border-b pb-3 border-slate-700/30">
-            <div class="min-w-0">
-              <span class="text-[10px] sm:text-xs uppercase tracking-widest font-mono-num text-[#60aa75] font-bold block" id="gameCatBadge">
-                Igra 1 · Pitanje 1 / 8
-              </span>
+            <div class="flex items-center gap-2.5 min-w-0">
+              <button onclick="confirmExitGame()" title="Prekini kviz i vrati se na izbor" class="p-2 sm:px-2.5 sm:py-1.5 bg-card-inner hover:bg-red-950/40 hover:border-red-500/40 border rounded-xl text-muted hover:text-red-300 transition shrink-0 text-xs flex items-center gap-1">
+                <span>🏠</span>
+                <span class="hidden sm:inline">Izlaz</span>
+              </button>
+              <div class="min-w-0">
+                <span class="text-[10px] sm:text-xs uppercase tracking-widest font-mono-num text-[#60aa75] font-bold block truncate" id="gameCatBadge">
+                  Igra 1 · Pitanje 1 / 8
+                </span>
               <h3 class="text-sm sm:text-lg font-bold text-white truncate mt-0.5" id="gameActiveTitle">
                 Nastanak moderne države
               </h3>
@@ -1051,60 +1127,59 @@ HTML_CONTENT = r'''<!DOCTYPE html>
 
   <!-- MODALI -->
   <div id="loginModal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 hidden">
-    <div class="bg-surface rounded-3xl max-w-md w-full p-5 sm:p-7 shadow-2xl space-y-4 max-h-[95dvh] overflow-y-auto border">
-      <div class="text-center space-y-1.5">
-        <div class="w-11 h-11 mx-auto rounded-2xl bg-[#60aa75]/15 border border-[#60aa75]/30 flex items-center justify-center text-xl text-[#60aa75]">
+    <div class="bg-surface rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl space-y-4 max-h-[95dvh] overflow-y-auto border-2 border-[#60aa75]/40">
+      <div class="text-center space-y-2">
+        <div class="w-12 h-12 mx-auto rounded-2xl bg-[#60aa75]/20 border border-[#60aa75]/40 flex items-center justify-center text-2xl text-[#60aa75]">
           👤
         </div>
-        <h3 class="text-lg sm:text-xl font-serif-title font-bold text-white">Prijava učenika</h3>
+        <h3 class="text-xl font-serif-title font-bold text-white">Prijava za kviz</h3>
         <p class="text-xs text-muted">
-          Unesite svoje stvarno ime, razred i e-mail za sudjelovanje u kvizu i bodovanje.
+          Upišite svoje ime ili pseudonim za sudjelovanje u igri i bodovanje.
         </p>
       </div>
 
-      <form id="registerForm" onsubmit="handleRegisterSubmit(event)" class="space-y-3.5 text-xs">
+      <form id="registerForm" onsubmit="handleRegisterSubmit(event)" class="space-y-4 text-xs">
         <div>
-          <label class="block font-bold text-slate-300 mb-1">E-mail adresa (obavezno):</label>
-          <input type="email" id="inputEmail" required placeholder="ime.prezime@skola.hr"
-                 inputmode="email" autocomplete="email"
-                 class="w-full px-3.5 py-2.5 bg-card-inner border rounded-xl text-white focus:border-[#60aa75] focus:outline-none min-h-[44px]" />
-        </div>
-
-        <div>
-          <label class="block font-bold text-[#60aa75] mb-1 flex items-center justify-between">
-            <span>Stvarno osobno ime:</span>
-            <span class="text-[10px] text-muted font-normal">Bez nadimaka!</span>
+          <label class="block font-bold text-[#60aa75] mb-1.5 text-sm flex items-center justify-between">
+            <span>Ime ili pseudonim:</span>
+            <span class="text-[10px] text-muted font-normal">npr. Marko ili Povjesničar3</span>
           </label>
-          <input type="text" id="inputFirstName" required placeholder="npr. Marko ili Ana"
-                 inputmode="text" autocomplete="given-name"
-                 class="w-full px-3.5 py-2.5 bg-card-inner border border-[#60aa75]/50 rounded-xl text-white focus:border-[#60aa75] focus:outline-none min-h-[44px]" />
+          <input type="text" id="inputPlayerName" maxlength="30" required
+                 placeholder="Upiši svoje ime ili nadimak..."
+                 inputmode="text" autocomplete="nickname"
+                 class="w-full px-4 py-3 bg-card-inner border-2 border-slate-700/60 focus:border-[#60aa75] rounded-xl text-white font-medium text-sm focus:outline-none min-h-[48px] transition" />
         </div>
 
-        <div class="grid grid-cols-2 gap-2.5">
-          <div>
-            <label class="block font-semibold text-muted mb-1">Prezime:</label>
-            <input type="text" id="inputLastName" placeholder="npr. Horvat"
-                   inputmode="text" autocomplete="family-name"
-                   class="w-full px-3.5 py-2.5 bg-card-inner border rounded-xl text-white focus:border-[#60aa75] focus:outline-none min-h-[44px]" />
-          </div>
-          <div>
-            <label class="block font-semibold text-muted mb-1">Razred:</label>
-            <input type="text" id="inputClass" placeholder="npr. 3.a"
-                   inputmode="text"
-                   class="w-full px-3.5 py-2.5 bg-card-inner border rounded-xl text-white focus:border-[#60aa75] focus:outline-none min-h-[44px]" />
-          </div>
+        <div>
+          <label class="block font-semibold text-muted mb-1 text-xs">
+            Razred (opcionalno):
+          </label>
+          <input type="text" id="inputClass" placeholder="npr. 3.a"
+                 inputmode="text"
+                 class="w-full px-3.5 py-2.5 bg-card-inner border border-slate-700/50 rounded-xl text-white text-xs focus:border-[#60aa75] focus:outline-none min-h-[42px]" />
         </div>
 
-        <div class="p-2.5 bg-red-950/40 border border-red-500/30 rounded-xl text-[11px] text-red-300 leading-snug">
-          ⚠️ <strong>Pravila:</strong> Za točnu evidenciju unesite stvarno ime i razred. Maksimalan broj profila u sustavu je 70 učenika.
+        <!-- STROGO UPOZORENJE NA VULGARNOST -->
+        <div class="p-3 bg-red-950/50 border border-red-500/40 rounded-xl text-xs text-red-300 leading-snug space-y-1">
+          <div class="font-bold flex items-center gap-1.5 text-red-200">
+            <span>⚠️</span> <span>STROGO UPOZORENJE NA VULGARNOST:</span>
+          </div>
+          <p class="text-[11px] text-red-300/90 leading-relaxed">
+            Zabranjeni su vulgarni, uvredljivi, pogrdni izrazi i govor mržnje. Sustav posjeduje automatski sigurnosni filtar koji takva imena automatski odbija i blokira.
+          </p>
+        </div>
+
+        <div id="profanityErrorBox" class="hidden p-3 bg-red-600/20 border-2 border-red-500 rounded-xl text-xs text-red-200 font-bold text-center leading-relaxed">
+          🚫 Uneseno ime sadrži neprimjeren ili uvredljiv izraz. Molimo odaberite pristojno ime ili nadimak.
         </div>
 
         <div class="flex gap-2.5 pt-1">
-          <button type="button" onclick="closeLoginModal()" class="w-1/3 py-3 bg-card-inner rounded-xl font-bold transition min-h-[44px] border">
+          <button type="button" onclick="closeLoginModal()" class="w-1/3 py-3 bg-card-inner hover:bg-slate-800 rounded-xl font-bold transition min-h-[46px] border text-muted hover:text-white">
             Odustani
           </button>
-          <button type="submit" id="regSubmitBtn" class="w-2/3 py-3 bg-[#478b5c] hover:bg-[#3d774f] text-white font-black rounded-xl transition shadow-lg shadow-[#478b5c]/30 min-h-[44px]">
-            Prijavi se i igraj ➔
+          <button type="submit" id="regSubmitBtn" class="w-2/3 py-3 bg-[#478b5c] hover:bg-[#3d774f] text-white font-black rounded-xl text-sm transition shadow-lg shadow-[#478b5c]/30 min-h-[46px] flex items-center justify-center gap-2">
+            <span>Započni igru</span>
+            <span>➔</span>
           </button>
         </div>
       </form>
@@ -1587,6 +1662,7 @@ HTML_CONTENT = r'''<!DOCTYPE html>
     window.addEventListener('DOMContentLoaded', () => {
       initTheme();
       loadSavedUser();
+      updateModuleBannerUI();
       renderLobby();
       fetchLeaderboard();
       updateMapPosition(0);
@@ -1608,10 +1684,11 @@ HTML_CONTENT = r'''<!DOCTYPE html>
     function updateUserBadgeUI() {
       const badge = document.getElementById('userBadge');
       const loginBtn = document.getElementById('loginBtn');
-      if (currentUser && currentUser.first_name) {
+      const name = currentUser ? (currentUser.name || currentUser.first_name || 'Učenik') : '';
+      if (currentUser && name) {
         badge.classList.remove('hidden');
         badge.classList.add('flex');
-        document.getElementById('userDisplayName').textContent = currentUser.first_name;
+        document.getElementById('userDisplayName').textContent = name;
         loginBtn.classList.add('hidden');
       } else {
         badge.classList.add('hidden');
@@ -1648,17 +1725,127 @@ HTML_CONTENT = r'''<!DOCTYPE html>
 
     let currentLobbySection = 'all';
 
+    function returnToHome() {
+      clearInterval(timerInterval);
+      document.getElementById('studySection').classList.add('hidden');
+      document.getElementById('gameSection').classList.add('hidden');
+      document.getElementById('resultsSection').classList.add('hidden');
+      document.getElementById('lobbySection').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setLobbySection('all');
+    }
+
+    function confirmExitGame() {
+      if (confirm('Želite li prekinuti igru i vratiti se na početni izbor kvizova?')) {
+        returnToHome();
+      }
+    }
+
     function setLobbySection(sec) {
       currentLobbySection = sec;
-      document.querySelectorAll('.module-tab-btn').forEach(b => {
-        b.classList.remove('bg-[#60aa75]', 'text-white', 'shadow');
-        b.classList.add('bg-card-inner', 'text-muted');
-      });
-      if (event && event.target) {
-        event.target.classList.remove('bg-card-inner', 'text-muted');
-        event.target.classList.add('bg-[#60aa75]', 'text-white', 'shadow');
-      }
+      updateModuleBannerUI();
       renderLobby();
+      const banner = document.getElementById('moduleStatusBanner');
+      if (banner && sec !== 'all') {
+        banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    function updateModuleBannerUI() {
+      const banner = document.getElementById('moduleStatusBanner');
+      if (!banner) return;
+
+      if (currentLobbySection === 'enlightenment') {
+        banner.className = 'p-4 rounded-2xl border-2 border-[#60aa75]/60 bg-[#60aa75]/10 shadow-lg flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-all';
+        banner.innerHTML = `
+          <div class="flex items-center gap-3 min-w-0">
+            <span class="text-3xl shrink-0">🏛️</span>
+            <div class="min-w-0">
+              <div class="text-[11px] uppercase font-mono-num font-bold text-[#60aa75] tracking-wider truncate">ODABRANI MODUL: REDOVNA NASTAVA</div>
+              <h4 class="text-base sm:text-lg font-serif-title font-bold text-white truncate">Doba prosvjetiteljstva u Europi i Hrvatskoj (Kvizovi 1–4)</h4>
+              <p class="text-[11px] text-muted line-clamp-1 sm:line-clamp-none">Apsolutizam, prosvjetiteljske ideje, habsburške reforme i gospodarstvo (Alfa, str. 12–21)</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button onclick="setLobbySection('vukovar')" class="px-4 py-2 bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white font-bold rounded-xl text-xs transition shadow-md flex items-center gap-1.5 active:scale-95">
+              <span>🕯️ Prebaci na Vukovar i Škabrnju</span>
+              <span>➔</span>
+            </button>
+            <button onclick="setLobbySection('all')" class="px-3 py-2 bg-card-inner hover:bg-slate-800 rounded-xl text-xs text-muted hover:text-white border transition">
+              🏠 Sve igre
+            </button>
+          </div>
+        `;
+      } else if (currentLobbySection === 'vukovar') {
+        banner.className = 'p-4 rounded-2xl border-2 border-amber-500/60 bg-amber-950/30 shadow-lg flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-all';
+        banner.innerHTML = `
+          <div class="flex items-center gap-3 min-w-0">
+            <span class="text-3xl shrink-0">🕯️</span>
+            <div class="min-w-0">
+              <div class="text-[11px] uppercase font-mono-num font-bold text-amber-400 tracking-wider truncate">ODABRANI MODUL: 18. STUDENOGA</div>
+              <h4 class="text-base sm:text-lg font-serif-title font-bold text-white truncate">Dan sjećanja na žrtve Vukovara i Škabrnje (Kvizovi 5–8)</h4>
+              <p class="text-[11px] text-amber-200/80 line-clamp-1 sm:line-clamp-none">Herojska obrana Vukovara, stradanje Škabrnje, Domovinski rat i kultura sjećanja</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button onclick="setLobbySection('enlightenment')" class="px-4 py-2 bg-[#478b5c] hover:bg-[#3d774f] text-white font-bold rounded-xl text-xs transition shadow-md flex items-center gap-1.5 active:scale-95">
+              <span>🏛️ Vrati se na Redovnu nastavu</span>
+              <span>➔</span>
+            </button>
+            <button onclick="setLobbySection('all')" class="px-3 py-2 bg-card-inner hover:bg-slate-800 rounded-xl text-xs text-muted hover:text-white border transition">
+              🏠 Sve igre
+            </button>
+          </div>
+        `;
+      } else {
+        banner.className = 'p-3.5 sm:p-4 rounded-2xl border border-slate-700/50 bg-surface shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-all';
+        banner.innerHTML = `
+          <div class="flex items-center gap-3 min-w-0">
+            <span class="text-2xl shrink-0">📋</span>
+            <div class="min-w-0">
+              <div class="text-[11px] uppercase font-mono-num font-bold text-[#60aa75] tracking-wider truncate">SVI DOSTUPNI KVIZOVI</div>
+              <h4 class="text-sm sm:text-base font-serif-title font-bold text-white truncate">Prikazano svih 8 nastavnih i memorijalnih igara</h4>
+              <p class="text-[11px] text-muted line-clamp-1 sm:line-clamp-none">Odaberite željeni kviz iz popisa niže ili filtrirajte po modulu na vrhu</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button onclick="setLobbySection('enlightenment')" class="px-3 py-1.5 bg-[#60aa75]/20 hover:bg-[#60aa75]/30 text-[#60aa75] border border-[#60aa75]/40 rounded-xl text-xs font-bold transition">
+              🏛️ Samo Prosvjetiteljstvo
+            </button>
+            <button onclick="setLobbySection('vukovar')" class="px-3 py-1.5 bg-amber-950/40 hover:bg-amber-900/50 text-amber-300 border border-amber-500/40 rounded-xl text-xs font-bold transition">
+              🕯️ Samo Vukovar
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    function filterStudyScript(filter) {
+      document.querySelectorAll('.study-tab-btn').forEach(b => {
+        b.classList.remove('bg-[#60aa75]', 'text-white');
+        b.classList.add('bg-card-inner', 'text-muted', 'border');
+      });
+      const activeBtn = filter === 'all' ? document.getElementById('studyTabAll') :
+                        filter === 'enlightenment' ? document.getElementById('studyTabEnl') :
+                        document.getElementById('studyTabVuk');
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-card-inner', 'text-muted', 'border');
+        activeBtn.classList.add('bg-[#60aa75]', 'text-white');
+      }
+
+      // Show/hide lesson accordions
+      const details = document.querySelectorAll('#studySection details');
+      details.forEach((d, idx) => {
+        if (filter === 'all') {
+          d.classList.remove('hidden');
+        } else if (filter === 'enlightenment') {
+          if (idx < 5) d.classList.remove('hidden');
+          else d.classList.add('hidden');
+        } else if (filter === 'vukovar') {
+          if (idx >= 5) d.classList.remove('hidden');
+          else d.classList.add('hidden');
+        }
+      });
     }
 
     function renderLobby() {
@@ -1877,7 +2064,9 @@ Otključavanje za: ${formatCooldownTime(cooldown.remaining_ms)}.`);
     function findBestMatch(rawInput, answersList) {
       if (!rawInput || !answersList) return null;
       const clean = normalizeText(rawInput);
+      if (!clean) return null;
 
+      // 1. Direct exact normalized match with canonical or any alias
       for (const ans of answersList) {
         if (normalizeText(ans.c_hr) === clean || normalizeText(ans.c_en) === clean) {
           return ans;
@@ -1890,7 +2079,85 @@ Otključavanje za: ${formatCooldownTime(cooldown.remaining_ms)}.`);
           }
         }
       }
+
+      // 2. Prefix stripping (dr, doktor, general, pukovnik, kralj, car, operacija, bitka, grad, selo)
+      const prefixes = ['dr', 'doktor', 'general', 'pukovnik', 'bojnik', 'kralj', 'car', 'operacija', 'bitkaza', 'grad', 'selo', 'ulica', 'polozaj'];
+      let stripped = clean;
+      for (const p of prefixes) {
+        if (clean.startsWith(p) && clean.length > p.length + 2) {
+          stripped = clean.slice(p.length);
+          break;
+        }
+      }
+
+      if (stripped !== clean && stripped.length >= 3) {
+        for (const ans of answersList) {
+          if (normalizeText(ans.c_hr) === stripped || normalizeText(ans.c_en) === stripped) {
+            return ans;
+          }
+          if (ans.a && Array.isArray(ans.a)) {
+            for (const alias of ans.a) {
+              if (normalizeText(alias) === stripped) {
+                return ans;
+              }
+            }
+          }
+        }
+      }
+
+      // 3. Croatian plural / sound alternation tolerance
+      // e.g. doktori -> doktor; lijecnici -> lijecnik (ci -> k); branitelji -> branitelj; puske -> puska
+      const pluralVariants = [];
+      if (clean.endsWith('ci') && clean.length > 4) {
+        pluralVariants.push(clean.slice(0, -2) + 'k');
+      }
+      if (clean.endsWith('i') && clean.length > 3) {
+        pluralVariants.push(clean.slice(0, -1));
+      }
+      if (clean.endsWith('e') && clean.length > 3) {
+        pluralVariants.push(clean.slice(0, -1) + 'a');
+        pluralVariants.push(clean.slice(0, -1));
+      }
+      for (const pv of pluralVariants) {
+        for (const ans of answersList) {
+          if (normalizeText(ans.c_hr) === pv || (ans.a && ans.a.some(al => normalizeText(al) === pv))) {
+            return ans;
+          }
+        }
+      }
+
+      // 4. Fuzzy Levenshtein match for typos (1 typo for >= 5 letters, 2 typos for >= 8 letters)
+      for (const ans of answersList) {
+        const targets = [normalizeText(ans.c_hr)];
+        if (ans.a && Array.isArray(ans.a)) {
+          ans.a.forEach(al => targets.push(normalizeText(al)));
+        }
+        for (const tgt of targets) {
+          const maxLen = Math.max(clean.length, tgt.length);
+          if (maxLen >= 8 && levenshteinDist(clean, tgt) <= 2) {
+            return ans;
+          }
+          if (maxLen >= 5 && levenshteinDist(clean, tgt) <= 1) {
+            return ans;
+          }
+        }
+      }
+
       return null;
+    }
+
+    function levenshteinDist(s1, s2) {
+      if (s1.length < s2.length) return levenshteinDist(s2, s1);
+      if (s2.length === 0) return s1.length;
+      let prev = Array.from({ length: s2.length + 1 }, (_, i) => i);
+      for (let i = 0; i < s1.length; i++) {
+        const curr = [i + 1];
+        for (let j = 0; j < s2.length; j++) {
+          curr.push(Math.min(prev[j + 1] + 1, curr[j] + 1, prev[j] + (s1[i] !== s2[j] ? 1 : 0)));
+        }
+        prev = curr;
+      }
+      return prev[prev.length - 1];
     }
 
     function normalizeText(str) {
@@ -2263,7 +2530,10 @@ Otključavanje za: ${formatCooldownTime(cooldown.remaining_ms)}.`);
       document.getElementById('gameSection').classList.add('hidden');
       document.getElementById('studySection').classList.add('hidden');
       document.getElementById('lobbySection').classList.remove('hidden');
+      updateModuleBannerUI();
+      renderLobby();
       fetchLeaderboard();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function replayCurrentGame() {
@@ -2281,12 +2551,91 @@ Otključavanje za: ${formatCooldownTime(cooldown.remaining_ms)}.`);
       document.getElementById('loginModal').classList.add('hidden');
     }
 
+    // STROGI KLIJENTSKI FILTAR VULGARNOSTI
+    const CLIENT_PROFANITY_ROOTS = [
+      'jeb', 'jebo', 'jebat', 'jebem', 'jebi', 'jebiga', 'jebote', 'jebate', 'jebanje', 'jebac', 'jebavac',
+      'kurac', 'kurca', 'kurcina', 'kurce', 'kurcu', 'kurcev', 'karindj', 'karat',
+      'picka', 'pička', 'picu', 'piču', 'picke', 'pičke', 'pizda', 'pizde', 'pizdo', 'pizdetina', 'pizdarija',
+      'govno', 'govna', 'govnar', 'govnjar', 'govnarija', 'govnence',
+      'seronja', 'sranje', 'posran', 'posrati', 'poserem', 'usrani', 'kenjam', 'kenjator', 'kenjac',
+      'drkadzija', 'drkadžija', 'drkati', 'drkam', 'drkanje',
+      'drolja', 'droljo', 'droljetina', 'kurva', 'kurvetina', 'kurvetino', 'kucka', 'kučka',
+      'supak', 'šupak', 'supcina', 'šupčina', 'cmar', 'čmar',
+      'peder', 'pederu', 'pedercina', 'pederčina', 'pedofil', 'lezba', 'lezbijka',
+      'cigan', 'cigani', 'cigo', 'balija', 'cetnik', 'četnik', 'ustasa', 'ustaša',
+      'hitler', 'nacist', 'fasist', 'fašist', 'siegheil', 'svastika',
+      'debil', 'idiot', 'retard', 'moron',
+      'fuck', 'fucker', 'fucking', 'shit', 'bitch', 'dick', 'pussy', 'asshole', 'cunt', 'whore', 'bastard', 'nigger', 'nigga'
+    ];
+
+    function isClientProfane(name) {
+      if (!name || typeof name !== 'string') return true;
+      const raw = name.trim().toLowerCase();
+      if (raw.length < 2 || raw.length > 35) return true;
+
+      const leetMap = {
+        '0': 'o', '1': 'i', '3': 'e', '4': 'a', '5': 's', '7': 't', '8': 'b',
+        '@': 'a', '$': 's', 'v': 'u', 'w': 'v'
+      };
+      let leetStr = '';
+      for (const ch of raw) {
+        leetStr += leetMap[ch] || ch;
+      }
+
+      const clean1 = raw.replace(/[^a-zčćžšđ]/g, '');
+      const clean2 = leetStr.replace(/[^a-zčćžšđ]/g, '');
+      const dedup1 = clean1.replace(/(.)\1+/g, '$1');
+      const dedup2 = clean2.replace(/(.)\1+/g, '$1');
+
+      const candidates = [clean1, clean2, dedup1, dedup2, raw.replace(/\s+/g, ''), leetStr.replace(/\s+/g, '')];
+
+      for (const cand of candidates) {
+        if (!cand) continue;
+        const candNorm = cand
+          .replace(/[čć]/g, 'c')
+          .replace(/[ž]/g, 'z')
+          .replace(/[š]/g, 's')
+          .replace(/[đ]/g, 'dj');
+
+        for (const bad of CLIENT_PROFANITY_ROOTS) {
+          const badNorm = bad
+            .replace(/[čć]/g, 'c')
+            .replace(/[ž]/g, 'z')
+            .replace(/[š]/g, 's')
+            .replace(/[đ]/g, 'dj');
+
+          if (candNorm.includes(badNorm)) {
+            return true;
+          }
+        }
+      }
+      return false;
+    }
+
     async function handleRegisterSubmit(e) {
       e.preventDefault();
-      const email = document.getElementById('inputEmail').value.trim();
-      const firstName = document.getElementById('inputFirstName').value.trim();
-      const lastName = document.getElementById('inputLastName').value.trim();
-      const className = document.getElementById('inputClass').value.trim();
+      const nameInput = document.getElementById('inputPlayerName');
+      const name = nameInput.value.trim();
+      const classInput = document.getElementById('inputClass');
+      const className = (classInput ? classInput.value : '').trim();
+      const errBox = document.getElementById('profanityErrorBox');
+
+      if (errBox) errBox.classList.add('hidden');
+      nameInput.classList.remove('border-red-500', 'animate-pulse');
+
+      if (!name || name.length < 2) {
+        alert('Molimo upišite ime ili pseudonim od barem 2 znaka.');
+        nameInput.focus();
+        return;
+      }
+
+      // STROGA KLIJENTSKA PROVJERA VULGARNOSTI
+      if (isClientProfane(name)) {
+        if (errBox) errBox.classList.remove('hidden');
+        nameInput.classList.add('border-red-500', 'animate-pulse');
+        nameInput.focus();
+        return;
+      }
 
       const btn = document.getElementById('regSubmitBtn');
       btn.disabled = true;
@@ -2296,12 +2645,12 @@ Otključavanje za: ${formatCooldownTime(cooldown.remaining_ms)}.`);
         const res = await fetch(`${API_BASE}/api/auth/register`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email, firstName, lastName, className })
+          body: JSON.stringify({ name, className })
         });
         const data = await res.json();
 
         if (data.success) {
-          currentUser = data.user || { id: 1, email, first_name: firstName, last_name: lastName, class_name: className };
+          currentUser = data.user || { id: 1, first_name: name, class_name: className };
           localStorage.setItem('dokle_current_user', JSON.stringify(currentUser));
           updateUserBadgeUI();
           closeLoginModal();
@@ -2312,11 +2661,16 @@ Otključavanje za: ${formatCooldownTime(cooldown.remaining_ms)}.`);
             startGame(g);
           }
         } else {
-          alert(data.message_hr || data.message_en || 'Greška pri prijavi.');
+          if (errBox && (data.message_hr || '').includes('neprimjeren')) {
+            errBox.textContent = '🚫 ' + data.message_hr;
+            errBox.classList.remove('hidden');
+          } else {
+            alert(data.message_hr || data.message_en || 'Greška pri prijavi.');
+          }
         }
       } catch (err) {
         // Lokalni offline rad / Netlify fallback
-        currentUser = { id: 1, email, first_name: firstName, last_name: lastName, class_name: className };
+        currentUser = { id: 1, first_name: name, class_name: className };
         localStorage.setItem('dokle_current_user', JSON.stringify(currentUser));
         updateUserBadgeUI();
         closeLoginModal();
@@ -2327,7 +2681,7 @@ Otključavanje za: ${formatCooldownTime(cooldown.remaining_ms)}.`);
         }
       } finally {
         btn.disabled = false;
-        btn.textContent = 'Prijavi se i igraj ➔';
+        btn.textContent = 'Započni igru ➔';
       }
     }
 
